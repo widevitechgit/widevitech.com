@@ -9,8 +9,6 @@ import fxr90 from "../images/FXR90.jpg"
 import an720 from "../images/AN720.jpg"
 import zd621r from "../images/ZD621R.jpg"
 
-import fx90video from "../video/FX90video.mp4"
-
 // ─── Accent couleur selon la catégorie ─────────────────────────────────────────
 function accentFromGradient(gradient) {
     if (gradient && gradient.includes("orange")) {
@@ -163,7 +161,7 @@ const PRODUITS = {
         sku: "FXR90011-400000-WR",
         image: fxr90,
         medias: [
-            { type: "video", src: fx90video },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/product-solutions-portfolio/0003/fxr90-video-en-us.mp4/jcr:content/renditions/original" },
             { type: "image", src: fxr90 }
         ],
         categorie: "fixe",

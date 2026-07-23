@@ -13,13 +13,6 @@ import zt231 from "../images/ZT231.jpg"
 import zd510 from "../images/ZD510-HC.jpg"
 import rs5 from "../images/RS5.jfif"
 
-import zd6video from "../video/ZD6video.mp4"
-import zq620video from "../video/ZQ620video.mp4"
-import zq630video from "../video/ZQ630video.mp4"
-import zt231video from "../video/ZT231video.mp4"
-import zc300video from "../video/ZC300video.mp4"
-import zc100video from "../video/ZC100video.mp4"
-
 // ─── Accent couleur selon la catégorie ─────────────────────────────────────────
 function accentFromGradient(gradient) {
     if (gradient && gradient.includes("orange")) {
@@ -141,7 +134,7 @@ const PRODUITS = {
         sku: "ZD6A142-31EF00EZ",
         image: zd621,
         medias: [
-            { type: "video", src: zd6video },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/web-production/zd421-zd621-video-website-en-us.mp4/jcr:content/renditions/original" },
             { type: "image", src: zd621 }
         ],
         categorie: "bureau",
@@ -175,7 +168,7 @@ const PRODUITS = {
         sku: "ZQ62-AUWAE14-00",
         image: zq620,
         medias: [
-            { type: "video", src: zq620video },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/product-solutions-portfolio/0005/zq600-plus-series-video-retail-en-us.mp4/jcr:content/renditions/original" },
             { type: "image", src: zq620 }
         ],
         categorie: "mobiles",
@@ -207,7 +200,7 @@ const PRODUITS = {
         sku: "ZQ63-AUFAE14-00",
         image: zq630,
         medias: [
-            { type: "video", src: zq630video },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/product-solutions-portfolio/0005/zq600-plus-series-video-warehouse-en-us.mp4/jcr:content/renditions/original" },
             { type: "image", src: zq630 }
         ],
         categorie: "mobiles",
@@ -240,7 +233,7 @@ const PRODUITS = {
         sku: "ZT23143-T0E000FZ",
         image: zt231,
         medias: [
-            { type: "video", src: zt231video },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/web-production/zt231-video-website-en-us.mp4/jcr:content/renditions/original" },
             { type: "image", src: zt231 }
         ],
         categorie: "industrielles",
@@ -272,7 +265,7 @@ const PRODUITS = {
         sku: "ZC11-0000Q00EM00",
         image: zc11,
         medias: [
-            { type: "video", src: zc100video },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/product-solutions-portfolio/0001/zc300-product-video.mp4/jcr:content/renditions/original" },
             { type: "image", src: zc11 }
         ],
         categorie: "cartes",
@@ -303,7 +296,7 @@ const PRODUITS = {
         sku: "ZC32-000CQ00EM00",
         image: zc11,
         medias: [
-            { type: "video", src: zc300video },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/product-solutions-portfolio/0001/zc300-product-video.mp4/jcr:content/renditions/original" },
             { type: "image", src: zc11 }
         ],
         categorie: "cartes",

@@ -11,9 +11,6 @@ import ls2208 from "../images/LS2208.jpg"
 import ds55 from "../images/DS55.jpg"
 import ds8208hc from "../images/DS8208-HC.jpg"
 
-import ds2208video from "../video/DS2208video.mp4"
-import ds5502video from "../video/DS5502video.mp4"
-
 // ─── Accent couleur selon la catégorie ─────────────────────────────────────────
 function accentFromGradient(gradient) {
     if (gradient && gradient.includes("orange")) {
@@ -135,7 +132,7 @@ const PRODUITS = {
         sku: "DS2208-SR00007ZZWW",
         image: ds2208,
         medias: [
-            { type: "video", src: ds2208video },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/product-solutions-portfolio/0001/ds2200-series-retail-video.mp4/jcr:content/renditions/original" },
             { type: "image", src: ds2208 }
         ],
         categorie: "portable",
@@ -281,7 +278,7 @@ const PRODUITS = {
         sku: "DS5502-SR4US70MMZW",
         image: ds55,
         medias: [
-            { type: "video", src: ds5502video },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/animation/ds55-video-animation-en-us.mp4/jcr:content/renditions/original" },
             { type: "image", src: ds55 }
         ],
         categorie: "fixe",
@@ -533,7 +530,7 @@ export default function ScannerDetail() {
                             {autresModeles.map((p) => (
                                 <button
                                     key={p.sku}
-                                    onClick={() => navigate(`/Scanner/${p.sku}`)}
+                                    onClick={() => navigate(`/scanners/${p.sku}`)}
                                     className="bg-white border border-gray-100 rounded-2xl p-6 flex flex-col items-center gap-3 text-center hover:shadow-lg transition-all"
                                 >
                                     <div className="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center">

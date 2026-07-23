@@ -652,7 +652,7 @@ export default function TermPortDetail() {
                             {autresModeles.map((p) => (
                                 <button
                                     key={p.sku}
-                                    onClick={() => navigate(`/Terminaux-portables/${p.sku}`)}
+                                    onClick={() => navigate(`/terminaux/${p.sku}`)}
                                     className="bg-white border border-gray-100 rounded-2xl p-6 flex flex-col items-center gap-3 text-center hover:shadow-lg transition-all"
                                 >
                                     <div className="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center">

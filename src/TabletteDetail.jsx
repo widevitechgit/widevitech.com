@@ -9,12 +9,6 @@ import et40hc from "../images/ET40-HC.jpg"
 import et60 from "../images/ET60.jpg"
 import et80 from "../images/ET80.jpg"
 
-
-import et4video from "../video/ET4video.mp4"
-import et4hcvideo from "../video/ET4HCvideo.mp4"
-import et6video from "../video/ET6video.mp4"
-import et8video from "../video/ET8video.mp4"
-
 // ─── Accent couleur selon la catégorie ─────────────────────────────────────────
 function accentFromGradient(gradient) {
     if (gradient && gradient.includes("orange")) {
@@ -134,7 +128,7 @@ const PRODUITS = {
         sku: "ET40AB-001C1B0-A6",
         image: et40,
         medias: [
-            { type: "video", src: et4video },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/product-solutions-portfolio/0005/et401-video-product-overview-web-en-us.mp4/jcr:content/renditions/original" },
             { type: "image", src: et40 }
         ],
         gamme: "et4x",
@@ -163,7 +157,7 @@ const PRODUITS = {
         sku: "ET45CB-101D2B0-A6",
         image: et40,
         medias: [
-            { type: "video", src: et4hcvideo },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/product-solutions-portfolio/0005/et401-video-product-overview-web-en-us.mp4/jcr:content/renditions/original" },
             { type: "image", src: et40 }
         ],
         gamme: "et4x",
@@ -192,7 +186,7 @@ const PRODUITS = {
         sku: "ET40AB-0H1C1B0-A6",
         image: et40hc,
         medias: [
-            { type: "video", src: et4hcvideo },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/web-production/et40-hc-et45-hc-video-website-en-us.mp4/jcr:content/renditions/original" },
             { type: "image", src: et40hc }
         ],
         gamme: "et4x-hc",
@@ -221,7 +215,7 @@ const PRODUITS = {
         sku: "ET45CB-1H1C1B0-A6",
         image: et40hc,
         medias: [
-            { type: "video", src: et4hcvideo },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/web-production/et40-hc-et45-hc-video-website-en-us.mp4/jcr:content/renditions/original" },
             { type: "image", src: et40hc }
         ],
         gamme: "et4x-hc",
@@ -250,7 +244,7 @@ const PRODUITS = {
         sku: "ET60AW-0SQAGS00A0-A6",
         image: et60,
         medias: [
-            { type: "video", src: et6video },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/web-production/et6x-series-video-product-overview-web-en-us.mp4/jcr:content/renditions/original" },
             { type: "image", src: et60 }
         ],
         gamme: "et6x",
@@ -279,7 +273,7 @@ const PRODUITS = {
         sku: "ET80A-0P5B2-CF0",
         image: et80,
         medias: [
-            { type: "video", src: et8video },
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/web-production/et80-et85-tablets-video-website-en-us.mp4/jcr:content/renditions/original" },
             { type: "image", src: et80 }
         ],
         gamme: "et8x",
