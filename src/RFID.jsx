@@ -238,7 +238,7 @@ export default function RFID () {
                                         <img src={mc3330xr} alt="" className="flex w-35 mx-auto" />
                                         <h1 className="text-2xl font-bold">MC3330XR<br /><span className="text-[14px]">&#40;MC333U-GJ4EG4EU&#41;</span></h1>
                                         <p>Pistolet RFID UHF MC3330XR, antenne circulaire, Wi-Fi 802.11 a/b/g/n/ac, lecteur 2D SE4770, 47 touches, batterie haute capacité, GMS, 4 Go de RAM / 32 Go de ROM, bandes ETSI</p>
-                                        <button onClick={() => navigate("/rfid/MC333U-GJ4EG4EU")} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                        <button onClick={() => {navigate("/rfid/MC333U-GJ4EG4EU"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +252,7 @@ export default function RFID () {
                                         <img src={fxr90} alt="" className="flex w-75 mx-auto" />
                                         <h1 className="text-2xl font-bold">FXR90<br /><span className="text-[14px]">&#40;FXR90011-400000-WR&#41;</span></h1>
                                         <p>Lecteur RFID fixe ultra-robuste FXR90, RFID UHF, Bluetooth 5.3, Wi-Fi 6, antenne linéaire à polarisation croisée intégrée, 4 ports d'antenne externes, compatible avec les fréquences mondiales 800 MHz et 900 MHz</p>
-                                        <button onClick={() => navigate("/rfid/FXR90011-400000-WR")} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                        <button onClick={() => {navigate("/rfid/FXR90011-400000-WR"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                 </div>
                             </div>
@@ -266,7 +266,7 @@ export default function RFID () {
                                         <img src={an720} alt="" className="flex w-35 mx-auto" />
                                         <h1 className="text-2xl font-bold">AN720<br /><span className="text-[14px]">&#40;AN720-L51NF00WEU&#41;</span></h1>
                                         <p>ANT: RFID, ROBUSTE, FRÉQUENCE EU, ARTICLE À UTILISATION RESTREINTE DE CLASSE 4, CERTIFICATION CORRESPONDANTE REQUISE.</p>
-                                        <button onClick={() => navigate("/rfid/AN720-L51NF00WEU")} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                        <button onClick={() => {navigate("/rfid/AN720-L51NF00WEU"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                 </div>
                             </div>
@@ -280,7 +280,7 @@ export default function RFID () {
                                         <img src={zd621r} alt="" className="flex w-55 mx-auto" />
                                         <h1 className="text-2xl font-bold">ZD621R<br /><span className="text-[14px]">&#40;ZD6A142-30ELR2EZ&#41;</span></h1>
                                         <p>La Zebra ZD621R est une imprimante d’étiquettes RFID professionnelle offrant une impression haute qualité en 203 dpi, un écran tactile couleur intuitif et de nombreuses options de connectivité. Idéale pour la gestion d’inventaire, la traçabilité et les applications logistiques nécessitant l’encodage RFID UHF.</p>
-                                        <button onClick={() => navigate("/rfid/ZD6A142-30ELR2EZ")} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                        <button onClick={() => {navigate("/rfid/ZD6A142-30ELR2EZ"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                 </div>
                             </div>

@@ -393,7 +393,7 @@ export default function ScannerDetail() {
 
             {/* ── Fil d'ariane ── */}
             <div className="border-b border-gray-100">
-                <div className="max-w-6xl mx-auto px-6 pt-28 pb-3 md:pt-32 flex items-center gap-2 text-xs text-gray-500">
+                <div className="max-w-6xl mx-auto px-6 pt-28 pb-3 md:pt-38 flex items-center gap-2 text-xs text-gray-500">
                     <button
                         onClick={() => navigate(`/Scanner?categorie=${produit.categorie}`)}
                         className="flex items-center gap-1 hover:text-black transition-colors"
@@ -530,7 +530,7 @@ export default function ScannerDetail() {
                             {autresModeles.map((p) => (
                                 <button
                                     key={p.sku}
-                                    onClick={() => navigate(`/scanners/${p.sku}`)}
+                                    onClick={() => {navigate(`/scanners/${p.sku}`), window.scrollTo(0,0)}}
                                     className="bg-white border border-gray-100 rounded-2xl p-6 flex flex-col items-center gap-3 text-center hover:shadow-lg transition-all"
                                 >
                                     <div className="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center">

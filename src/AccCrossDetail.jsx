@@ -460,7 +460,7 @@ export default function AccCrossDetail() {
         <div className="min-h-screen bg-white">
 
             {/* ── Fil d'ariane ── */}
-            <div className="max-w-6xl mx-auto px-6 pt-28 pb-2 md:pt-32">
+            <div className="max-w-6xl mx-auto px-6 pt-28 pb-2 md:pt-36">
                 <button
                     onClick={() => navigate(`/Accessoire-Crosscall?categorie=${produit.categorie}`)}
                     className="flex items-center gap-2 text-gray-500 hover:text-black text-sm w-fit transition-colors"

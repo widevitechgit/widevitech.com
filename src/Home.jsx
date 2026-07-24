@@ -25,10 +25,32 @@ import tab from "../images/tab.png"
 import core_p6 from "../images/CORE-P6.png"
 import core_h6ex1 from "../images/CORE-H6-Ex1.png"
 import core_h6ex2 from "../images/CORE-H6-Ex2.png"
-import gamme_stellar from "../images/GAMME_STELLAR.png"
-import gamme_core from "../images/GAMME_CORE.png"
+import gamme_stellar from "../images/gammestellar.png"
+import gamme_core from "../images/gammecore.jpg"
 
 import aproposBg from "../images/Widevitech02.jpg";
+
+// Brand palette used throughout: navy for the enterprise / data-capture line
+// (Zebra) and orange for the rugged mobility line (Crosscall). Class names
+// below are written out in full (not built from variables) because Tailwind
+// only generates CSS for class strings it can literally find in the source.
+//
+// Navy    #0A2A4A / #071C33 (deep) / #1C5A96 (light)
+// Orange  #F2801E / #C2600C (deep)
+//
+// Each hero theme pairs a background gradient with a CTA hover colour taken
+// from the *other* brand colour, so the two families visually answer each
+// other across the whole carousel instead of repeating one accent everywhere.
+const THEMES = {
+    navy: {
+        gradient: "from-[#071C33]/95 via-[#0A2A4A]/90 to-[#1C5A96]/75",
+        hoverBtn: "hover:bg-[#F2801E] hover:text-white",
+    },
+    orange: {
+        gradient: "from-[#6B2E05]/95 via-[#C2600C]/90 to-[#F2801E]/78",
+        hoverBtn: "hover:bg-[#0A2A4A] hover:text-white",
+    },
+};
 
 // Slide, stat and partner data pulled out of the JSX so the markup below
 // stays simple and new entries can be added without touching the layout.
@@ -37,84 +59,77 @@ const slides = [
         image: termmob,
         title: "Terminaux Mobiles",
         to: '/Terminaux-portables',
-        gradient: "from-gray-700/90 via-gray-500/90 to-gray-300/90 shadow-xl/30",
-        text: "Transformez les performances de terrain en un avantage concurrentiel. Les terminaux mobiles Zebra connectent en temps réel personnes, appareils et données, permettant ainsi des décisions plus rapides, des flux de travail plus intelligents et de meilleurs résultats opérationnels, afin de permettre à vos équipes de donner le meilleur d’elles-mêmes, et cela dans n’importe quel environnement.",
+        theme: "navy",
     },
     {
         image: impr,
         title: "Imprimantes",
+        stitle: "Zebra",
         to: '/Imprimantes',
-        gradient: "from-gray-700/90 via-gray-500/90 to-gray-300/90 shadow-xl/30",
-        text: "Améliorez l’efficacité sur le terrain avec les imprimantes durables Zebra, faciles à configurer, à gérer et à sécuriser. S’appuyant sur plus de 50 ans d’expertise, les imprimantes et moteurs d’impression mobiles, de bureau, industriels, de cartes et RFID de Zebra offrent des performances fiables maximisant autant la productivité que la disponibilité.",
+        theme: "navy",
     },
     {
         image: scanner,
         title: "Scanners de Codes-Barres",
         to: '/Scanner',
-        gradient: "from-gray-700/90 via-gray-500/90 to-gray-300/90 shadow-xl/30",
-        text: "Les scanners Zebra aident les équipes de terrain à travailler avec plus de précision, de visibilité et d’être plus productives. Soutenus par le logiciel Zebra DNA®, ils simplifient les workflows, fonctionnent de manière fiable dans des environnements difficiles et permettent des opérations sans heurts dans toute votre entreprise.",
+        theme: "navy",
     },
     {
         image: rfid,
-        title: "Produits RFID",
+        title: "Produits",
+        stitle: "RFID",
         to: '/RFID',
-        gradient: "from-gray-700/90 via-gray-500/90 to-gray-300/90 shadow-xl/30",
-        text: "Zebra RFID automatise la capture de données, réduit les erreurs et fournit des informations en temps opportun sur l’ensemble de vos opérations, permettant ainsi une prise de décision plus intelligente et plus rapide. Assurez le suivi des moments clés pour les actifs, les stocks, le personnel et plus encore afin d’améliorer l’efficacité et d’atteindre le plein potentiel de votre entreprise.",
+        theme: "navy",
     },
     {
         image: conso,
         title: "Consommables pour l’impression",
         to: '/Consommables?categorie=etiquette',
-        gradient: "from-gray-700/90 via-gray-500/90 to-gray-300/90 shadow-xl/30",
-        text: "Améliorez les performances et la qualité d’impression avec les consommables certifiés Zebra, conçus et testés pour fonctionner de manière transparente avec les imprimantes Zebra. S’appuyant sur plus de 50 ans d’expertise, nos consommables réduisent le nombre de réimpressions, réduisent les temps d’arrêt et garantissent des résultats fiables garantissant le bon déroulement des opérations.",
+        theme: "navy",
     },
     {
         image: tab,
         title: "Tablettes",
+        stitle: "Zebra",
         to: '/Tablettes?categorie=et4x',
-        gradient: "from-gray-700/90 via-gray-500/90 to-gray-300/90 shadow-xl/30",
-        text: "Les tablettes durcies Zebra sont conçues pour s’adapter aux flux de travail spécifiques des équipes de terrain. Grâce à une connectivité solide, des options de configuration flexibles, une sécurité et un support fiables, elles contribuent à accroître la productivité et à fluidifier les opérations, permettant ainsi aux équipes de fonctionner au mieux de leurs performances.",
+        theme: "navy",
     },
     {
         image: core_p6,
         title: "CORE-P6",
-        to: '/Téléphone-Crosscall/core-p6',
-        /*no: "hidden",
-        none: "none",*/
-        gradient: "from-lime-700/90 via-lime-500/90 to-lime-300/90 shadow-xl/30",
-        text: "Conçu pour aider les équipes à communiquer clairement, à agir plus rapidement et à rester opérationnelles sur le terrain, le CORE-P6 allie l'ergonomie d'une radio, des performances adaptées à la large bande et une technologie vocale de pointe dans un appareil de nouvelle génération dédié aux missions critiques.",
+        to: '/Téléphone-Crosscall/CORE-P6.png',
+        theme: "orange",
     },
     {
         image: core_h6ex1,
-        title: "CORE-H6 Ex1",
-        /*none: "none",*/
+        title: "CORE-H6",
+        stitle: "Ex1",
         to: '/Téléphone-Crosscall/core-h6-ex1',
-        gradient: "from-lime-700/90 via-lime-500/90 to-lime-300/90 shadow-xl/30",
-        /*no: "hidden",*/
-        text: "Conçu pour aider les équipes à communiquer clairement, à agir plus rapidement et à rester opérationnelles sur le terrain, le CORE-P6 allie l'ergonomie d'une radio, des performances adaptées à la large bande et une technologie vocale de pointe dans un appareil de nouvelle génération dédié aux missions critiques.",
+        theme: "orange",
+        text: "Certifié ATEX Zone 1/21",
     },
     {
         image: core_h6ex2,
-        title: "CORE-H6 Ex2",
-        /*no: "hidden",
-        none: "none",*/
+        title: "CORE-H6",
+        stitle: "Ex2",
         to: '/Téléphone-Crosscall/core-h6-ex2',
-        gradient: "from-lime-700/90 via-lime-500/90 to-lime-300/90 shadow-xl/30",
-        text: "Protégez vos équipes et maintenez leur productivité, même dans les environnements les plus extrêmes. Sa structure renforcée, étanche et résistante à la poussière, son fonctionnement en températures extrêmes, sa batterie amovible et sécurisée, ainsi que sa certification ATEX / IECEx Zone 2/22 en font un outil fiable et durable sur le terrain.",
+        theme: "orange",
     },
     {
         image: gamme_stellar,
-        title: "GAMME STELLAR",
+        title: "GAMME",
+        stitle: "STELLAR",
         to: '/Téléphone-Crosscall?categorie=stellar',
-        gradient: "from-lime-700/90 via-lime-500/90 to-lime-300/90 shadow-xl/30",
-        text: "Protégez vos équipes et maintenez leur productivité, même dans les environnements les plus extrêmes. Sa structure renforcée, étanche et résistante à la poussière, son fonctionnement en températures extrêmes, sa batterie amovible et sécurisée, ainsi que sa certification ATEX / IECEx Zone 2/22 en font un outil fiable et durable sur le terrain.",
+        theme: "orange",
+        text: "Edition Chamonix-Mont-Blanc",
     },
     {
         image: gamme_core,
-        title: "GAMME CORE",
+        title: "GAMME",
+        stitle: "CORE",
         to: '/Téléphone-Crosscall?categorie=core',
-        gradient: "from-lime-700/90 via-lime-500/90 to-lime-300/90 shadow-xl/30",
-        text: "Protégez vos équipes et maintenez leur productivité, même dans les environnements les plus extrêmes. Sa structure renforcée, étanche et résistante à la poussière, son fonctionnement en températures extrêmes, sa batterie amovible et sécurisée, ainsi que sa certification ATEX / IECEx Zone 2/22 en font un outil fiable et durable sur le terrain.",
+        theme: "orange",
+        text: "Core M6, core z5 etc...",
     },
 ];
 
@@ -131,6 +146,20 @@ const partners = [
     { src: logo04, alt: "Getac" },
 ];
 
+// Small reusable "eyebrow" label used above section titles to keep the
+// orange/navy pairing consistent site-wide.
+function Eyebrow({ children, dark = false }) {
+    return (
+        <span
+            className={`text-xs md:text-sm font-bold uppercase tracking-[0.25em] ${
+                dark ? "text-[#F2801E]" : "text-[#C2600C]"
+            }`}
+        >
+            {children}
+        </span>
+    );
+}
+
 export default function Home() {
     return (
         <>
@@ -146,48 +175,66 @@ export default function Home() {
                     loop={true}
                     aria-label="Secteurs d'activité Zebra"
                 >
-                    {slides.map((slide) => (
-                        <SwiperSlide key={slide.title}>
-                            <img
-                                src={slide.image}
-                                alt={slide.title}
-                                className="relative md:mt-0 -mt-10 w-full h-75 md:h-screen object-cover scale-65"
-                                loading="eager"
-                            />
-                            <div className="md:absolute md:inset-0 bg-black/25"></div>
-                            <div className="flex flex-col text-start items-start md:mt-25 justify-center md:mx-10 text-white md:absolute md:inset-0">
-                                <div
-                                    className={`flex flex-col md:bg-none bg-gradient-to-t ${slide.gradient} md:w-140 md:p-10 p-8 gap-6 md:rounded-2xl`}
-                                >
-                                    <h1 className={`md:text-4xl text-3xl font-bold md:${slide.no}`}>
-                                        {slide.title}
-                                    </h1>
-                                    <hr className={`border-2 ${slide.no}`} />
-                                    <p className={`md:${slide.no}`}>{slide.text}</p>
-                                    <Link to={`${slide.to}`}  className="bg-white flex text-center items-center justify-center mt-auto text-black p-1.5 rounded-xl hover:shadow-xl text-xl">
-                                        <button>
-                                            Découvrir
-                                        </button>
-                                    </Link>
+                    {slides.map((slide) => {
+                        const theme = THEMES[slide.theme];
+                        return (
+                            <SwiperSlide key={slide.title + (slide.stitle || "")}>
+                                <img
+                                    src={slide.image}
+                                    alt={slide.title}
+                                    className="relative md:mt-0 -mt-10 w-full h-75 md:h-screen object-cover"
+                                    loading="eager"
+                                />
+                                <div className="md:absolute md:inset-0 bg-black/25"></div>
+                                <div className="flex flex-col text-start items-start md:mt-25 justify-center md:mx-10 text-white md:absolute md:inset-0">
+                                    <div
+                                        className={`md:flex hidden flex-col md:bg-none bg-gradient-to-t ${theme.gradient} md:w-140 md:p-10 p-8 gap-6 md:rounded-2xl shadow-2xl shadow-black/40`}
+                                    >
+                                        <h1 className="md:text-[58px] scale-y-130 flex flex-col text-3xl font-extrabold leading-none tracking-tight">
+                                            <span>{slide.title}</span>
+                                            {slide.stitle && (
+                                                <span className="-mt-1 text-[#F2801E]">{slide.stitle}</span>
+                                            )}
+                                        </h1>
+                                        <span className="w-14 h-1 rounded-full bg-[#F2801E]" />
+                                        <p className="text-lg md:text-xl scale-y-110 font-medium leading-snug">
+                                            {slide.text}
+                                        </p>
+                                        <Link
+                                            to={`${slide.to}`}
+                                            className={`bg-white ${theme.hoverBtn} flex text-center w-52 h-15 font-bold items-center justify-center mt-auto text-[#0A2A4A] p-1.5 rounded-tr-2xl rounded-bl-2xl transition-colors duration-300 hover:shadow-xl text-xl`}
+                                        >
+                                            <button>
+                                                Découvrir
+                                            </button>
+                                        </Link>
+                                    </div>
                                 </div>
-                            </div>
-                        </SwiperSlide>
-                    ))}
+                            </SwiperSlide>
+                        );
+                    })}
                 </Swiper>
             </section>
 
-            <section className="flex flex-col min-h-130 p-6 text-center items-center justify-center bg-black text-white gap-10">
-                <h1 className="md:text-3xl text-xl font-semibold uppercase">
-                    Notre Statut ZEBRA
-                </h1>
+            <section className="flex flex-col min-h-130 p-6 text-center items-center justify-center bg-gradient-to-br from-[#071C33] via-[#0A2A4A] to-[#124272] text-white gap-10">
+                <div className="flex flex-col items-center gap-3">
+                    <Eyebrow dark>Certification</Eyebrow>
+                    <h1 className="md:text-3xl text-xl font-extrabold uppercase tracking-tight">
+                        Notre Statut ZEBRA
+                    </h1>
+                    <span className="w-16 h-1 rounded-full bg-[#F2801E]" />
+                </div>
                 <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
                     {stats.map((stat) => (
-                        <div key={stat.alt}>
+                        <div
+                            key={stat.alt}
+                            className="bg-white/5 border border-white/10 rounded-2xl p-3 transition-transform duration-300 hover:-translate-y-1 hover:border-[#F2801E]/60"
+                        >
                             <img
                                 src={stat.src}
                                 alt={stat.alt}
                                 loading="lazy"
-                                className="w-80 rounded-2xl"
+                                className="w-80 max-w-full rounded-xl"
                             />
                         </div>
                     ))}
@@ -201,14 +248,18 @@ export default function Home() {
                     aria-hidden="true"
                     className="absolute inset-0 w-full h-full object-cover blur-sm scale-110"
                 />
-                <div className="absolute inset-0 bg-white/35" />
+                <div className="absolute inset-0 bg-[#0A2A4A]/40" />
 
-                <h1 className="relative z-10 md:text-3xl text-xl font-semibold uppercase">
-                    À propos de WIDEVITECH
-                </h1>
+                <div className="relative z-10 flex flex-col items-center gap-3">
+                    <Eyebrow dark>Qui sommes-nous</Eyebrow>
+                    <h1 className="md:text-3xl text-xl font-extrabold uppercase text-white tracking-tight text-center">
+                        À propos de WIDEVITECH
+                    </h1>
+                    <span className="w-16 h-1 rounded-full bg-[#F2801E]" />
+                </div>
 
                 <div className="relative z-10 flex flex-col gap-10 max-w-5xl w-full">
-                    <div className="bg-white/95 backdrop-blur-sm shadow-xl rounded-2xl p-6 md:p-10 flex flex-col gap-4 text-left md:text-lg leading-relaxed">
+                    <div className="bg-white/95 backdrop-blur-sm shadow-xl rounded-2xl p-6 md:p-10 flex flex-col gap-4 text-left md:text-lg leading-relaxed border-t-4 border-[#0A2A4A]">
                         <p>
                             Notre entreprise WIDEVITECH est spécialisée dans la distribution
                             de solutions technologiques innovantes, de matériel
@@ -219,7 +270,7 @@ export default function Home() {
                             Notre service après-vente apporte une très grande valeur ajoutée à
                             notre activité. Nous sommes fiers d'être les représentants
                             exclusifs de grandes marques leaders du marché telles que{" "}
-                            <span className="font-semibold">
+                            <span className="font-bold text-[#0A2A4A]">
                                 ZEBRA, CROSSCALL, GETAC, KASPERSKY, 6 GRAIN, GEOTHENTIC,
                                 KAYMERA, HP et DELL
                             </span>
@@ -235,8 +286,8 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <div className="bg-white/95 backdrop-blur-sm shadow-xl rounded-2xl p-6 md:p-10 border-l-4 border-blue-700 text-left">
-                        <p className="uppercase text-sm tracking-widest text-blue-700 font-semibold mb-3">
+                    <div className="bg-[#0A2A4A] shadow-xl rounded-2xl p-6 md:p-10 border-l-4 border-[#F2801E] text-left text-white">
+                        <p className="uppercase text-sm tracking-widest text-[#F2801E] font-bold mb-3">
                             Mot du directeur
                         </p>
                         <p className="md:text-lg italic leading-relaxed">
@@ -244,24 +295,31 @@ export default function Home() {
                             objectif : faire gagner nos clients en fiabilité, en productivité
                             et en performance. »
                         </p>
-                        <p className="mt-4 font-semibold">Serge Bruno Waounwa</p>
-                        <p className="text-sm text-gray-600">Directeur Général, WIDEVITECH</p>
+                        <p className="mt-4 font-bold">Serge Bruno Waounwa</p>
+                        <p className="text-sm text-white/70">Directeur Général, WIDEVITECH</p>
                     </div>
                 </div>
             </section>
 
-            <section className="flex flex-col min-h-80 p-6 text-center items-center justify-center bg-white text-black gap-10">
-                <h1 className="md:text-3xl text-xl font-semibold uppercase">
-                    Nos partenaires
-                </h1>
+            <section className="flex flex-col min-h-80 p-6 text-center items-center justify-center bg-[#F5F7FA] text-black gap-10">
+                <div className="flex flex-col items-center gap-3">
+                    <Eyebrow>Ils nous font confiance</Eyebrow>
+                    <h1 className="md:text-3xl text-xl font-extrabold uppercase tracking-tight text-[#0A2A4A]">
+                        Nos partenaires
+                    </h1>
+                    <span className="w-16 h-1 rounded-full bg-[#F2801E]" />
+                </div>
                 <div className="grid md:grid-cols-4 grid-cols-2 gap-5">
                     {partners.map((partner) => (
-                        <div key={partner.alt}>
+                        <div
+                            key={partner.alt}
+                            className="bg-white rounded-2xl p-4 shadow-sm border border-black/5 flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:border-[#F2801E]/50 hover:-translate-y-1"
+                        >
                             <img
                                 src={partner.src}
                                 alt={partner.alt}
                                 loading="lazy"
-                                className="w-40 rounded-2xl"
+                                className="w-40 max-w-full"
                             />
                         </div>
                     ))}
