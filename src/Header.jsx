@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import logo from "../Logos/logo.png"
 import { useState, useEffect } from "react"
+import PremierBP from "../images/PremierBP.png"
 
 // ─── Données de navigation ────────────────────────────────────────────────────
 
@@ -389,6 +390,7 @@ export default function Header() {
                     <p>
                         Cel : 05 55 55 56 56 - Fixe : 27 21 28 49 52
                     </p>
+                    <img src={PremierBP} className="w-17" alt="Partner" />
                     <button className={`py-1 px-5 rounded-full bg-transparent font-bold shadow-xl`}>
                         Actualité
                     </button>
