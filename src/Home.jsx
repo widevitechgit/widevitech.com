@@ -83,7 +83,8 @@ const slides = [
     },
     {
         image: conso,
-        title: "Consommables pour l’impression",
+        title: "Consommables pour",
+        stitle: "l’impression",
         to: '/Consommables?categorie=etiquette',
         theme: "navy",
     },
