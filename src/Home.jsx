@@ -43,11 +43,11 @@ import aproposBg from "../images/Widevitech02.jpg";
 // other across the whole carousel instead of repeating one accent everywhere.
 const THEMES = {
     navy: {
-        gradient: "from-[#071C33]/95 via-[#0A2A4A]/90 to-[#1C5A96]/75",
+        gradient: "md:from-[#071C33]/95 md:via-[#0A2A4A]/90 md:to-[#1C5A96]/75",
         hoverBtn: "hover:bg-[#F2801E] hover:text-white",
     },
     orange: {
-        gradient: "from-[#6B2E05]/95 via-[#C2600C]/90 to-[#F2801E]/78",
+        gradient: "md:from-[#6B2E05]/95 md:via-[#C2600C]/90 md:to-[#F2801E]/78",
         hoverBtn: "hover:bg-[#0A2A4A] hover:text-white",
     },
 };
@@ -100,6 +100,7 @@ const slides = [
         title: "CORE-P6",
         to: '/Téléphone-Crosscall/CORE-P6.png',
         theme: "orange",
+        ajust: "md:object-cover object-right",
     },
     {
         image: core_h6ex1,
@@ -183,13 +184,13 @@ export default function Home() {
                                 <img
                                     src={slide.image}
                                     alt={slide.title}
-                                    className="relative w-full h-115 md:h-screen object-cover"
+                                    className={`relative md:mt-0 -mt-10 w-full h-75 md:h-screen object-cover ${slide.ajust}`}
                                     loading="eager"
                                 />
                                 <div className="absolute inset-0 bg-black/25"></div>
-                                <div className="absolute inset-0 flex flex-col text-start items-start justify-end md:justify-center md:mt-25 md:mx-10 text-white">
+                                <div className="absolute inset-0 flex flex-col items-center justify-start text-center pt-10 md:items-start md:justify-center md:text-start md:pt-0 md:mt-25 md:mx-10 text-white">
                                     <div
-                                        className={`flex flex-col bg-gradient-to-t ${theme.gradient} w-full md:w-140 p-5 md:p-10 gap-3 md:gap-6 md:rounded-2xl shadow-2xl shadow-black/40`}
+                                        className={`flex flex-col items-center text-center md:items-start md:text-start md:bg-gradient-to-t ${theme.gradient} w-fit md:w-140 px-6 md:p-10 gap-3 md:gap-6 md:rounded-2xl md:shadow-2xl md:shadow-black/40`}
                                     >
                                         <h1 className="md:text-[58px] scale-y-110 md:scale-y-130 flex flex-col text-2xl font-extrabold leading-none tracking-tight">
                                             <span>{slide.title}</span>
