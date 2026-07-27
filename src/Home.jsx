@@ -92,17 +92,17 @@ const slides = [
         theme: "navy",
     },
     {
-        image: conso,
-        title: "Consommables pour",
-        stitle: "l’impression",
-        to: '/Consommables?categorie=etiquette',
-        theme: "navy",
-    },
-    {
         image: tab,
         title: "Tablettes",
         stitle: "Zebra",
         to: '/Tablettes?categorie=et4x',
+        theme: "navy",
+    },
+    {
+        image: conso,
+        title: "Consommables pour",
+        stitle: "l’impression",
+        to: '/Consommables?categorie=etiquette',
         theme: "navy",
     },
     {
@@ -126,6 +126,7 @@ const slides = [
         stitle: "Ex2",
         to: '/Téléphone-Crosscall/core-h6-ex2',
         theme: "orange",
+        text: "Certifié ATEX / IECEx Zone 2/22",
     },
     {
         image: gamme_stellar,
@@ -147,7 +148,7 @@ const slides = [
 
 const stats = [
     { src: stat01, alt: "Imprimante RS Zebra" },
-    { src: stat02, alt: "Statut Premier Business Partner Zebra" },
+    { src: stat02, alt: "Statut Premier Business Partner Zebra", order: "order-1 md:order-2" },
     { src: stat03, alt: "Solutions RFID Zebra" },
 ];
 
@@ -248,7 +249,7 @@ export default function Home() {
                                 src={stat.src}
                                 alt={stat.alt}
                                 loading="lazy"
-                                className="w-80 max-w-full rounded-xl"
+                                className={`${stat.order} w-80 max-w-full rounded-xl`}
                             />
                         </div>
                     ))}
@@ -275,28 +276,37 @@ export default function Home() {
                 <div className="relative z-10 flex flex-col gap-10 max-w-5xl w-full">
                     <div className="bg-white/95 backdrop-blur-sm shadow-xl rounded-2xl p-6 md:p-10 flex flex-col gap-4 text-left md:text-lg leading-relaxed border-t-4 border-[#0A2A4A]">
                         <p>
-                            Notre entreprise WIDEVITECH est spécialisée dans la distribution
-                            de solutions technologiques innovantes, de matériel
-                            d'identification et de traçabilité ainsi que d'intégration de
-                            solutions informatiques et de télécommunications.
+                            À l'ère de l'hyper-connectivité et de l'optimisation opérationnelle,
+                            Widevitech accompagne les entreprises dans la transformation de leurs
+                            processus métiers. En tant que partenaire de confiance et distributeur
+                            des solutions Zebra, nous mettons à votre disposition des technologies
+                            de pointe conçues pour connecter vos équipes, vos actifs et vos données
+                            en temps réel.
                         </p>
                         <p>
-                            Notre service après-vente apporte une très grande valeur ajoutée à
-                            notre activité. Nous sommes fiers d'être les représentants
-                            exclusifs de grandes marques leaders du marché telles que{" "}
-                            <span className="font-bold text-[#0A2A4A]">
-                                ZEBRA, CROSSCALL, GETAC, KASPERSKY, 6 GRAIN, GEOTHENTIC,
-                                KAYMERA, HP et DELL
-                            </span>
-                            .
+                            De la gestion de la chaîne d'approvisionnement (Supply Chain) à l'inventaire
+                            en magasin, en passant par le secteur de la santé, de l'industrie et de la
+                            logistique, nous vous apportons un écosystème complet de solutions durables
+                            et performantes :
                         </p>
                         <p>
-                            Nous fournissons des solutions complètes pour les entreprises qui
-                            cherchent à améliorer leurs processus de gestion des données.
-                            Notre objectif est d'offrir à nos clients des produits et des
-                            services de qualité supérieure pour améliorer la traçabilité, la
-                            productivité, la rentabilité, les aider à réussir et à atteindre
-                            leurs objectifs.
+                            <li className="">
+                                Lecteurs de codes-barres & Scanners industriels : Capturez vos données
+                                avec une précision inégalée, même dans les environnements les plus exigeants.
+                            </li>
+                            <li className="">
+                                Terminal mobiles & Tablettes durcies : Donnez à vos collaborateurs sur
+                                le terrain les outils d'une mobilité intelligente et sécurisée.
+                            </li>
+                            <li className="">
+                                Imprimantes thermiques & Identification RFID : Assurez une traçabilité totale
+                                et une gestion fluide de vos flux de marchandises.
+                            </li>
+                            <li className="">
+                                Consommables certifiés Zebra : Maximisez la durée de vie de vos équipements grâce
+                                à des fournitures d'origine garanties.
+                            </li>
+
                         </p>
                     </div>
 
