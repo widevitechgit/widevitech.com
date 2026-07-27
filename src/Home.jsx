@@ -54,7 +54,7 @@ const THEMES = {
     },
     none: {
         gradient: "none",
-        hoverBtn: "none",
+        hoverBtn: "hover:bg-[#F2801E] hover:text-white",
     }
 };
 
@@ -64,11 +64,15 @@ const slides = [
     {
         image: home,
         theme: "none",
-        hidden: "hidden",
+        title: "A Propos",
+        to: "#apropos",
+        buttonLabel: "Découvrir Widevitech",
+        hideOnDesktop: true,
     },
     {
         image: termmob,
-        title: "Terminaux Mobiles",
+        title: "Terminaux",
+        stitle: "Mobiles",
         to: '/Terminaux-portables',
         theme: "navy",
     },
@@ -81,7 +85,8 @@ const slides = [
     },
     {
         image: scanner,
-        title: "Scanners de Codes-Barres",
+        title: "Scanners de",
+        stitle: "Codes-Barres",
         to: '/Scanner',
         theme: "navy",
     },
@@ -182,13 +187,21 @@ function Eyebrow({ children, dark = false }) {
 // in normal document flow below the image for mobile (see the `bg`
 // argument, which only applies the gradient card on the desktop version).
 function SlideContent({ slide, theme, bg }) {
+    const buttonClasses = `bg-white ${theme.hoverBtn} flex text-center w-40 h-11 md:w-52 md:h-15 font-bold items-center justify-center mt-1 md:mt-auto text-[#0A2A4A] p-1.5 rounded-tr-2xl rounded-bl-2xl transition-colors duration-300 hover:shadow-xl text-base md:text-xl ${
+        bg ? "" : "border border-[#0A2A4A]/15 shadow-md"
+    }`;
+    // A hash target ("#apropos") points to a section further down this same
+    // page, so it needs a plain anchor tag to get the browser's native
+    // scroll-to-element behaviour. A router Link is only for real routes.
+    const isHash = slide.to?.startsWith("#");
+
     return (
         <div
             className={`flex flex-col items-center text-center md:items-start md:text-start ${
                 bg
                     ? `bg-gradient-to-t ${theme.gradient} shadow-2xl shadow-black/40 rounded-2xl p-10 text-white`
                     : "text-[#0A2A4A]"
-            } ${slide.hidden} w-fit md:w-140 gap-3 md:gap-6`}
+            } w-fit md:w-140 gap-3 md:gap-6`}
         >
             <h1 className="md:text-[58px] scale-y-110 md:scale-y-130 flex flex-col text-2xl font-extrabold leading-none tracking-tight">
                 <span>{slide.title}</span>
@@ -202,16 +215,17 @@ function SlideContent({ slide, theme, bg }) {
                     {slide.text}
                 </p>
             )}
-            <Link
-                to={`${slide.to}`}
-                className={`bg-white ${theme.hoverBtn} ${slide.hidden} flex text-center w-40 h-11 md:w-52 md:h-15 font-bold items-center justify-center mt-1 md:mt-auto text-[#0A2A4A] p-1.5 rounded-tr-2xl rounded-bl-2xl transition-colors duration-300 hover:shadow-xl text-base md:text-xl ${
-                    bg ? "" : "border border-[#0A2A4A]/15 shadow-md"
-                }`}
-            >
-                <button>
-                    Découvrir
-                </button>
-            </Link>
+            {slide.to && (
+                isHash ? (
+                    <a href={slide.to} className={buttonClasses}>
+                        <button>{slide.buttonLabel || "Découvrir"}</button>
+                    </a>
+                ) : (
+                    <Link to={slide.to} className={buttonClasses}>
+                        <button>{slide.buttonLabel || "Découvrir"}</button>
+                    </Link>
+                )
+            )}
         </div>
     );
 }
@@ -241,17 +255,19 @@ export default function Home() {
                                     className={`relative md:mt-0 -mt-10 w-full h-75 md:h-screen object-cover ${slide.ajust}`}
                                     loading="eager"
                                 />
-                                {/* Desktop: text overlaid on top of the image */}
-                                <div className="absolute inset-0 bg-black/25 hidden md:block"></div>
-                                <div className="hidden md:flex absolute inset-0 flex-col items-start justify-center md:mt-25 md:mx-10">
-                                    <SlideContent slide={slide} theme={theme} bg={true} />
-                                </div>
-                                {/* Mobile: text below the image, in normal flow */}
-                                {!slide.hidden && (
-                                    <div className="flex md:hidden flex-col items-center bg-white px-6 py-8">
-                                        <SlideContent slide={slide} theme={theme} bg={false} />
-                                    </div>
+                                {/* Desktop: text overlaid on top of the image (skipped when hideOnDesktop) */}
+                                {!slide.hideOnDesktop && (
+                                    <>
+                                        <div className="absolute inset-0 bg-black/25 hidden md:block"></div>
+                                        <div className="hidden md:flex absolute inset-0 flex-col items-start justify-center md:mt-25 md:mx-10">
+                                            <SlideContent slide={slide} theme={theme} bg={true} />
+                                        </div>
+                                    </>
                                 )}
+                                {/* Mobile: text below the image, in normal flow */}
+                                <div className="flex md:hidden flex-col items-center bg-white px-6 py-8">
+                                    <SlideContent slide={slide} theme={theme} bg={false} />
+                                </div>
                             </SwiperSlide>
                         );
                     })}
@@ -283,7 +299,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="relative flex flex-col min-h-100 p-6 md:px-20 items-center justify-center text-black gap-8 overflow-hidden">
+            <section id="apropos" className="relative flex flex-col min-h-100 p-6 md:px-20 items-center justify-center text-black gap-8 overflow-hidden">
                 <img
                     src={aproposBg}
                     alt=""
