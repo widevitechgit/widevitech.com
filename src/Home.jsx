@@ -114,7 +114,7 @@ const slides = [
     {
         image: core_p6,
         title: "CORE-P6",
-        to: '/Téléphone-Crosscall/CORE-P6.png',
+        to: '/Téléphone-Crosscall/core-p6',
         theme: "orange",
         ajust: "md:object-cover object-right",
     },
