@@ -183,27 +183,29 @@ export default function Home() {
                                 <img
                                     src={slide.image}
                                     alt={slide.title}
-                                    className="relative md:mt-0 -mt-10 w-full h-75 md:h-screen object-cover"
+                                    className="relative w-full h-115 md:h-screen object-cover"
                                     loading="eager"
                                 />
-                                <div className="md:absolute md:inset-0 bg-black/25"></div>
-                                <div className="flex flex-col text-start items-start md:mt-25 justify-center md:mx-10 text-white md:absolute md:inset-0">
+                                <div className="absolute inset-0 bg-black/25"></div>
+                                <div className="absolute inset-0 flex flex-col text-start items-start justify-end md:justify-center md:mt-25 md:mx-10 text-white">
                                     <div
-                                        className={`md:flex hidden flex-col md:bg-none bg-gradient-to-t ${theme.gradient} md:w-140 md:p-10 p-8 gap-6 md:rounded-2xl shadow-2xl shadow-black/40`}
+                                        className={`flex flex-col bg-gradient-to-t ${theme.gradient} w-full md:w-140 p-5 md:p-10 gap-3 md:gap-6 md:rounded-2xl shadow-2xl shadow-black/40`}
                                     >
-                                        <h1 className="md:text-[58px] scale-y-130 flex flex-col text-3xl font-extrabold leading-none tracking-tight">
+                                        <h1 className="md:text-[58px] scale-y-110 md:scale-y-130 flex flex-col text-2xl font-extrabold leading-none tracking-tight">
                                             <span>{slide.title}</span>
                                             {slide.stitle && (
                                                 <span className="-mt-1 text-[#F2801E]">{slide.stitle}</span>
                                             )}
                                         </h1>
-                                        <span className="w-14 h-1 rounded-full bg-[#F2801E]" />
-                                        <p className="text-lg md:text-xl scale-y-110 font-medium leading-snug">
-                                            {slide.text}
-                                        </p>
+                                        <span className="w-10 md:w-14 h-1 rounded-full bg-[#F2801E]" />
+                                        {slide.text && (
+                                            <p className="text-sm md:text-xl scale-y-105 md:scale-y-110 font-medium leading-snug">
+                                                {slide.text}
+                                            </p>
+                                        )}
                                         <Link
                                             to={`${slide.to}`}
-                                            className={`bg-white ${theme.hoverBtn} flex text-center w-52 h-15 font-bold items-center justify-center mt-auto text-[#0A2A4A] p-1.5 rounded-tr-2xl rounded-bl-2xl transition-colors duration-300 hover:shadow-xl text-xl`}
+                                            className={`bg-white ${theme.hoverBtn} flex text-center w-40 h-11 md:w-52 md:h-15 font-bold items-center justify-center mt-1 md:mt-auto text-[#0A2A4A] p-1.5 rounded-tr-2xl rounded-bl-2xl transition-colors duration-300 hover:shadow-xl text-base md:text-xl`}
                                         >
                                             <button>
                                                 Découvrir
