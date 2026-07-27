@@ -16,6 +16,7 @@ import bgPompier from "../images/servicepubbg.jpg";
 import bgSante from "../images/sante-bg.jpg";
 import bgConstruction from "../images/techmobilebg.jpg";
 
+import home from "../images/home.png"
 import termmob from "../images/termmob.png"
 import impr from "../images/impr.png"
 import scanner from "../images/scanner.png"
@@ -50,11 +51,20 @@ const THEMES = {
         gradient: "md:from-[#6B2E05]/95 md:via-[#C2600C]/90 md:to-[#F2801E]/78",
         hoverBtn: "hover:bg-[#0A2A4A] hover:text-white",
     },
+    none: {
+        gradient: "none",
+        hoverBtn: "none",
+    }
 };
 
 // Slide, stat and partner data pulled out of the JSX so the markup below
 // stays simple and new entries can be added without touching the layout.
 const slides = [
+    {
+        image: home,
+        theme: "none",
+        hidden: "hidden",
+    },
     {
         image: termmob,
         title: "Terminaux Mobiles",
@@ -190,7 +200,7 @@ export default function Home() {
                                 <div className="absolute inset-0 bg-black/25"></div>
                                 <div className="absolute inset-0 flex flex-col items-center justify-start text-center pt-10 md:items-start md:justify-center md:text-start md:pt-0 md:mt-25 md:mx-10 text-white">
                                     <div
-                                        className={`flex flex-col items-center text-center md:items-start md:text-start md:bg-gradient-to-t ${theme.gradient} w-fit md:w-140 px-6 md:p-10 gap-3 md:gap-6 md:rounded-2xl md:shadow-2xl md:shadow-black/40`}
+                                        className={`flex flex-col items-center ${slide.hidden} text-center md:items-start md:text-start md:bg-gradient-to-t ${theme.gradient} w-fit md:w-140 px-6 md:p-10 gap-3 md:gap-6 md:rounded-2xl md:shadow-2xl md:shadow-black/40`}
                                     >
                                         <h1 className="md:text-[58px] scale-y-110 md:scale-y-130 flex flex-col text-2xl font-extrabold leading-none tracking-tight">
                                             <span>{slide.title}</span>
@@ -206,7 +216,7 @@ export default function Home() {
                                         )}
                                         <Link
                                             to={`${slide.to}`}
-                                            className={`bg-white ${theme.hoverBtn} flex text-center w-40 h-11 md:w-52 md:h-15 font-bold items-center justify-center mt-1 md:mt-auto text-[#0A2A4A] p-1.5 rounded-tr-2xl rounded-bl-2xl transition-colors duration-300 hover:shadow-xl text-base md:text-xl`}
+                                            className={`bg-white ${theme.hoverBtn} ${slide.hidden} flex text-center w-40 h-11 md:w-52 md:h-15 font-bold items-center justify-center mt-1 md:mt-auto text-[#0A2A4A] p-1.5 rounded-tr-2xl rounded-bl-2xl transition-colors duration-300 hover:shadow-xl text-base md:text-xl`}
                                         >
                                             <button>
                                                 Découvrir
