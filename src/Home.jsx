@@ -120,6 +120,7 @@ const slides = [
         to: '/Téléphone-Crosscall/core-h6-ex1',
         theme: "orange",
         text: "Certifié ATEX Zone 1/21",
+        ajust: "md:object-cover object-right",
     },
     {
         image: core_h6ex2,
@@ -128,6 +129,7 @@ const slides = [
         to: '/Téléphone-Crosscall/core-h6-ex2',
         theme: "orange",
         text: "Certifié ATEX / IECEx Zone 2/22",
+        ajust: "md:object-cover object-right",
     },
     {
         image: gamme_stellar,
@@ -175,6 +177,45 @@ function Eyebrow({ children, dark = false }) {
     );
 }
 
+// Hero slide text block (title, underline, text, CTA). Rendered twice per
+// slide: once absolutely-positioned over the image for desktop, and once
+// in normal document flow below the image for mobile (see the `bg`
+// argument, which only applies the gradient card on the desktop version).
+function SlideContent({ slide, theme, bg }) {
+    return (
+        <div
+            className={`flex flex-col items-center text-center md:items-start md:text-start ${
+                bg
+                    ? `bg-gradient-to-t ${theme.gradient} shadow-2xl shadow-black/40 rounded-2xl p-10 text-white`
+                    : "text-[#0A2A4A]"
+            } ${slide.hidden} w-fit md:w-140 gap-3 md:gap-6`}
+        >
+            <h1 className="md:text-[58px] scale-y-110 md:scale-y-130 flex flex-col text-2xl font-extrabold leading-none tracking-tight">
+                <span>{slide.title}</span>
+                {slide.stitle && (
+                    <span className="-mt-1 text-[#F2801E]">{slide.stitle}</span>
+                )}
+            </h1>
+            <span className="w-10 md:w-14 h-1 rounded-full bg-[#F2801E]" />
+            {slide.text && (
+                <p className="text-sm md:text-xl scale-y-105 md:scale-y-110 font-medium leading-snug">
+                    {slide.text}
+                </p>
+            )}
+            <Link
+                to={`${slide.to}`}
+                className={`bg-white ${theme.hoverBtn} ${slide.hidden} flex text-center w-40 h-11 md:w-52 md:h-15 font-bold items-center justify-center mt-1 md:mt-auto text-[#0A2A4A] p-1.5 rounded-tr-2xl rounded-bl-2xl transition-colors duration-300 hover:shadow-xl text-base md:text-xl ${
+                    bg ? "" : "border border-[#0A2A4A]/15 shadow-md"
+                }`}
+            >
+                <button>
+                    Découvrir
+                </button>
+            </Link>
+        </div>
+    );
+}
+
 export default function Home() {
     return (
         <>
@@ -200,33 +241,17 @@ export default function Home() {
                                     className={`relative md:mt-0 -mt-10 w-full h-75 md:h-screen object-cover ${slide.ajust}`}
                                     loading="eager"
                                 />
-                                <div className="absolute inset-0 bg-black/25"></div>
-                                <div className="absolute inset-0 flex flex-col items-center justify-start text-center pt-10 md:items-start md:justify-center md:text-start md:pt-0 md:mt-25 md:mx-10 text-white">
-                                    <div
-                                        className={`flex flex-col items-center ${slide.hidden} text-center md:items-start md:text-start md:bg-gradient-to-t ${theme.gradient} w-fit md:w-140 px-6 md:p-10 gap-3 md:gap-6 md:rounded-2xl md:shadow-2xl md:shadow-black/40`}
-                                    >
-                                        <h1 className="md:text-[58px] scale-y-110 md:scale-y-130 flex flex-col text-2xl font-extrabold leading-none tracking-tight">
-                                            <span>{slide.title}</span>
-                                            {slide.stitle && (
-                                                <span className="-mt-1 text-[#F2801E]">{slide.stitle}</span>
-                                            )}
-                                        </h1>
-                                        <span className="w-10 md:w-14 h-1 rounded-full bg-[#F2801E]" />
-                                        {slide.text && (
-                                            <p className="text-sm md:text-xl scale-y-105 md:scale-y-110 font-medium leading-snug">
-                                                {slide.text}
-                                            </p>
-                                        )}
-                                        <Link
-                                            to={`${slide.to}`}
-                                            className={`bg-white ${theme.hoverBtn} ${slide.hidden} flex text-center w-40 h-11 md:w-52 md:h-15 font-bold items-center justify-center mt-1 md:mt-auto text-[#0A2A4A] p-1.5 rounded-tr-2xl rounded-bl-2xl transition-colors duration-300 hover:shadow-xl text-base md:text-xl`}
-                                        >
-                                            <button>
-                                                Découvrir
-                                            </button>
-                                        </Link>
-                                    </div>
+                                {/* Desktop: text overlaid on top of the image */}
+                                <div className="absolute inset-0 bg-black/25 hidden md:block"></div>
+                                <div className="hidden md:flex absolute inset-0 flex-col items-start justify-center md:mt-25 md:mx-10">
+                                    <SlideContent slide={slide} theme={theme} bg={true} />
                                 </div>
+                                {/* Mobile: text below the image, in normal flow */}
+                                {!slide.hidden && (
+                                    <div className="flex md:hidden flex-col items-center bg-white px-6 py-8">
+                                        <SlideContent slide={slide} theme={theme} bg={false} />
+                                    </div>
+                                )}
                             </SwiperSlide>
                         );
                     })}
