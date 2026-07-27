@@ -279,7 +279,7 @@ export default function Home() {
                             À l'ère de l'hyper-connectivité et de l'optimisation opérationnelle,
                             Widevitech accompagne les entreprises dans la transformation de leurs
                             processus métiers. En tant que partenaire de confiance et distributeur
-                            des solutions Zebra, nous mettons à votre disposition des technologies
+                            des solutions Zebra et Crosscall, nous mettons à votre disposition des technologies
                             de pointe conçues pour connecter vos équipes, vos actifs et vos données
                             en temps réel.
                         </p>
