@@ -7,6 +7,7 @@ import { Link } from "react-router-dom"
 import stat01 from "../images/PrinterRS.png";
 import stat02 from "../images/PremierBP.png";
 import stat03 from "../images/RFIDS.png";
+import stat04 from "../images/SCard.png";
 import logo01 from "../images/zebra.png";
 import logo02 from "../images/crosscall.png";
 import logo03 from "../images/Dell-logo.png";
@@ -147,9 +148,10 @@ const slides = [
 ];
 
 const stats = [
-    { src: stat01, alt: "Imprimante RS Zebra" },
+    { src: stat01, alt: "Imprimante RS Zebra", order: "order-2 md:order-1" },
     { src: stat02, alt: "Statut Premier Business Partner Zebra", order: "order-1 md:order-2" },
-    { src: stat03, alt: "Solutions RFID Zebra" },
+    { src: stat03, alt: "Solutions RFID Zebra", order: "order-3 md:order-3" },
+    { src: stat04, alt: "Specialist CARD", order: "order-4 md:order-4" },
 ];
 
 const partners = [
@@ -239,17 +241,17 @@ export default function Home() {
                     </h1>
                     <span className="w-16 h-1 rounded-full bg-[#F2801E]" />
                 </div>
-                <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
+                <div className="grid md:grid-cols-4 grid-cols-1 gap-10">
                     {stats.map((stat) => (
                         <div
                             key={stat.alt}
-                            className="bg-white/5 border border-white/10 rounded-2xl p-3 transition-transform duration-300 hover:-translate-y-1 hover:border-[#F2801E]/60"
+                            className={`bg-white/5 border border-white/10 rounded-2xl p-3 transition-transform duration-300 hover:-translate-y-1 hover:border-[#F2801E]/60 ${stat.order || ""}`}
                         >
                             <img
                                 src={stat.src}
                                 alt={stat.alt}
                                 loading="lazy"
-                                className={`${stat.order} w-80 max-w-full rounded-xl`}
+                                className="w-60 max-w-full rounded-xl"
                             />
                         </div>
                     ))}
