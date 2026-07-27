@@ -275,6 +275,7 @@ export default function Home() {
 
                 <div className="relative z-10 flex flex-col gap-10 max-w-5xl w-full">
                     <div className="bg-white/95 backdrop-blur-sm shadow-xl rounded-2xl p-6 md:p-10 flex flex-col gap-4 text-left md:text-lg leading-relaxed border-t-4 border-[#0A2A4A]">
+                        <h1 className="text-[#0A2A4A] font-bold md:text-4xl text-2xl">Bienvenue chez Widevitech</h1>
                         <p>
                             À l'ère de l'hyper-connectivité et de l'optimisation opérationnelle,
                             Widevitech accompagne les entreprises dans la transformation de leurs
