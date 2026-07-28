@@ -255,17 +255,8 @@ export default function Home() {
                                     className={`relative md:mt-0 -mt-10 w-full h-75 md:h-screen object-cover ${slide.ajust}`}
                                     loading="eager"
                                 />
-                                {/* Desktop: text overlaid on top of the image (skipped when hideOnDesktop) */}
-                                {!slide.hideOnDesktop && (
-                                    <>
-                                        <div className="absolute inset-0 bg-black/25 hidden md:block"></div>
-                                        <div className="hidden md:flex absolute inset-0 flex-col items-start justify-center md:mt-25 md:mx-10">
-                                            <SlideContent slide={slide} theme={theme} bg={true} />
-                                        </div>
-                                    </>
-                                )}
                                 {/* Mobile: text below the image, in normal flow */}
-                                <div className="flex md:hidden flex-col items-center bg-white px-6 py-8">
+                                <div className="flex flex-col items-center bg-white px-6 py-8">
                                     <SlideContent slide={slide} theme={theme} bg={false} />
                                 </div>
                             </SwiperSlide>
