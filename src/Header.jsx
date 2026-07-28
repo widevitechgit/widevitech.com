@@ -27,7 +27,7 @@ const NAV_MATERIELS = [
             { label: "Imprimantes mobiles",              to: "/Imprimantes?categorie=mobiles" },
             { label: "Imprimantes industrielles",        to: "/Imprimantes?categorie=industrielles" },
             { label: "Imprimantes pour cartes d'identification", to: "/Imprimantes?categorie=cartes" },
-            { label: "Moteurs d'impression",             to: "/Imprimantes?categorie=moteurs" },
+            /*{ label: "Moteurs d'impression",             to: "/Imprimantes?categorie=moteurs" },*/
             { label: "Imprimantes pour le secteur de la santé", to: "/Imprimantes?categorie=sante" },
         ],
     },

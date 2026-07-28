@@ -310,12 +310,12 @@ export default function Imprimante() {
                         >
                             Imprimantes pour cartes d'identifications
                         </button>
-                        <button
+                        {/*<button
                             className={categorie === "moteurs" ? "font-bold md:w-85 w-80 h-10 text-start p-2 hover:bg-orange-500" : "bg-white/50 md:w-85 w-80 h-10 text-start p-2 hover:bg-orange-500"}
                             onClick={() => switchCategorie("moteurs")}
                         >
                             Moteurs d'impression
-                        </button>
+                        </button>*/}
                         <button
                             className={categorie === "sante" ? "font-bold md:w-85 w-80 h-10 text-start p-2 hover:bg-orange-500" : "bg-white/50 md:w-85 w-80 h-10 text-start p-2 hover:bg-orange-500"}
                             onClick={() => switchCategorie("sante")}
