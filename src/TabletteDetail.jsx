@@ -331,7 +331,7 @@ export default function TabletteDetail() {
 
             {/* ── Fil d'ariane ── */}
             <div className="border-b border-gray-100">
-                <div className="max-w-6xl mx-auto px-6 pt-28 pb-3 md:pt-38 flex items-center gap-2 text-xs text-gray-500">
+                <div className="max-w-6xl mx-auto px-6 pt-20 pb-3 md:pt-43 flex items-center gap-2 text-xs text-gray-500">
                     <button
                         onClick={() => navigate(`/tablettes?categorie=${produit.gamme}`)}
                         className="flex items-center gap-1 hover:text-black transition-colors"

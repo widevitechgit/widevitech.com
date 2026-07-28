@@ -5,6 +5,8 @@ import tc27 from "../images/TC27.jfif"
 import tc78 from "../images/TC78.jpg"
 import tc58 from "../images/TC58.jpg"
 import mc330l from "../images/MC330L.jpg"
+import mc345b from "../images/MC34X0.jpg"
+import mc3401 from "../images/MC34X0.jpg"
 import mc94 from "../images/MC94.jpg"
 import tc57 from "../images/TC57.jpg"
 import vc83 from "../images/VC83.jpg"
@@ -45,7 +47,7 @@ export default function TermPort() {
             <section className="flex text-center items-center justify-center min-h-screen md:p-0 p-2">
 
                 {categorie === "portables" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">TERMINAUX MOBILES</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Terminaux Portables</h1>
@@ -69,7 +71,7 @@ export default function TermPort() {
                 )}
 
                 {categorie === "embarques" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-orange-900 via-orange-700 to-orange-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">TERMINAUX MOBILES</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Terminaux embarqués</h1>
@@ -93,7 +95,7 @@ export default function TermPort() {
                 )}
 
                 {categorie === "transportables" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">TERMINAUX MOBILES</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Terminaux transportables</h1>
@@ -124,10 +126,10 @@ export default function TermPort() {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold text-black/60">TERMINAUX PORTABLES</p>
                         <h1 className="text-3xl font-bold text-black">L'outil ultime pour améliorer la productivité du personnel</h1>
-                        <p>
-                            Le terminal mobile de Zebra permet aux utilisateurs d'accéder aux informations, aux applications et aux personnes nécessaires à l'accomplissement de leur travail. Le<br />
-                            résultat : la productivité augmente et les clients bénéficient du meilleur service possible. Avec Zebra, vous êtes en bonnes mains. Les plus grands détaillants, fabricants,<br />
-                            entreprises de transport et de logistique, organisations de services et prestataires de soins de santé du monde entier s'appuient sur les terminaux mobiles de Zebra pour<br />
+                        <p className="md:p-6 p-4">
+                            Le terminal mobile de Zebra permet aux utilisateurs d'accéder aux informations, aux applications et aux personnes nécessaires à l'accomplissement de leur travail. Le
+                            résultat : la productivité augmente et les clients bénéficient du meilleur service possible. Avec Zebra, vous êtes en de bonnes mains. Les plus grands détaillants, fabricants,
+                            entreprises de transport et de logistique, organisations de services et prestataires de soins de santé du monde entier s'appuient sur les terminaux mobiles de Zebra pour
                             poursuivre leurs activités.
                         </p>
                     </div>
@@ -137,10 +139,10 @@ export default function TermPort() {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Terminaux embarqués</p>
                         <h1 className="text-3xl font-bold text-black">Des terminaux durcis et performants pour un traitement sans faille des commandes</h1>
-                        <p>
-                            Les terminaux embarqués Zebra ultra-durcis permettent à votre personnel de première ligne d'atteindre de nouveaux sommets en termes de performances. Conçus pour être<br />
-                            montés sur des équipements de manutention, nos terminaux sont fabriqués pour résister aux environnements difficiles des entrepôts, à la chaîne du froid et aux chantiers, aux<br />
-                            chocs et aux vibrations, et bien plus encore. Notre gamme de terminaux prêts à l'emploi permet à vos employés d'exécuter les tâches plus rapidement, sans pour autant<br />
+                        <p className="md:p-6 p-4">
+                            Les terminaux embarqués Zebra ultra-durcis permettent à votre personnel de première ligne d'atteindre de nouveaux sommets en termes de performances. Conçus pour être
+                            montés sur des équipements de manutention, nos terminaux sont fabriqués pour résister aux environnements difficiles des entrepôts, à la chaîne du froid et aux chantiers, aux
+                            chocs et aux vibrations, et bien plus encore. Notre gamme de terminaux prêts à l'emploi permet à vos employés d'exécuter les tâches plus rapidement, sans pour autant
                             sacrifier la précision.
                         </p>
                     </div>
@@ -150,7 +152,7 @@ export default function TermPort() {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Terminaux transportables</p>
                         <h1 className="text-3xl font-bold text-black">Plus de productivité, plus de mobilité et plus de flexibilité</h1>
-                        <p>
+                        <p className="md:p-6 p-4">
                             Les solutions transportables robustes de Zebra sont conçues pour votre entreprise. De nos terminaux mobiles portables Android™ à nos diverses bagues de lecture, donnez à<br />
                             votre personnel de terrain l'avance technologique en termes de performances dont il a besoin. Profitez des fonctions intelligentes intégrées et des performances de lecture<br />
                             inégalées qui permettent à vos employés d'en faire plus. Notre technologie portable, dotée de caractéristiques uniques, offre la flexibilité opérationnelle nécessaire pour<br />
@@ -162,7 +164,7 @@ export default function TermPort() {
                 <div className="flex md:flex-row flex-col text-center items-center justify-center gap-4">
 
                     {/* ── Sidebar catégories ── */}
-                    <div className="flex flex-col text-start items-start self-start">
+                    <div className="flex flex-col text-start items-start gap-3 self-start">
                         <h1 className="text-2xl mb-7">Catégories</h1>
                         <button
                             className={categorie === "portables" ? "font-bold w-55 h-10 text-start p-2 hover:bg-orange-500" : "bg-white/50 w-55 h-10 text-start p-2 hover:bg-orange-500"}
@@ -222,16 +224,22 @@ export default function TermPort() {
                                         <button onClick={() => {navigate("/terminaux/MC330L-GJ3EG4RW"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={mc345b} alt="" className="flex w-35 mx-auto" />
+                                        <h1 className="text-2xl font-bold">MC345B<br /><span className="text-[14px]">&#40;MC345B-3G1J53SS-A6&#41;</span></h1>
+                                        <p>MC34, WAN, 5G/LTE, GPS, LAN, Wi-Fi 6E, une carte SIM + eSIM, pistolet, Bluetooth, NFC, écran 4 pouces, vibreur, GMS, imageur SE4770, 6 Go de RAM/64 Go UFS, 38 touches, batterie standard 7000 mAh, ROW</p>
+                                        <button onClick={() => {navigate("/terminaux/MC345B-3G1J53SS-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={mc3401} alt="" className="flex w-35 mx-auto" />
+                                        <h1 className="text-2xl font-bold">MC3401<br /><span className="text-[14px]">&#40;MC3401-0G1M54SS-A6&#41;</span></h1>
+                                        <p>MC34, LAN, Wi-Fi 6E, pistolet, Bluetooth, NFC, écran 4 pouces, vibreur, GMS, appareil photo SE58, 6 Go de RAM/64 Go UFS, 47 touches, batterie standard 7000 mAh, ROW</p>
+                                        <button onClick={() => {navigate("/terminaux/MC3401-0G1M54SS-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={mc94} alt="" className="flex w-35 mx-auto" />
                                         <h1 className="text-2xl font-bold">MC94<br /><span className="text-[14px]">&#40;MC9401-0G1R6BSS-A6&#41;</span></h1>
                                         <p>MC94, LAN, Wi-Fi 6E, pistolet, Bluetooth, NFC, écran 4,3 pouces, vibreur, GMS, appareil photo SE58, caméra frontale 8 MP, caméra frontale 16 MP, 6 Go de RAM/128 Go UFS, clavier 34 touches, batterie standard 7000 mAh, ROW</p>
                                         <button onClick={() => {navigate("/terminaux/MC9401-0G1R6BSS-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
-                                    </div>
-                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
-                                        <img src={tc57} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">TC57<br /><span className="text-[14px]">&#40;TC57HO-1XFMU6P-A6&#41;</span></h1>
-                                        <p>TC57X WAN LTE pour le reste du monde, écran FHD 5 pouces, processeur octocœur, imageur SE4720, NFC, connecteurs d'entrée/sortie électriques arrière 2 broches, connecteur inférieur 7 broches, 4/32 Go de RAM/mémoire flash UFS, GMS</p>
-                                        <button onClick={() => {navigate("/terminaux/TC57HO-1XFMU6P-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                 </div>
                             </div>

@@ -279,7 +279,7 @@ export default function RFIDDetail() {
 
             {/* ── Fil d'ariane ── */}
             <div className="border-b border-gray-100">
-                <div className="max-w-6xl mx-auto px-6 pt-28 md:pt-38 pb-3 flex items-center gap-2 text-xs text-gray-500">
+                <div className="max-w-6xl mx-auto px-6 pt-20 md:pt-43 pb-3 flex items-center gap-2 text-xs text-gray-500">
                     <button
                         onClick={() => navigate(`/rfid?categorie=${produit.categorie}`)}
                         className="flex items-center gap-1 hover:text-black transition-colors"

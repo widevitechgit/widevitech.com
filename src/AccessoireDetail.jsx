@@ -532,7 +532,7 @@ export default function AccessoireDetail() {
 
             {/* ── Hero ── */}
             <section className={`bg-gradient-to-br ${produit.couleurGradient} text-white`}>
-                <div className="max-w-6xl mx-auto px-6 pt-20 md:pt-38 pb-16 flex md:flex-row flex-col items-center gap-12">
+                <div className="max-w-6xl mx-auto px-6 pt-20 md:pt-43 pb-16 flex md:flex-row flex-col items-center gap-12">
 
                     {/* Texte */}
                     <div className="flex flex-col gap-5 md:w-1/2">

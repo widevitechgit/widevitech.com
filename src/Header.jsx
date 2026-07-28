@@ -242,7 +242,7 @@ function MobileMenu({ onClose }) {
 
     const sections = [
         { key: "materiels",  label: "Matériels",  items: NAV_MATERIELS,  color: "orange" },
-        { key: "logiciels",  label: "Logiciels",  items: NAV_LOGICIELS,  color: "orange" },
+        /*{ key: "logiciels",  label: "Logiciels",  items: NAV_LOGICIELS,  color: "orange" },*/
         { key: "crosscall",  label: "Crosscall",  items: NAV_CROSSCALL,  color: "lime" },
         { key: "dell",       label: "Dell",        items: NAV_DELL,       color: "blue" },
     ]
@@ -422,9 +422,9 @@ export default function Header() {
                             Dell
                         </button>
 
-                        <button className={underlineClass("logiciels")} onClick={() => toggleMenu("logiciels")}>
+                        {/*<button className={underlineClass("logiciels")} onClick={() => toggleMenu("logiciels")}>
                             Logiciels
-                        </button>
+                        </button>*/}
 
                         <button onClick={() => {window.open("https://widevitech-sav.vercel.app/","_blank"), toggleMenu("savwide")}} className="cursor-pointer">
                             SAV
@@ -474,14 +474,14 @@ export default function Header() {
                         onClose={closeAll}
                     />
                 )}
-                {activeMenu === "logiciels" && (
+                {/*{activeMenu === "logiciels" && (
                     <DesktopPanel
                         items={NAV_LOGICIELS}
                         activeId={activeSub.logiciels}
                         onSelect={(id) => setSubItem("logiciels", id)}
                         onClose={closeAll}
                     />
-                )}
+                )}*/}
             </header>
 
             {/* ── Menu mobile (en dehors du header pour prendre tout l'écran) ── */}

@@ -26,7 +26,7 @@ export default function Ecrans() {
 
     return(
         <section className="min-h-screen bg-gray-300 p-4">
-            <div className="flex md:flex-row pt-30 flex-col text-center items-center justify-center gap-4">
+            <div className="flex md:flex-row pt-20 md:pt-43 flex-col text-center items-center justify-center gap-4">
                 <div className="flex flex-col text-start items-start self-start">
                     <h1 className="text-2xl mb-7">Catégories</h1>
                     <button

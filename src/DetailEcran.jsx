@@ -88,7 +88,7 @@ export default function DetailEcran() {
 
     return (
         <section className="min-h-screen bg-gray-300 p-4">
-            <div className="max-w-6xl mx-auto pt-30">
+            <div className="max-w-6xl mx-auto pt-20 md:pt-43">
 
                 {/* Fil d'ariane */}
                 <div className="text-sm text-gray-600 mb-6 flex flex-wrap items-center gap-1">
@@ -131,60 +131,27 @@ export default function DetailEcran() {
 
                         <p className="text-gray-700">{produit.accroche}</p>
 
-                        <div className="border-t border-gray-200 pt-4">
-                            {produit.prixBarre && (
-                                <>
-                                    <p className="text-gray-500 text-sm">
-                                        Prix d'origine <span className="line-through">{prixBarreAffiche}€</span>
-                                    </p>
-                                    <p className="text-orange-600 font-bold text-sm mb-1">Économisez {economie}€</p>
-                                </>
-                            )}
-                            <p className="text-3xl font-bold">
-                                {prixAffiche}€ <span className="text-sm font-normal text-gray-500">Prix Dell</span>
-                            </p>
-                        </div>
-
-                        <div className="flex items-center gap-3">
-                            <div className="flex items-center border border-gray-300 rounded-2xl overflow-hidden">
-                                <button
-                                    onClick={() => setQuantite((q) => Math.max(1, q - 1))}
-                                    className="w-10 h-11 hover:bg-gray-100 font-bold"
-                                >
-                                    −
-                                </button>
-                                <span className="w-10 text-center font-semibold">{quantite}</span>
-                                <button
-                                    onClick={() => setQuantite((q) => q + 1)}
-                                    className="w-10 h-11 hover:bg-gray-100 font-bold"
-                                >
-                                    +
-                                </button>
-                            </div>
-                            <span className="text-sm text-gray-500">Quantité</span>
-                        </div>
-
                         <div className="flex flex-col gap-3">
-                            <button className="bg-blue-600 text-white hover:bg-blue-700 h-12 rounded-2xl text-[16px] font-bold w-full">
-                                Ajouter au panier
+                            <button onClick={() => navigate("/devis", { state: { produit } })} className="bg-blue-600 text-white hover:bg-blue-700 h-12 rounded-2xl text-[16px] font-bold w-full">
+                                Demander un devis
                             </button>
-                            <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 h-12 rounded-2xl text-[16px] font-bold w-full">
-                                Acheter maintenant
+                            <button onClick={() => navigate('/Contact-Commercial')} className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 h-12 rounded-2xl text-[16px] font-bold w-full">
+                                Contacter le service commercial
                             </button>
                         </div>
 
                         <div className="border-t border-gray-200 pt-4 flex flex-col gap-3 text-sm">
                             <div className="flex items-center gap-3">
                                 <FaTruck className="text-blue-600 text-lg shrink-0" />
-                                <span>Livraison gratuite</span>
+                                <span>Livraison 3 semaines après validation du paiement</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <FaShieldAlt className="text-blue-600 text-lg shrink-0" />
-                                <span>Garantie 2 ans incluse</span>
+                                <span>Garantie</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <FaCheckCircle className="text-blue-600 text-lg shrink-0" />
-                                <span>Meilleur prix garanti Dell</span>
+                                <span>Meilleur prix</span>
                             </div>
                         </div>
                     </div>

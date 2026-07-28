@@ -12,6 +12,9 @@ import zq630 from "../images/ZQ630.jpg"
 import zt231 from "../images/ZT231.jpg"
 import zd510 from "../images/ZD510-HC.jpg"
 import rs5 from "../images/RS5.jfif"
+import zt411 from "../images/zt411.jpg"
+import zt620 from "../images/zt620.jpg"
+import zt510 from "../images/zt510.jpg"
 
 // ─── Accent couleur selon la catégorie ─────────────────────────────────────────
 function accentFromGradient(gradient) {
@@ -259,6 +262,261 @@ const PRODUITS = {
         ],
     },
 
+    "ZT41142-T0E0000Z": {
+        nom: "ZT411",
+        sku: "ZT41142-T0E0000Z",
+        image: zt411,
+        medias: [
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/fr/video/product-solutions-portfolio/zt400industrialprinter-video-design-highlights-fr-fr.mp4/jcr:content/renditions/original" },
+            { type: "image", src: zt411 }
+        ],
+        categorie: "industrielles",
+        couleurGradient: "from-orange-900 via-orange-700 to-orange-500",
+        accroche: "Imprimante industrielle à transfert thermique 4 pouces 203 dpi avec écran tactile couleur",
+        description:
+            "La ZT411 (série ZT400) est une imprimante industrielle robuste de 4 pouces conçue pour les volumes d'impression élevés en environnement d'entrepôt, de fabrication ou de logistique. Sa résolution de 203 dpi et sa vitesse d'impression allant jusqu'à 14 pouces/seconde en font une solution idéale pour l'impression d'étiquettes standards à haut débit. Son châssis tout métal et sa porte bi-pliante assurent une fiabilité maximale, tandis que son écran tactile couleur 4,3 pouces simplifie le paramétrage et le suivi du statut.",
+        specs: [
+            { label: "Technologie", valeur: "Transfert thermique et thermique direct" },
+            { label: "Largeur d'impression max.", valeur: "4,09 pouces (104 mm)" },
+            { label: "Résolution", valeur: "203 dpi (8 points/mm)" },
+            { label: "Vitesse d'impression", valeur: "Jusqu'à 14 ips (355,6 mm/s)" },
+            { label: "Processeur", valeur: "ARM Cortex A7" },
+            { label: "Mémoire", valeur: "256 Mo RAM / 512 Mo Flash" },
+            { label: "Écran", valeur: "Tactile couleur 4,3 pouces" },
+            { label: "Interfaces", valeur: "Série RS-232, USB 2.0, 2x hôte USB, Ethernet 10/100, Bluetooth 4.1/MFi" },
+            { label: "Langage", valeur: "EZPL (ZPL II / EPL)" },
+            { label: "Support d'impression", valeur: "Continu, à découpe, repère noir, encoche" },
+            { label: "Largeur des supports", valeur: "1,0 à 4,5 po (découpe/massicot), 1,0 à 4,25 po (pelage/rembobinage)" },
+            { label: "Épaisseur des supports", valeur: "0,058 à 0,25 mm" },
+            { label: "Diamètre max. du rouleau", valeur: "8,0 pouces (203 mm)" },
+            { label: "Longueur du ruban", valeur: "Jusqu'à 450 m (1476 pieds)" },
+            { label: "Dimensions", valeur: "324 (H) x 269 (L) x 495 (P) mm" },
+            { label: "Poids", valeur: "16,33 kg" },
+            { label: "Construction", valeur: "Châssis tout métal, porte bi-pliante à fenêtre large" },
+            { label: "Alimentation", valeur: "100-240V auto-adaptable, certifiée ENERGY STAR" },
+            { label: "Câbles", valeur: "EU / UK inclus" },
+        ],
+        points: [
+            "203 dpi et jusqu'à 14 ips pour une impression rapide adaptée aux étiquettes standards",
+            "Écran tactile couleur 4,3 pouces pour un paramétrage et un suivi simplifiés",
+            "Double port hôte USB pour connecter simultanément scanner, clavier ou clé USB",
+            "Bluetooth 4.1/MFi pour une connectivité mobile flexible",
+            "Châssis tout métal robuste avec porte bi-pliante pour les environnements industriels exigeants",
+            "Compatible EPL et ZPL pour une migration facile depuis d'autres imprimantes Zebra",
+            "Options d'évolution sur site : RFID, Wi-Fi 802.11ac, découpe, pelage, rembobinage, impression sans mandrin (linerless)",
+        ],
+    },
+
+    "ZT41143-T0E0000Z": {
+        nom: "ZT411",
+        sku: "ZT41143-T0E0000Z",
+        image: zt411,
+        medias: [
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/fr/video/product-solutions-portfolio/zt400industrialprinter-video-design-highlights-fr-fr.mp4/jcr:content/renditions/original" },
+            { type: "image", src: zt411 }
+        ],
+        categorie: "industrielles",
+        couleurGradient: "from-orange-900 via-orange-700 to-orange-500",
+        accroche: "Imprimante industrielle à transfert thermique 4 pouces 300 dpi avec découpe et écran tactile couleur",
+        description:
+            "La ZT411 (série ZT400) est une imprimante industrielle robuste de 4 pouces conçue pour les volumes d'impression élevés en environnement d'entrepôt, de fabrication ou de logistique. Sa résolution de 300 dpi garantit une qualité d'impression irréprochable pour les codes-barres et graphiques les plus fins, tandis que son module de découpe avec bac de récupération automatise la séparation des étiquettes. Son châssis tout métal et son écran tactile couleur 4,3 pouces complètent une conception pensée pour la fiabilité et la simplicité d'utilisation.",
+        specs: [
+            { label: "Technologie", valeur: "Transfert thermique et thermique direct" },
+            { label: "Largeur d'impression max.", valeur: "4,09 pouces (104 mm)" },
+            { label: "Résolution", valeur: "300 dpi (12 points/mm)" },
+            { label: "Vitesse d'impression", valeur: "Jusqu'à 10 ips (254 mm/s)" },
+            { label: "Coupe", valeur: "Massicot frontal avec bac de récupération" },
+            { label: "Processeur", valeur: "ARM Cortex A7" },
+            { label: "Mémoire", valeur: "256 Mo RAM / 512 Mo Flash" },
+            { label: "Écran", valeur: "Tactile couleur 4,3 pouces" },
+            { label: "Interfaces", valeur: "Série RS-232, USB 2.0, 2x hôte USB, Ethernet 10/100, Bluetooth 4.1/MFi" },
+            { label: "Langage", valeur: "EZPL (ZPL II / EPL)" },
+            { label: "Support d'impression", valeur: "Continu, à découpe, repère noir, encoche" },
+            { label: "Largeur des supports", valeur: "1,0 à 4,5 po (découpe/massicot), 1,0 à 4,25 po (pelage/rembobinage)" },
+            { label: "Épaisseur des supports", valeur: "0,058 à 0,25 mm" },
+            { label: "Diamètre max. du rouleau", valeur: "8,0 pouces (203 mm)" },
+            { label: "Longueur du ruban", valeur: "Jusqu'à 450 m (1476 pieds)" },
+            { label: "Dimensions", valeur: "324 (H) x 269 (L) x 495 (P) mm" },
+            { label: "Poids", valeur: "16,33 kg" },
+            { label: "Construction", valeur: "Châssis tout métal, porte bi-pliante à fenêtre large" },
+            { label: "Alimentation", valeur: "100-240V auto-adaptable, certifiée ENERGY STAR" },
+            { label: "Câbles", valeur: "EU / UK inclus" },
+        ],
+        points: [
+            "300 dpi pour des codes-barres et graphiques d'une précision maximale",
+            "Découpe automatique intégrée avec bac de récupération pour un débit d'impression optimisé",
+            "Écran tactile couleur 4,3 pouces pour un paramétrage et un suivi simplifiés",
+            "Double port hôte USB pour connecter simultanément scanner, clavier ou clé USB",
+            "Bluetooth 4.1/MFi pour une connectivité mobile flexible",
+            "Châssis tout métal robuste avec porte bi-pliante pour les environnements industriels exigeants",
+            "Compatible EPL et ZPL pour une migration facile depuis d'autres imprimantes Zebra",
+            "Options d'évolution sur site : RFID, Wi-Fi 802.11ac, pelage, rembobinage, impression sans mandrin (linerless)",
+        ],
+    },
+
+    "ZT62062-T0E0100Z": {
+        nom: "ZT620",
+        sku: "ZT62062-T0E0100Z",
+        image: zt620,
+        medias: [
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/web-production/zt600-series-video-website-en-us.mp4/jcr:content/renditions/original" },
+            { type: "image", src: zt620 }
+        ],
+        categorie: "industrielles",
+        couleurGradient: "from-orange-900 via-orange-700 to-orange-500",
+        accroche: "Imprimante industrielle à transfert thermique 6 pouces 203 dpi avec écran tactile couleur",
+        description:
+            "La ZT620 (série ZT600) succède à la gamme Xi et représente le haut de gamme industriel de Zebra. Conçue pour les très hauts volumes d'impression en industrie, transport, logistique, commerce ou santé, elle imprime sur une largeur de 6 pouces à une vitesse pouvant atteindre 12 pouces par seconde. Son architecture pensée pour la facilité d'utilisation — chargement latéral, capteurs intégrés, indicateurs de pression colorés — réduit les besoins de support technique, tandis que son écran tactile couleur 4,3 pouces et sa plateforme Link-OS offrent une visibilité et une gestion à distance complètes.",
+        specs: [
+            { label: "Technologie", valeur: "Transfert thermique et thermique direct" },
+            { label: "Largeur d'impression max.", valeur: "6 pouces (168 mm)" },
+            { label: "Résolution", valeur: "203 dpi (8 points/mm)" },
+            { label: "Vitesse d'impression", valeur: "Jusqu'à 12 ips (305 mm/s)" },
+            { label: "Coupe", valeur: "Fonction Tear (arrachage manuel), pas de découpe automatique" },
+            { label: "Mémoire", valeur: "1 Go SDRAM (32 Mo utilisateur) / 2 Go Flash (512 Mo utilisateur)" },
+            { label: "Écran", valeur: "Tactile couleur 4,3 pouces" },
+            { label: "Interfaces", valeur: "Série, USB 2.0, 2x hôte USB, Ethernet Gigabit, Bluetooth 4.1" },
+            { label: "Langage", valeur: "ZPL" },
+            { label: "Capteurs", valeur: "Transmissif ajustable + réflectif fixe" },
+            { label: "Construction", valeur: "Porte bi-pliante, mandrin de support intégré" },
+            { label: "Câbles", valeur: "EU / UK inclus" },
+        ],
+        points: [
+            "203 dpi et jusqu'à 12 ips pour les très gros volumes d'impression industrielle",
+            "Écran tactile couleur 4,3 pouces avec plateforme Link-OS pour la gestion et la visibilité à distance",
+            "Ethernet Gigabit pour une connectivité réseau à très haut débit",
+            "Double port hôte USB pour connecter simultanément plusieurs périphériques",
+            "Capteurs intégrés et diagnostics embarqués pour réduire les besoins de support technique",
+            "Chargement latéral des supports pour simplifier l'installation des rubans et étiquettes",
+            "Successeur de la gamme Xi, référence historique de Zebra pour l'impression industrielle",
+            "Options d'évolution sur site : RFID, Wi-Fi, découpe, pelage, rembobinage",
+        ],
+    },
+
+    "ZT62063-T0E0100Z": {
+        nom: "ZT620",
+        sku: "ZT62063-T0E0100Z",
+        image: zt620,
+        medias: [
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/web-production/zt600-series-video-website-en-us.mp4/jcr:content/renditions/original" },
+            { type: "image", src: zt620 }
+        ],
+        categorie: "industrielles",
+        couleurGradient: "from-orange-900 via-orange-700 to-orange-500",
+        accroche: "Imprimante industrielle à transfert thermique 6 pouces 300 dpi haute résolution avec écran tactile couleur",
+        description:
+            "La ZT620 (série ZT600) succède à la gamme Xi et représente le haut de gamme industriel de Zebra. Cette version 300 dpi de la ZT62063 offre une résolution deux fois supérieure à la variante 203 dpi, idéale pour les étiquettes de petite taille nécessitant une grande précision : composants électroniques, cartes de circuits imprimés, bijouterie, cosmétique ou étiquetage pharmaceutique. Elle imprime sur une largeur de 6 pouces à une vitesse pouvant atteindre 8 pouces par seconde. Son architecture pensée pour la facilité d'utilisation — chargement latéral, capteurs intégrés, indicateurs de pression colorés — réduit les besoins de support technique, tandis que son écran tactile couleur 4,3 pouces et sa plateforme Link-OS offrent une visibilité et une gestion à distance complètes.",
+        specs: [
+            { label: "Technologie", valeur: "Transfert thermique et thermique direct" },
+            { label: "Largeur d'impression max.", valeur: "6 pouces (168 mm)" },
+            { label: "Résolution", valeur: "300 dpi (12 points/mm)" },
+            { label: "Vitesse d'impression", valeur: "Jusqu'à 8 ips (203 mm/s)" },
+            { label: "Coupe", valeur: "Fonction Tear (arrachage manuel), pas de découpe automatique" },
+            { label: "Mémoire", valeur: "1 Go SDRAM (32 Mo utilisateur) / 2 Go Flash (512 Mo utilisateur)" },
+            { label: "Écran", valeur: "Tactile couleur 4,3 pouces" },
+            { label: "Interfaces", valeur: "Série, USB 2.0, 2x hôte USB, Ethernet Gigabit, Bluetooth 4.0" },
+            { label: "Langage", valeur: "ZPL" },
+            { label: "Capteurs", valeur: "Transmissif ajustable + réflectif fixe" },
+            { label: "Construction", valeur: "Porte bi-pliante, mandrin de support intégré" },
+            { label: "Câbles", valeur: "EU / UK inclus" },
+        ],
+        points: [
+            "300 dpi (résolution 2x supérieure à la 203 dpi) pour les étiquettes petites et précises",
+            "Jusqu'à 8 ips, adapté aux applications haute précision plutôt qu'au très gros volume brut",
+            "Idéale pour l'électronique, les cartes de circuits imprimés, la bijouterie, la cosmétique et la pharmacie",
+            "Écran tactile couleur 4,3 pouces avec plateforme Link-OS pour la gestion et la visibilité à distance",
+            "Ethernet Gigabit pour une connectivité réseau à très haut débit",
+            "Double port hôte USB pour connecter simultanément plusieurs périphériques",
+            "Capteurs intégrés et diagnostics embarqués pour réduire les besoins de support technique",
+            "Chargement latéral des supports pour simplifier l'installation des rubans et étiquettes",
+            "Successeur de la gamme Xi, référence historique de Zebra pour l'impression industrielle",
+            "Options d'évolution sur site : RFID, Wi-Fi, découpe, pelage, rembobinage",
+        ],
+    },
+
+    "ZT51042-T0E0000Z": {
+        nom: "ZT510",
+        sku: "ZT51042-T0E0000Z",
+        image: zt510,
+        medias: [
+            { type: "image", src: zt510 }
+        ],
+        categorie: "industrielles",
+        couleurGradient: "from-red-900 via-red-700 to-red-500",
+        accroche: "Imprimante industrielle à transfert thermique 4 pouces 203 dpi, économique et robuste, avec écran LCD rétroéclairé",
+        description:
+            "La ZT510 (série ZT500) succède à la 105SL Plus et constitue l'entrée de gamme industrielle de Zebra. Pensée pour offrir l'essentiel des fonctions industrielles à un prix maîtrisé, elle imprime sur une largeur de 4 pouces à une vitesse pouvant atteindre 12 pouces par seconde. Sa construction tout métal et ses boutons dôme scellés la rendent résistante à la poussière, aux salissures et à l'humidité des environnements de production et d'entrepôt. Son processeur Cortex A9 800 MHz assure un traitement rapide même pour les graphismes complexes, tandis que sa plateforme Link-OS et son tag NFC statique (compatible Print Touch) simplifient l'appairage, la gestion et la mise à jour à distance.",
+        specs: [
+            { label: "Technologie", valeur: "Transfert thermique et thermique direct" },
+            { label: "Largeur d'impression max.", valeur: "4 pouces (104 mm)" },
+            { label: "Résolution", valeur: "203 dpi (8 points/mm)" },
+            { label: "Vitesse d'impression", valeur: "Jusqu'à 12 ips (305 mm/s)" },
+            { label: "Coupe", valeur: "Fonction Tear (arrachage manuel), pas de découpe automatique" },
+            { label: "Mémoire", valeur: "512 Mo SDRAM (32 Mo utilisateur) / 2 Go Flash (256 Mo utilisateur)" },
+            { label: "Processeur", valeur: "Cortex A9 800 MHz" },
+            { label: "Écran", valeur: "LCD graphique rétroéclairé multi-lignes avec clavier et protection par mot de passe (non tactile, monochrome)" },
+            { label: "Interfaces", valeur: "Série RS-232, USB 2.0, Ethernet Gigabit, Bluetooth LE, tag NFC statique" },
+            { label: "Langage", valeur: "ZPL" },
+            { label: "Capteurs", valeur: "Transmissif ajustable + réflectif fixe" },
+            { label: "Construction", valeur: "Châssis tout métal, boutons dôme scellés, succède à la gamme 105SL Plus" },
+            { label: "Câbles", valeur: "EU / UK inclus" },
+        ],
+        points: [
+            "Alternative économique au ZT620 tout en conservant une construction industrielle tout métal",
+            "203 dpi et jusqu'à 12 ips, adaptée aux volumes moyens à élevés",
+            "Boutons dôme scellés contre la poussière, les salissures et l'humidité",
+            "Écran LCD graphique rétroéclairé avec clavier et protection par mot de passe",
+            "Processeur Cortex A9 800 MHz pour un traitement rapide, y compris de graphismes complexes",
+            "Ethernet Gigabit interne et Bluetooth LE de série pour la configuration et les transferts légers",
+            "Tag NFC statique compatible avec l'application Print Touch pour un appairage Android simplifié",
+            "Double capteur média (transmissif et réflectif), ajustable via logiciel ou panneau avant",
+            "Successeur de la 105SL Plus, référence Zebra d'entrée de gamme industrielle",
+            "Options d'évolution : hôte USB, Wi-Fi 802.11ac avec Bluetooth 4.0, port parallèle, IPv6",
+        ],
+    },
+
+    "ZT51043-T2E0000Z": {
+        nom: "ZT510",
+        sku: "ZT51043-T2E0000Z",
+        image: zt510,
+        medias: [
+            { type: "image", src: zt510 }
+        ],
+        categorie: "industrielles",
+        couleurGradient: "from-red-900 via-red-700 to-red-500",
+        accroche: "Imprimante industrielle à transfert thermique 4 pouces 300 dpi haute résolution avec rembobinage interne",
+        description:
+            "La ZT510 (série ZT500) succède à la 105SL Plus et constitue l'entrée de gamme industrielle de Zebra. Cette version 300 dpi de la ZT51043 offre une résolution deux fois supérieure à la variante 203 dpi, adaptée aux étiquettes plus petites ou plus détaillées, avec un rembobinage interne qui enroule automatiquement les étiquettes imprimées sur un mandrin 3 pouces (ou pèle et rembobine le liner), idéal pour les applications d'impression en lot ou d'application différée. Sa construction tout métal et ses boutons dôme scellés la rendent résistante à la poussière, aux salissures et à l'humidité des environnements de production et d'entrepôt. Son processeur Cortex A9 800 MHz assure un traitement rapide même pour les graphismes complexes, tandis que sa plateforme Link-OS, son horloge temps réel (RTC) et son tag NFC statique (compatible Print Touch) simplifient l'appairage, la gestion et la mise à jour à distance.",
+        specs: [
+            { label: "Technologie", valeur: "Transfert thermique et thermique direct" },
+            { label: "Largeur d'impression max.", valeur: "4 pouces (104 mm)" },
+            { label: "Résolution", valeur: "300 dpi (12 points/mm)" },
+            { label: "Vitesse d'impression", valeur: "Jusqu'à 10 ips (254 mm/s)" },
+            { label: "Gestion des supports", valeur: "Rembobinage interne sur mandrin 3 pouces (mode peler + rembobiner disponible)" },
+            { label: "Mémoire", valeur: "512 Mo SDRAM (32 Mo utilisateur) / 2 Go Flash (256 Mo utilisateur)" },
+            { label: "Processeur", valeur: "Cortex A9 800 MHz" },
+            { label: "Écran", valeur: "LCD graphique rétroéclairé multi-lignes avec clavier et protection par mot de passe (non tactile, monochrome)" },
+            { label: "Interfaces", valeur: "Série RS-232, USB 2.0, Ethernet Gigabit 10/100/1000, Bluetooth LE, tag NFC statique" },
+            { label: "Horloge", valeur: "Horloge temps réel (RTC) intégrée" },
+            { label: "Langage", valeur: "ZPL / ZPL II" },
+            { label: "Capteurs", valeur: "Transmissif ajustable + réflectif fixe" },
+            { label: "Construction", valeur: "Châssis tout métal, boutons dôme scellés, succède à la gamme 105SL Plus" },
+            { label: "Câbles", valeur: "EU / UK inclus" },
+        ],
+        points: [
+            "300 dpi (résolution 2x supérieure à la 203 dpi) pour les étiquettes plus petites ou détaillées",
+            "Rembobinage interne sur mandrin 3 pouces, avec mode peler + rembobiner du liner",
+            "Alternative économique au ZT620 tout en conservant une construction industrielle tout métal",
+            "Boutons dôme scellés contre la poussière, les salissures et l'humidité",
+            "Écran LCD graphique rétroéclairé avec clavier et protection par mot de passe",
+            "Processeur Cortex A9 800 MHz pour un traitement rapide, y compris de graphismes complexes",
+            "Horloge temps réel (RTC) intégrée et tag NFC statique compatible Print Touch pour l'appairage Android",
+            "Ethernet Gigabit interne et Bluetooth LE de série pour la configuration et les transferts légers",
+            "Double capteur média (transmissif et réflectif), ajustable via logiciel ou panneau avant",
+            "Options d'évolution : hôte USB, Wi-Fi 802.11ac avec Bluetooth 4.0, port parallèle, IPv6",
+        ],
+    },
+
     // ── Cartes d'identification ────────────────────────────────────────────
     "ZC11-0000Q00EM00": {
         nom: "ZC100",
@@ -415,7 +673,7 @@ export default function ImprimanteDetail() {
 
             {/* ── Fil d'ariane ── */}
             <div className="border-b border-gray-100">
-                <div className="max-w-6xl mx-auto px-6 pt-28 md:pt-38 pb-3 md:pt-32 flex items-center gap-2 text-xs text-gray-500">
+                <div className="max-w-6xl mx-auto px-6 pt-20 md:pt-43 pb-3 flex items-center gap-2 text-xs text-gray-500">
                     <button
                         onClick={() => navigate(`/imprimantes?categorie=${produit.categorie}`)}
                         className="flex items-center gap-1 hover:text-black transition-colors"

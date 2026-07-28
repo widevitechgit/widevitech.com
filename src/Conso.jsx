@@ -62,7 +62,7 @@ export default function Conso () {
             <section className="flex text-center items-center justify-center min-h-screen md:p-0 p-2">
 
                 {categorie === "etiquette" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-orange-900 via-orange-700 to-orange-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">CONSOMMABLES</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Étiquettes</h1>
@@ -77,7 +77,7 @@ export default function Conso () {
                 )}
 
                 {categorie === "rubans" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-orange-900 via-orange-700 to-orange-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">CONSOMMABLES</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Rubans</h1>
@@ -92,7 +92,7 @@ export default function Conso () {
                 )}
 
                 {categorie === "cartes" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">CONSOMMABLES</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Cartes plastiques</h1>
@@ -107,7 +107,7 @@ export default function Conso () {
                 )}
 
                 {categorie === "bracelet" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">CONSOMMABLES</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Bracelet</h1>
@@ -129,10 +129,10 @@ export default function Conso () {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold text-black/60">Etiquettes Zebra</p>
                         <h1 className="text-3xl font-bold text-black">Étiquettes haute performance en papier, synthétiques et RFID</h1>
-                        <p>
-                            Toutes les étiquettes de codes-barres ne se valent pas. Il en existe dans des milliers de matériaux différents, chacun ayant ses propres caractéristiques influant sur la durabilité<br/>
-                            et les performances de l’imprimante. Pour s’assurer que vos étiquettes correspondent à vos besoins, nos experts en sciences des matériaux ont pré-testé, sélectionné et<br/>
-                            certifié les matériaux d’étiquettes les plus performants afin de garantir une impression durable et une usure minimale de l’imprimante, le tout en tenant compte de votre<br/>
+                        <p className="md:p-6 p-4">
+                            Toutes les étiquettes de codes-barres ne se valent pas. Il en existe dans des milliers de matériaux différents, chacun ayant ses propres caractéristiques influant sur la durabilité
+                            et les performances de l’imprimante. Pour s’assurer que vos étiquettes correspondent à vos besoins, nos experts en sciences des matériaux ont pré-testé, sélectionné et
+                            certifié les matériaux d’étiquettes les plus performants afin de garantir une impression durable et une usure minimale de l’imprimante, le tout en tenant compte de votre
                             budget et de votre application.
                         </p>
                     </div>
@@ -142,11 +142,11 @@ export default function Conso () {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Rubans Zebra</p>
                         <h1 className="text-3xl font-bold text-black">Ces rubans thermiques à la qualité éprouvée vous offrent une performance constante et optimale</h1>
-                        <p>
-                            Des rubans d’impression thermique inférieurs peuvent donner lieu à une impression d’étiquettes de mauvaise performance, des têtes d’impression endommagées, une perte<br/>
-                            de productivité et, au final, une réduction des bénéfices. Évitez-les. Zebra vous garantit une qualité d’impression supérieure et une performance constante à chaque fois.<br/>
-                            Comment ? Notre équipe R&D en consommables effectue des contrôles de qualité rigoureux pour garantir que nos rubans restent constants dans la qualité et la durabilité<br/>
-                            des impressions. Quel est le résultat ? Des têtes d’impression à la durée de vie prolongée, une baisse du coût total de possession et une performance de lecture<br/>
+                        <p className="md:p-6 p-4">
+                            Des rubans d’impression thermique inférieurs peuvent donner lieu à une impression d’étiquettes de mauvaise performance, des têtes d’impression endommagées, une perte
+                            de productivité et, au final, une réduction des bénéfices. Évitez-les. Zebra vous garantit une qualité d’impression supérieure et une performance constante à chaque fois.
+                            Comment ? Notre équipe R&D en consommables effectue des contrôles de qualité rigoureux pour garantir que nos rubans restent constants dans la qualité et la durabilité
+                            des impressions. Quel est le résultat ? Des têtes d’impression à la durée de vie prolongée, une baisse du coût total de possession et une performance de lecture
                             exceptionnelle.
                         </p>
                     </div>
@@ -156,10 +156,10 @@ export default function Conso () {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Cartes</p>
                         <h1 className="text-3xl font-bold text-black">Imprimez, Identifiez, Contrôlez avec les Cartes Zebra</h1>
-                        <p>
-                            Les cartes Zebra sont conçues pour offrir une qualité d’impression exceptionnelle, une grande durabilité et une sécurité renforcée. Idéales pour la création de badges d’entreprise,<br/>
-                            cartes d’identification, cartes de fidélité ou cartes de contrôle d’accès, elles garantissent des résultats professionnels et fiables. Grâce à leur finition de haute qualité et à leur<br/>
-                            compatibilité avec les imprimantes Zebra, ces cartes répondent parfaitement aux besoins des entreprises, des établissements scolaires, des institutions et des organisations soucieuses<br/>
+                        <p className="md:p-6 p-4">
+                            Les cartes Zebra sont conçues pour offrir une qualité d’impression exceptionnelle, une grande durabilité et une sécurité renforcée. Idéales pour la création de badges d’entreprise,
+                            cartes d’identification, cartes de fidélité ou cartes de contrôle d’accès, elles garantissent des résultats professionnels et fiables. Grâce à leur finition de haute qualité et à leur
+                            compatibilité avec les imprimantes Zebra, ces cartes répondent parfaitement aux besoins des entreprises, des établissements scolaires, des institutions et des organisations soucieuses
                             de leur image et de la sécurité de leurs utilisateurs.
                         </p>
                     </div>
@@ -169,10 +169,10 @@ export default function Conso () {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Bracelets</p>
                         <h1 className="text-3xl font-bold text-black">Bracelets Zebra : Une Identification Intelligente pour une Gestion Simplifiée</h1>
-                        <p>
-                            Offrez à votre organisation une solution d’identification moderne, fiable et sécurisée avec les bracelets Zebra. Conçus pour allier confort et performance, ils permettent d’identifier<br/>
-                            instantanément patients, visiteurs, participants ou clients tout en réduisant les risques d’erreur. Résistants, faciles à utiliser et compatibles avec les imprimantes Zebra, ces bracelets<br/>
-                            garantissent une traçabilité optimale et une expérience utilisateur fluide. Que ce soit pour un hôpital, un événement, un parc de loisirs ou un hôtel, les bracelets Zebra sont le choix idéal<br/>
+                        <p className="md:p-6 p-4">
+                            Offrez à votre organisation une solution d’identification moderne, fiable et sécurisée avec les bracelets Zebra. Conçus pour allier confort et performance, ils permettent d’identifier
+                            instantanément patients, visiteurs, participants ou clients tout en réduisant les risques d’erreur. Résistants, faciles à utiliser et compatibles avec les imprimantes Zebra, ces bracelets
+                            garantissent une traçabilité optimale et une expérience utilisateur fluide. Que ce soit pour un hôpital, un événement, un parc de loisirs ou un hôtel, les bracelets Zebra sont le choix idéal
                             pour renforcer la sécurité et améliorer l’efficacité de vos opérations.
                         </p>
                     </div>
@@ -181,7 +181,7 @@ export default function Conso () {
                 <div className="flex md:flex-row flex-col text-center items-center justify-center gap-4">
 
                     {/* ── Sidebar catégories ── */}
-                    <div className="flex flex-col text-start items-start self-start">
+                    <div className="flex flex-col text-start items-start gap-3 self-start">
                         <h1 className="text-2xl mb-7">Catégories</h1>
                         <button
                             className={categorie === "etiquette" ? "font-bold w-55 h-10 text-start p-2 hover:bg-orange-500" : "bg-white/50 w-55 h-10 text-start p-2 hover:bg-orange-500"}

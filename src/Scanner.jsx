@@ -60,7 +60,7 @@ export default function Scanner() {
             <section className="flex text-center items-center justify-center min-h-screen md:p-0 p-2">
         
                 {categorie === "portable" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">SCANNERS</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Scanners portables universels</h1>
@@ -84,7 +84,7 @@ export default function Scanner() {
                 )}
         
                 {categorie === "durcis" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">SCANNERS</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Scanners ultra-durcis</h1>
@@ -108,7 +108,7 @@ export default function Scanner() {
                 )}
 
                 {categorie === "fixe" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-orange-900 via-orange-700 to-orange-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">SCANNERS</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Scanners de codes-barres fixes</h1>
@@ -132,7 +132,7 @@ export default function Scanner() {
                 )}
 
                 {categorie === "sante" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">SCANNERS</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Scanners de codes-barres pour le secteur de la santé</h1>
@@ -163,9 +163,9 @@ export default function Scanner() {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold text-black/60">SCANNERS PORTABLES UNIVERSELS</p>
                         <h1 className="text-3xl font-bold text-black">Imprimantes de bureau compactes et faciles d’utilisation pour chaque application</h1>
-                        <p>
-                            Offrez à vos employés la possibilité de fournir un excellent service à la clientèle grâce à des scanners à haute fonctionnalité. Rationalisez toutes les tâches, de la gestion des<br/>
-                            stocks à l’enregistrement, grâce aux scanners portables universels de Zebra. Profitez d’une autonomie de batterie longue durée qui dure toute la journée. Obtenez une<br/>
+                        <p className="md:p-6 p-4">
+                            Offrez à vos employés la possibilité de fournir un excellent service à la clientèle grâce à des scanners à haute fonctionnalité. Rationalisez toutes les tâches, de la gestion des
+                            stocks à l’enregistrement, grâce aux scanners portables universels de Zebra. Profitez d’une autonomie de batterie longue durée qui dure toute la journée. Obtenez une
                             meilleure compréhension des données clients grâce à des informations exploitables. Scannez en toute confiance n’importe quoi, même les codes-barres endommagés ou de mauvaise qualité, dans n’importe quel environnement.
                         </p>
                     </div>
@@ -175,10 +175,10 @@ export default function Scanner() {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Scanners ultra-durcis</p>
                         <h1 className="text-3xl font-bold text-black">Gérez aisément vos enjeux, avec des scanners de codes-barres ultra-performants</h1>
-                        <p>
-                            Les scanners ultra-durcis de Zebra sont conçus pour relever les défis uniques de l’industrie et de la logistique. Ces scanners sont conçus pour résister à des conditions<br/>
-                            difficiles, pour lire à des vitesses étonnantes et pour fournir aux travailleurs une puissance ininterrompue pendant toute la durée du travail. Les codes-barres à longue<br/>
-                            distance, endommagés ou emballés sous film plastique ne posent aucun problème : nos scanners les lisent rapidement et facilement, ce qui vous permet de poursuivre vos<br/>
+                        <p className="md:p-6 p-4">
+                            Les scanners ultra-durcis de Zebra sont conçus pour relever les défis uniques de l’industrie et de la logistique. Ces scanners sont conçus pour résister à des conditions
+                            difficiles, pour lire à des vitesses étonnantes et pour fournir aux travailleurs une puissance ininterrompue pendant toute la durée du travail. Les codes-barres à longue
+                            distance, endommagés ou emballés sous film plastique ne posent aucun problème : nos scanners les lisent rapidement et facilement, ce qui vous permet de poursuivre vos
                             activités. Et grâce à une analyse en temps réel, vous pouvez rationaliser la gestion de votre flotte, avec le soutien d’experts en intelligence d’entreprise.
                         </p>
                     </div>
@@ -188,9 +188,9 @@ export default function Scanner() {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Scanners de codes-barres fixes</p>
                         <h1 className="text-3xl font-bold text-black">Lecture mains libres, pour de gros volume et à grande vitesse</h1>
-                        <p>
-                            Qu’il s’agisse d’accroître l’efficacité ou la polyvalence, la gamme de scanners de codes-barres fixes de Zebra offre des performances élevées, une lecture mains libres et des<br/>
-                            applications sans encombrement. Les utilisateurs peuvent rapidement déployer des scanners sans perturber les workflows. Choisissez parmi tous les scanners de notre<br/>
+                        <p className="md:p-6 p-4">
+                            Qu’il s’agisse d’accroître l’efficacité ou la polyvalence, la gamme de scanners de codes-barres fixes de Zebra offre des performances élevées, une lecture mains libres et des
+                            applications sans encombrement. Les utilisateurs peuvent rapidement déployer des scanners sans perturber les workflows. Choisissez parmi tous les scanners de notre
                             gamme, chacun pouvant être intégré dans une grande variété de produits ou utilisé seul.
                         </p>
                     </div>
@@ -200,12 +200,12 @@ export default function Scanner() {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Scanners de codes-barres pour le secteur de la santé</p>
                         <h1 className="text-3xl font-bold text-black">Proposez à vos patients un service et des soins de qualité avec nos scanners médicaux</h1>
-                        <p>
-                            Le personnel de santé est très sollicité et se doit d’être toujours disponible pour apporter les soins les plus critiques aux patients. C’est pour cette raison que les scanners<br/>
-                            médicaux de Zebra ont été conçus pour fonctionner pendant toute la durée des gardes, en mode silencieux pendant la nuit, et pour offrir une protection maximale contre la<br/>
-                            propagation des infections. En utilisant un scanner de codes-barres pour le secteur de la santé, le personnel hospitalier peut bénéficier d’un système d’identification des<br/>
-                            patients par code-barres qui contribuera à simplifier l’admission des patients et permettra d’accéder aux informations et aux dossiers médicaux importants des patients,<br/>
-                            garantissant ainsi un niveau de soins plus élevé et réduisant le risque d’erreurs. La numérisation des étiquettes de soins de santé permet de suivre facilement les médicaments<br/>
+                        <p className="md:p-6 p-4">
+                            Le personnel de santé est très sollicité et se doit d’être toujours disponible pour apporter les soins les plus critiques aux patients. C’est pour cette raison que les scanners
+                            médicaux de Zebra ont été conçus pour fonctionner pendant toute la durée des gardes, en mode silencieux pendant la nuit, et pour offrir une protection maximale contre la
+                            propagation des infections. En utilisant un scanner de codes-barres pour le secteur de la santé, le personnel hospitalier peut bénéficier d’un système d’identification des
+                            patients par code-barres qui contribuera à simplifier l’admission des patients et permettra d’accéder aux informations et aux dossiers médicaux importants des patients,
+                            garantissant ainsi un niveau de soins plus élevé et réduisant le risque d’erreurs. La numérisation des étiquettes de soins de santé permet de suivre facilement les médicaments
                             et de les administrer avec précision, ce qui contribue à garantir la sécurité de vos patients.
                         </p>
                     </div>
@@ -214,7 +214,7 @@ export default function Scanner() {
                 <div className="flex md:flex-row flex-col text-center items-center justify-center gap-4">
         
                     {/* ── Sidebar catégories ── */}
-                    <div className="flex flex-col text-start items-start self-start">
+                    <div className="flex flex-col text-start items-start gap-3 self-start">
                         <h1 className="text-2xl mb-7">Catégories</h1>
                         <button
                             className={categorie === "portable" ? "font-bold md:w-85 w-80 h-10 text-start p-2 hover:bg-orange-500" : "bg-white/50 md:w-85 w-80 h-10 text-start p-2 hover:bg-orange-500"}

@@ -60,8 +60,8 @@ export default function AccCross() {
 
     return(
         <section className="min-h-screen bg-gray-300 p-4">
-            <div className="flex md:flex-row pt-30 flex-col text-center items-center justify-center gap-4">
-                <div className="flex flex-col text-start items-start self-start">
+            <div className="flex md:flex-row pt-15 md:pt-43 flex-col text-center items-center justify-center gap-4">
+                <div className="flex flex-col text-start items-start gap-3 self-start">
                     <h1 className="text-2xl mb-7">Catégories</h1>
                     <button
                         className={categorie === "tel" ? "font-bold w-55 h-10 text-start p-2 hover:bg-lime-500" : "bg-white/50 w-55 h-10 text-start p-2 hover:bg-lime-500"}

@@ -9,6 +9,8 @@ import tc27 from "../images/TC27.jfif"
 import tc78 from "../images/TC78.jpg"
 import tc58 from "../images/TC58.jpg"
 import mc330l from "../images/MC330L.jpg"
+import mc345b from "../images/MC34X0.jpg"
+import mc3401 from "../images/MC34X0.jpg"
 import mc94 from "../images/MC94.jpg"
 import tc57 from "../images/TC57.jpg"
 import vc83 from "../images/VC83.jpg"
@@ -303,6 +305,70 @@ const PRODUITS = {
         ],
     },
 
+    "MC345B-3G1J53SS-A6": {
+        nom: "MC345B",
+        sku: "MC345B-3G1J53SS-A6",
+        image: mc345b,
+        medias: [{ type: "image", src: mc345b }],
+        categorie: "portables",
+        couleurGradient: "from-blue-900 via-blue-700 to-blue-500",
+        accroche: "Terminal pistolet WLAN 2D avec NFC — 4 Go/32 Go",
+        description:
+            "Le MC345B est un terminal pistolet robuste conçu pour les environnements d'entrepôt et de vente au détail. Sa poignée pistolet ergonomique réduit la fatigue lors des sessions de scan intensives, tandis que son imageur 2D capture tous types de codes-barres.",
+        specs: [
+            { label: "Connectivité", valeur: "WLAN + Bluetooth" },
+            { label: "Forme", valeur: "Pistolet" },
+            { label: "Scanner", valeur: "2D, grossissement 2,5x" },
+            { label: "Clavier", valeur: "38 touches" },
+            { label: "RAM / Stockage", valeur: "4 Go / 32 Go" },
+            { label: "NFC", valeur: "Oui" },
+            { label: "Capteur", valeur: "SNSR intégré" },
+            { label: "Système", valeur: "Android GMS" },
+            { label: "Région", valeur: "ROW (reste du monde)" },
+        ],
+        points: [
+            "Forme pistolet ergonomique pour le scan intensif",
+            "Imageur 2D à grossissement 2,5x pour la longue portée",
+            "NFC intégré pour les paiements et l'appairage rapide",
+            "38 touches pour une saisie de données complète",
+            "Robustesse certifiée pour les environnements industriels",
+        ],
+    },
+
+    "MC3401-0G1M54SS-A6": {
+        nom: "MC3401",
+        sku: "MC3401-0G1M54SS-A6",
+        image: mc3401,
+        medias: [{ type: "image", src: mc3401 }],
+        categorie: "portables",
+        couleurGradient: "from-blue-900 via-blue-700 to-blue-500",
+        accroche: "Terminal pistolet WLAN 2D longue portée avec NFC — 6 Go/64 Go",
+        description:
+            "Le MC3401 (série MC3400) est un terminal pistolet robuste conçu pour les environnements d'entrepôt et de vente au détail. Sa poignée pistolet ergonomique réduit la fatigue lors des sessions de scan intensives, tandis que son imageur SE58 longue portée capture les codes-barres jusqu'à 30 m de distance.",
+        specs: [
+            { label: "Connectivité", valeur: "WLAN Wi-Fi 6E + Bluetooth 5.3" },
+            { label: "Forme", valeur: "Pistolet (Gun)" },
+            { label: "Scanner", valeur: "SE58, imageur 1D/2D longue portée" },
+            { label: "Clavier", valeur: "47 touches" },
+            { label: "RAM / Stockage", valeur: "6 Go / 64 Go (UFS)" },
+            { label: "NFC", valeur: "Oui" },
+            { label: "Caméra", valeur: "Non (modèle sans caméra)" },
+            { label: "Batterie", valeur: "7000 mAh (standard)" },
+            { label: "Écran", valeur: "4,0 pouces" },
+            { label: "Système", valeur: "Android 13 GMS" },
+            { label: "Région", valeur: "A6 (EMEA)" },
+        ],
+        points: [
+            "Forme pistolet ergonomique pour le scan intensif",
+            "Imageur SE58 à très longue portée (jusqu'à 30 m)",
+            "Wi-Fi 6E et Bluetooth 5.3 pour une connectivité rapide et fiable",
+            "NFC intégré pour les paiements et l'appairage rapide",
+            "47 touches pour une saisie de données complète",
+            "Batterie 7000 mAh pour une autonomie sur toute la journée",
+            "Robustesse certifiée pour les environnements industriels",
+        ],
+    },
+
     "MC9401-0G1R6BSS-A6": {
         nom: "MC94",
         sku: "MC9401-0G1R6BSS-A6",
@@ -333,35 +399,6 @@ const PRODUITS = {
             "Scanner SE58 pour une capture de codes-barres ultra-précise",
             "128 Go UFS pour un stockage et des accès rapides",
             "Vibreur intégré pour les retours haptiques en environnement bruyant",
-        ],
-    },
-
-    "TC57HO-1XFMU6P-A6": {
-        nom: "TC57",
-        sku: "TC57HO-1XFMU6P-A6",
-        image: tc57,
-        medias: [{ type: "image", src: tc57 }],
-        categorie: "portables",
-        couleurGradient: "from-blue-900 via-blue-700 to-blue-500",
-        accroche: "Terminal mobile LTE FHD 5 pouces avec imageur SE4720",
-        description:
-            "Le TC57 est un terminal mobile polyvalent doté d'un écran FHD 5 pouces et d'un processeur octocœur. Son imageur SE4720 et ses connecteurs E/S avant et arrière en font un choix idéal pour les équipes terrain qui ont besoin d'un terminal compact mais puissant.",
-        specs: [
-            { label: "Connectivité", valeur: "WAN LTE (reste du monde)" },
-            { label: "Scanner", valeur: "SE4720" },
-            { label: "Écran", valeur: "5 pouces FHD" },
-            { label: "Processeur", valeur: "Octocœur" },
-            { label: "RAM / Stockage", valeur: "4 Go / 32 Go UFS" },
-            { label: "NFC", valeur: "Oui" },
-            { label: "Connecteurs", valeur: "Arrière 2 broches + inférieur 7 broches" },
-            { label: "Système", valeur: "Android GMS" },
-        ],
-        points: [
-            "Écran FHD 5 pouces pour une excellente lisibilité",
-            "Processeur octocœur pour la fluidité des applications",
-            "Imageur SE4720 fiable dans toutes les conditions",
-            "Double connecteur pour une compatibilité accessoires maximale",
-            "Format compact et léger pour une utilisation mobile prolongée",
         ],
     },
 
@@ -514,7 +551,7 @@ export default function TermPortDetail() {
 
             {/* ── Fil d'ariane ── */}
             <div className="border-b border-gray-100">
-                <div className="max-w-6xl mx-auto px-6 pt-28 pb-3 md:pt-38 flex items-center gap-2 text-xs text-gray-500">
+                <div className="max-w-6xl mx-auto px-6 pt-20 pb-3 md:pt-43 flex items-center gap-2 text-xs text-gray-500">
                     <button
                         onClick={() => navigate(`/Terminaux-portables?categorie=${produit.categorie}`)}
                         className="flex items-center gap-1 hover:text-black transition-colors"

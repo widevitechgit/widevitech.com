@@ -529,7 +529,7 @@ export default function TelCrossDetail() {
 
             {/* ── Fil d'ariane ── */}
             <div className="border-b border-gray-100">
-                <div className="max-w-6xl mx-auto px-6 py-3 pt-28 pb-2 md:pt-38 flex items-center gap-2 text-xs text-gray-500">
+                <div className="max-w-6xl mx-auto px-6 py-3 pt-20 pb-2 md:pt-43 flex items-center gap-2 text-xs text-gray-500">
                     <button onClick={() => navigate(`/Téléphone-Crosscall?categorie=${produit.gamme}`)} className="flex items-center gap-1 hover:text-black transition-colors">
                         <FaChevronLeft size={10} /> Téléphones
                     </button>

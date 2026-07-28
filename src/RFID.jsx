@@ -51,7 +51,7 @@ export default function RFID () {
             <section className="flex text-center items-center justify-center min-h-screen md:p-0 p-2">
 
                 {categorie === "portables" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">RFID ZEBRA</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Lecteurs RFID portables</h1>
@@ -75,7 +75,7 @@ export default function RFID () {
                 )}
 
                 {categorie === "fixe" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-orange-900 via-orange-700 to-orange-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">RFID</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Lecteurs RFID fixes et infrastructure</h1>
@@ -99,7 +99,7 @@ export default function RFID () {
                 )}
 
                 {categorie === "antennes" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">RFID</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Antennes RFID</h1>
@@ -123,7 +123,7 @@ export default function RFID () {
                 )}
 
                 {categorie === "imprimantes" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">IMPRIMANTES</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Imprimantes RFID</h1>
@@ -154,9 +154,9 @@ export default function RFID () {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold text-black/60">LECTEURS RFID PORTABLES</p>
                         <h1 className="text-3xl font-bold text-black">Accéder aux actifs et aux données de l’entreprise : Partout, tout le temps</h1>
-                        <p>
-                            Pour une utilisation dans les entrepôts, les quais de chargement ou les espaces d’accueil client confortables, les lecteurs RAIN RFID portables Zebra vous permettent d’obtenir<br/>
-                            une visibilité maximale sur les actifs de votre entreprise. Conçus pour résister aux environnements de travail exigeants, les lecteurs et appareils Zebra améliorent l’efficacité de<br/>
+                        <p className="md:p-6 p-4">
+                            Pour une utilisation dans les entrepôts, les quais de chargement ou les espaces d’accueil client confortables, les lecteurs RAIN RFID portables Zebra vous permettent d’obtenir
+                            une visibilité maximale sur les actifs de votre entreprise. Conçus pour résister aux environnements de travail exigeants, les lecteurs et appareils Zebra améliorent l’efficacité de
                             la chaîne d’approvisionnement et la productivité des employés.
                         </p>
                     </div>
@@ -166,9 +166,9 @@ export default function RFID () {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">LECTEURS RFID FIXES ET INFRASTRUCTURES</p>
                         <h1 className="text-3xl font-bold text-black">Une visibilité des stocks de niveau supérieur pour une gestion sans faille</h1>
-                        <p>
-                            Obtenez une visibilité maximale sur les actifs de l’ensemble de votre entreprise grâce aux lecteurs RFID RAIN fixes de Zebra. Profitez d'une gestion des stocks et des flux de<br/>
-                            marchandises plus rapides et plus simples grâce à une visibilité totale des mouvements de vos actifs. En plus, les lecteurs fixes RFID de Zebra vous fournissent davantage de<br/>
+                        <p className="md:p-6 p-4">
+                            Obtenez une visibilité maximale sur les actifs de l’ensemble de votre entreprise grâce aux lecteurs RFID RAIN fixes de Zebra. Profitez d'une gestion des stocks et des flux de
+                            marchandises plus rapides et plus simples grâce à une visibilité totale des mouvements de vos actifs. En plus, les lecteurs fixes RFID de Zebra vous fournissent davantage de
                             données exploitables. La technologie de pointe utilisée est capable de localiser avec précision tous vos actifs étiquetés, même s'ils circulent sur votre site.
                         </p>
                     </div>
@@ -178,8 +178,8 @@ export default function RFID () {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Antennes rfid</p>
                         <h1 className="text-3xl font-bold text-black">Une antenne pour chaque situation</h1>
-                        <p>
-                            Suivi rapide et précis des stocks et des actifs. La performance, la portée et la robustesse des antennes RFID RAIN de Zebra permettent un comptage précis quelque soit le<br/>
+                        <p className="md:p-6 p-4">
+                            Suivi rapide et précis des stocks et des actifs. La performance, la portée et la robustesse des antennes RFID RAIN de Zebra permettent un comptage précis quelque soit le
                             nombre de passages.
                         </p>
                     </div>
@@ -189,8 +189,8 @@ export default function RFID () {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Imprimantes rfid</p>
                         <h1 className="text-3xl font-bold text-black">Des données RFID fiables</h1>
-                        <p>
-                            Votre solution dépend de la fiabilité des données. La diversité de notre gamme d’imprimantes vous permet d’imprimer et de coder avec précision vos étiquettes, vignettes et<br/>
+                        <p className="md:p-6 p-4">
+                            Votre solution dépend de la fiabilité des données. La diversité de notre gamme d’imprimantes vous permet d’imprimer et de coder avec précision vos étiquettes, vignettes et
                             cartes RFID RAIN partout où vous en avez besoin. Le codeur RFID installable en usine ou sur site permet de répondre à vos besoins actuels ou futurs.
                         </p>
                     </div>
@@ -199,7 +199,7 @@ export default function RFID () {
                 <div className="flex md:flex-row flex-col text-center items-center justify-center gap-4">
 
                     {/* ── Sidebar catégories ── */}
-                    <div className="flex flex-col text-start items-start self-start">
+                    <div className="flex flex-col text-start items-start gap-3 self-start">
                         <h1 className="text-2xl mb-7">Catégories</h1>
                         <button
                             className={categorie === "portables" ? "font-bold w-55 h-10 text-start p-2 hover:bg-orange-500" : "bg-white/50 w-55 h-10 text-start p-2 hover:bg-orange-500"}

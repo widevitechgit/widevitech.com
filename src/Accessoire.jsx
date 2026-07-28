@@ -68,7 +68,7 @@ export default function Accessoire () {
             <section className="flex text-center items-center justify-center min-h-screen md:p-0 p-2">
 
                 {categorie === "imprimantes" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">ACCESSOIRES</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Accessoires pour imprimantes</h1>
@@ -83,7 +83,7 @@ export default function Accessoire () {
                 )}
 
                 {categorie === "terminaux" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-orange-900 via-orange-700 to-orange-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">ACCESSOIRES</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Accessoires pour terminaux mobiles</h1>
@@ -98,7 +98,7 @@ export default function Accessoire () {
                 )}
 
                 {categorie === "tablettes" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">ACCESSOIRES</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Accessoires pour tablettes</h1>
@@ -113,7 +113,7 @@ export default function Accessoire () {
                 )}
 
                 {categorie === "scanners" && (
-                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-34 pt-17">
+                    <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">ACCESSOIRES</p>
                             <h1 className="md:text-4xl text-2xl font-bold mb-14">Accessoires pour scanner</h1>
@@ -135,10 +135,10 @@ export default function Accessoire () {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Accessoires pour imprimantes</p>
                         <h1 className="text-3xl font-bold text-black">L'outil ultime pour améliorer la productivité du personnel</h1>
-                        <p>
-                            Le terminal mobile de Zebra permet aux utilisateurs d'accéder aux informations, aux applications et aux personnes nécessaires à l'accomplissement de leur travail. Le<br />
-                            résultat : la productivité augmente et les clients bénéficient du meilleur service possible. Avec Zebra, vous êtes en bonnes mains. Les plus grands détaillants, fabricants,<br />
-                            entreprises de transport et de logistique, organisations de services et prestataires de soins de santé du monde entier s'appuient sur les terminaux mobiles de Zebra pour<br />
+                        <p className="md:p-6 p-4">
+                            Le terminal mobile de Zebra permet aux utilisateurs d'accéder aux informations, aux applications et aux personnes nécessaires à l'accomplissement de leur travail. Le
+                            résultat : la productivité augmente et les clients bénéficient du meilleur service possible. Avec Zebra, vous êtes en bonnes mains. Les plus grands détaillants, fabricants,
+                            entreprises de transport et de logistique, organisations de services et prestataires de soins de santé du monde entier s'appuient sur les terminaux mobiles de Zebra pour
                             poursuivre leurs activités.
                         </p>
                     </div>
@@ -148,10 +148,10 @@ export default function Accessoire () {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Accessoires pour Terminaux mobiles</p>
                         <h1 className="text-3xl font-bold text-black">Des terminaux durcis et performants pour un traitement sans faille des commandes</h1>
-                        <p>
-                            Les terminaux embarqués Zebra ultra-durcis permettent à votre personnel de première ligne d'atteindre de nouveaux sommets en termes de performances. Conçus pour être<br />
-                            montés sur des équipements de manutention, nos terminaux sont fabriqués pour résister aux environnements difficiles des entrepôts, à la chaîne du froid et aux chantiers, aux<br />
-                            chocs et aux vibrations, et bien plus encore. Notre gamme de terminaux prêts à l'emploi permet à vos employés d'exécuter les tâches plus rapidement, sans pour autant<br />
+                        <p className="md:p-6 p-4">
+                            Les terminaux embarqués Zebra ultra-durcis permettent à votre personnel de première ligne d'atteindre de nouveaux sommets en termes de performances. Conçus pour être
+                            montés sur des équipements de manutention, nos terminaux sont fabriqués pour résister aux environnements difficiles des entrepôts, à la chaîne du froid et aux chantiers, aux
+                            chocs et aux vibrations, et bien plus encore. Notre gamme de terminaux prêts à l'emploi permet à vos employés d'exécuter les tâches plus rapidement, sans pour autant
                             sacrifier la précision.
                         </p>
                     </div>
@@ -161,10 +161,10 @@ export default function Accessoire () {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Accessoires pour tablettes</p>
                         <h1 className="text-3xl font-bold text-black">Plus de productivité, plus de mobilité et plus de flexibilité</h1>
-                        <p>
-                            Les solutions transportables robustes de Zebra sont conçues pour votre entreprise. De nos terminaux mobiles portables Android™ à nos diverses bagues de lecture, donnez à<br />
-                            votre personnel de terrain l'avance technologique en termes de performances dont il a besoin. Profitez des fonctions intelligentes intégrées et des performances de lecture<br />
-                            inégalées qui permettent à vos employés d'en faire plus. Notre technologie portable, dotée de caractéristiques uniques, offre la flexibilité opérationnelle nécessaire pour<br />
+                        <p className="md:p-6 p-4">
+                            Les solutions transportables robustes de Zebra sont conçues pour votre entreprise. De nos terminaux mobiles portables Android™ à nos diverses bagues de lecture, donnez à
+                            votre personnel de terrain l'avance technologique en termes de performances dont il a besoin. Profitez des fonctions intelligentes intégrées et des performances de lecture
+                            inégalées qui permettent à vos employés d'en faire plus. Notre technologie portable, dotée de caractéristiques uniques, offre la flexibilité opérationnelle nécessaire pour
                             remplacer la complexité par la productivité.
                         </p>
                     </div>
@@ -174,10 +174,10 @@ export default function Accessoire () {
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Accessoires pour scanners</p>
                         <h1 className="text-3xl font-bold text-black">Plus de productivité, plus de mobilité et plus de flexibilité</h1>
-                        <p>
-                            Les solutions transportables robustes de Zebra sont conçues pour votre entreprise. De nos terminaux mobiles portables Android™ à nos diverses bagues de lecture, donnez à<br />
-                            votre personnel de terrain l'avance technologique en termes de performances dont il a besoin. Profitez des fonctions intelligentes intégrées et des performances de lecture<br />
-                            inégalées qui permettent à vos employés d'en faire plus. Notre technologie portable, dotée de caractéristiques uniques, offre la flexibilité opérationnelle nécessaire pour<br />
+                        <p className="md:p-6 p-4">
+                            Les solutions transportables robustes de Zebra sont conçues pour votre entreprise. De nos terminaux mobiles portables Android™ à nos diverses bagues de lecture, donnez à
+                            votre personnel de terrain l'avance technologique en termes de performances dont il a besoin. Profitez des fonctions intelligentes intégrées et des performances de lecture
+                            inégalées qui permettent à vos employés d'en faire plus. Notre technologie portable, dotée de caractéristiques uniques, offre la flexibilité opérationnelle nécessaire pour
                             remplacer la complexité par la productivité.
                         </p>
                     </div>
@@ -186,7 +186,7 @@ export default function Accessoire () {
                 <div className="flex md:flex-row flex-col text-center items-center justify-center gap-4">
 
                     {/* ── Sidebar catégories ── */}
-                    <div className="flex flex-col text-start items-start self-start">
+                    <div className="flex flex-col text-start items-start gap-3 self-start">
                         <h1 className="text-2xl mb-7">Catégories</h1>
                         <button
                             className={categorie === "imprimantes" ? "font-bold md:w-85 0 h-10 text-start p-2 hover:bg-orange-500" : "bg-white/50 md:w-85 w-80 h-10 text-start p-2 hover:bg-orange-500"}
