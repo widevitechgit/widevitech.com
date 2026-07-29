@@ -4,10 +4,10 @@ import { Autoplay, Pagination, Keyboard } from "swiper/modules";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom"
 
-import stat01 from "../images/PrinterRS.png";
-import stat02 from "../images/PremierBP.png";
-import stat03 from "../images/RFIDS.png";
-import stat04 from "../images/SCard.png";
+import stat01 from "../images/PrinterRS.jpeg";
+import stat02 from "../images/PremierBP.jpeg";
+import stat03 from "../images/RFIDS.jpeg";
+import stat04 from "../images/SCard.jpeg";
 import logo01 from "../images/zebra.png";
 import logo02 from "../images/crosscall.png";
 import logo03 from "../images/Dell-logo.png";
@@ -43,18 +43,29 @@ import aproposBg from "../images/Widevitech02.jpg";
 // Each hero theme pairs a background gradient with a CTA hover colour taken
 // from the *other* brand colour, so the two families visually answer each
 // other across the whole carousel instead of repeating one accent everywhere.
+// NOTE: `panelBg` is currently unused — the desktop text panel is now an
+// overlay with a transparent background — kept here in case that changes.
 const THEMES = {
     navy: {
-        gradient: "md:from-[#071C33]/95 md:via-[#0A2A4A]/90 md:to-[#1C5A96]/75",
+        panelBg: "md:bg-gradient-to-br md:from-[#071C33] md:via-[#0A2A4A] md:to-[#1C5A96]",
         hoverBtn: "hover:bg-[#F2801E] hover:text-white",
+        panelText: "md:text-white",
+        accent: "text-[#F2801E]",
+        underline: "bg-[#F2801E]",
     },
     orange: {
-        gradient: "md:from-[#6B2E05]/95 md:via-[#C2600C]/90 md:to-[#F2801E]/78",
+        panelBg: "md:bg-gradient-to-br md:from-[#6B2E05] md:via-[#C2600C] md:to-[#F2801E]",
         hoverBtn: "hover:bg-[#0A2A4A] hover:text-white",
+        panelText: "md:text-white",
+        accent: "text-[#0A2A4A]",
+        underline: "bg-[#0A2A4A]",
     },
     none: {
-        gradient: "none",
+        panelBg: "md:bg-white",
         hoverBtn: "hover:bg-[#F2801E] hover:text-white",
+        panelText: "md:text-[#0A2A4A]",
+        accent: "text-[#F2801E]",
+        underline: "bg-[#F2801E]",
     }
 };
 
@@ -183,35 +194,43 @@ function Eyebrow({ children, dark = false }) {
 }
 
 // Hero slide text block (title, underline, text, CTA). Rendered twice per
-// slide: once absolutely-positioned over the image for desktop, and once
-// in normal document flow below the image for mobile (see the `bg`
-// argument, which only applies the gradient card on the desktop version).
-function SlideContent({ slide, theme, bg }) {
-    const buttonClasses = `bg-white ${theme.hoverBtn} flex text-center w-40 h-11 md:w-52 md:h-15 font-bold items-center justify-center mt-1 md:mt-auto text-[#0A2A4A] p-1.5 rounded-tr-2xl rounded-bl-2xl transition-colors duration-300 hover:shadow-xl text-base md:text-xl ${
-        bg ? "" : "border border-[#0A2A4A]/15 shadow-md"
-    }`;
+// slide: once in a dedicated colour panel next to the image on desktop,
+// once in normal document flow below the image on mobile (see the
+// `variant` prop, "panel" vs "mobile").
+function SlideContent({ slide, theme, variant }) {
+    const isPanel = variant === "panel";
+    // The panel background is now fully transparent (text sits directly on
+    // the photo), so the white CTA always needs its own border/shadow for
+    // definition — there's no solid colour behind it anymore to lean on.
+    const buttonClasses = `bg-white ${theme.hoverBtn} flex text-center w-40 h-11 md:w-52 md:h-15 font-bold items-center justify-center mt-1 md:mt-0 shrink-0 text-[#0A2A4A] p-1.5 rounded-tr-2xl rounded-bl-2xl transition-colors duration-300 hover:shadow-xl text-base md:text-xl border border-[#0A2A4A]/15 shadow-md`;
     // A hash target ("#apropos") points to a section further down this same
     // page, so it needs a plain anchor tag to get the browser's native
     // scroll-to-element behaviour. A router Link is only for real routes.
     const isHash = slide.to?.startsWith("#");
+    // With no panel background left, the text needs its own halo to stay
+    // legible over an arbitrary photo: a dark glow behind the white text of
+    // the navy/orange themes, a light glow behind the dark navy "none" text.
+    const dropShadow = theme.panelText.includes("text-white")
+        ? "md:[filter:drop-shadow(0_2px_10px_rgba(0,0,0,0.85))]"
+        : "md:[filter:drop-shadow(0_2px_10px_rgba(255,255,255,0.9))]";
 
     return (
         <div
-            className={`flex flex-col items-center text-center md:items-start md:text-start ${
-                bg
-                    ? `bg-gradient-to-t ${theme.gradient} shadow-2xl shadow-black/40 rounded-2xl p-10 text-white`
-                    : "text-[#0A2A4A]"
-            } w-fit md:w-140 gap-3 md:gap-6`}
+            className={`flex flex-col items-center text-center md:flex-row md:items-center md:justify-center md:text-start text-[#0A2A4A] ${theme.panelText} w-fit md:w-full gap-3 md:gap-8 ${
+                isPanel ? dropShadow : ""
+            }`}
         >
             <h1 className="md:text-[58px] scale-y-110 md:scale-y-130 flex flex-col text-2xl font-extrabold leading-none tracking-tight">
                 <span>{slide.title}</span>
                 {slide.stitle && (
-                    <span className="-mt-1 text-[#F2801E]">{slide.stitle}</span>
+                    <span className={`-mt-1 ${theme.accent}`}>{slide.stitle}</span>
                 )}
             </h1>
-            <span className="w-10 md:w-14 h-1 rounded-full bg-[#F2801E]" />
+            {/* Horizontal bar on mobile (under the title), vertical divider
+                between items once the row switches on for desktop. */}
+            <span className={`w-10 h-1 md:w-1 md:h-14 rounded-full ${theme.underline} shrink-0`} />
             {slide.text && (
-                <p className="text-sm md:text-xl scale-y-105 md:scale-y-110 font-medium leading-snug">
+                <p className="text-sm md:text-xl md:max-w-xs scale-y-105 md:scale-y-110 font-medium leading-snug">
                     {slide.text}
                 </p>
             )}
@@ -249,15 +268,23 @@ export default function Home() {
                         const theme = THEMES[slide.theme];
                         return (
                             <SwiperSlide key={slide.title + (slide.stitle || "")}>
-                                <img
-                                    src={slide.image}
-                                    alt={slide.title}
-                                    className={`relative md:mt-0 -mt-10 w-full h-75 md:h-screen object-cover ${slide.ajust}`}
-                                    loading="eager"
-                                />
-                                {/* Mobile: text below the image, in normal flow */}
-                                <div className="flex flex-col items-center bg-white px-6 py-8">
-                                    <SlideContent slide={slide} theme={theme} bg={false} />
+                                {/* Desktop: full-height image, text/CTA panel overlaid on top
+                                    of it, pinned to the bottom, background fully transparent. */}
+                                <div className="relative md:h-screen">
+                                    <img
+                                        src={slide.image}
+                                        alt={slide.title}
+                                        className={`relative md:mt-0 -mt-10 w-full h-75 md:h-full object-cover ${slide.ajust}`}
+                                        loading="eager"
+                                    />
+                                    {/* Desktop: text/CTA row overlaid at the bottom of the photo */}
+                                    <div className="hidden md:flex md:absolute md:inset-x-0 md:bottom-0 items-center justify-center bg-transparent px-14 pb-14 pt-10">
+                                        <SlideContent slide={slide} theme={theme} variant="panel" />
+                                    </div>
+                                    {/* Mobile: text below the image, in normal flow */}
+                                    <div className="flex md:hidden flex-col items-center bg-white px-6 py-8">
+                                        <SlideContent slide={slide} theme={theme} variant="mobile" />
+                                    </div>
                                 </div>
                             </SwiperSlide>
                         );
