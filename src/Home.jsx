@@ -128,6 +128,7 @@ const slides = [
         to: '/Téléphone-Crosscall/core-p6',
         theme: "orange",
         ajust: "md:object-center object-right",
+        position: "mr-100"
     },
     {
         image: core_h6ex1,
@@ -135,8 +136,9 @@ const slides = [
         stitle: "Ex1",
         to: '/Téléphone-Crosscall/core-h6-ex1',
         theme: "orange",
-        text: "Certifié ATEX Zone 1/21",
+        text: "Certifié ATEX",
         ajust: "md:object-cover object-right",
+        position: "ml-140"
     },
     {
         image: core_h6ex2,
@@ -144,8 +146,9 @@ const slides = [
         stitle: "Ex2",
         to: '/Téléphone-Crosscall/core-h6-ex2',
         theme: "orange",
-        text: "Certifié ATEX / IECEx Zone 2/22",
+        text: "Certifié ATEX / IECEx",
         ajust: "md:object-cover object-right",
+        position: "ml-140"
     },
     {
         image: gamme_stellar,
@@ -278,7 +281,7 @@ export default function Home() {
                                         loading="eager"
                                     />
                                     {/* Desktop: text/CTA row overlaid at the bottom of the photo */}
-                                    <div className="hidden md:flex md:absolute md:inset-x-0 md:bottom-0 items-center justify-center bg-transparent px-14 pb-14 pt-10">
+                                    <div className={`${slide.position} hidden md:flex md:absolute md:inset-x-0 md:bottom-0 items-center justify-center bg-transparent px-14 pb-14 pt-10`}>
                                         <SlideContent slide={slide} theme={theme} variant="panel" />
                                     </div>
                                     {/* Mobile: text below the image, in normal flow */}
