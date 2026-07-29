@@ -57,13 +57,13 @@ const THEMES = {
         panelBg: "md:bg-gradient-to-br md:from-[#6B2E05] md:via-[#C2600C] md:to-[#F2801E]",
         hoverBtn: "hover:bg-[#0A2A4A] hover:text-white",
         panelText: "md:text-white",
-        accent: "text-[#0A2A4A]",
-        underline: "bg-[#0A2A4A]",
+        accent: "text-lime-600",
+        underline: "bg-lime-600",
     },
     none: {
         panelBg: "md:bg-white",
         hoverBtn: "hover:bg-[#F2801E] hover:text-white",
-        panelText: "md:text-[#0A2A4A]",
+        panelText: "md:text-[#F2801E]",
         accent: "text-[#F2801E]",
         underline: "bg-[#F2801E]",
     }
