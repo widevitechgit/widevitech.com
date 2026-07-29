@@ -26,9 +26,9 @@ import conso from "../images/conso.jpeg"
 import tab from "../images/tab.jpeg"
 import core_p6 from "../images/CORE-P6.jpeg"
 import core_h6ex1 from "../images/CORE-H6-Ex1.jpeg"
-import core_h6ex2 from "../images/CORE-H6-Ex2.png"
+import core_h6ex2 from "../images/CORE-H6-Ex2.jpeg"
 import gamme_stellar from "../images/gammestellar.png"
-import gamme_core from "../images/gammecore.jpg"
+import gamme_core from "../images/gammecore.png"
 
 import aproposBg from "../images/Widevitech02.jpg";
 
