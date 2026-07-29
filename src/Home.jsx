@@ -79,6 +79,7 @@ const slides = [
         to: "#apropos",
         buttonLabel: "Découvrir Widevitech",
         hideOnDesktop: true,
+        position: "mb-18"
     },
     {
         image: termmob,
