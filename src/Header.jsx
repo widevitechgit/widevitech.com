@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 import logo from "../Logos/logo.png"
 import { useState, useEffect } from "react"
-import PremierBP from "../images/PremierBP.jpeg"
-import card from "../images/SCard.jpeg"
-import printerrs from "../images/PrinterRS.jpeg"
-import rfids from "../images/RFIDS.jpeg"
+import PremierBP from "../images/PremierBP.png"
+import card from "../images/SCard.png"
+import printerrs from "../images/PrinterRS.png"
+import rfids from "../images/RFIDS.png"
 
 
 // ─── Données de navigation ────────────────────────────────────────────────────
