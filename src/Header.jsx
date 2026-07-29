@@ -320,7 +320,7 @@ function MobileMenu({ onClose }) {
                     <button
                         className="w-full bg-blue-700 text-white font-bold py-3 rounded-full hover:bg-orange-500 transition-all"
                         >
-                            <Link to="/contact">Contacter Widevitech</Link>
+                            <Link to="/contact">Contacter Nous</Link>
                     </button>
                 </div>
             </div>
@@ -439,7 +439,7 @@ export default function Header() {
                     {/* ── Bouton contact desktop ── */}
                     <button className="bg-blue-700 text-white h-10 md:text-[14px] text-2xl md:w-50 w-20 font-bold md:rounded-full rounded-2xl shadow-xl hover:bg-orange-500 transition-all md:block hidden">
                         <Link to="/contact">
-                            Contacter Widevitech
+                            Contacter Nous
                         </Link>
                     </button>
 

@@ -18,14 +18,14 @@ import bgSante from "../images/sante-bg.jpg";
 import bgConstruction from "../images/techmobilebg.jpg";
 
 import home from "../images/home.png"
-import termmob from "../images/termmob.png"
-import impr from "../images/impr.png"
-import scanner from "../images/scanner.png"
-import rfid from "../images/rfid.png"
-import conso from "../images/conso.png"
-import tab from "../images/tab.png"
-import core_p6 from "../images/CORE-P6.png"
-import core_h6ex1 from "../images/CORE-H6-Ex1.png"
+import termmob from "../images/termmob.jpeg"
+import impr from "../images/impr.jpeg"
+import scanner from "../images/scanner.jpeg"
+import rfid from "../images/rfid.jpeg"
+import conso from "../images/conso.jpeg"
+import tab from "../images/tab.jpeg"
+import core_p6 from "../images/CORE-P6.jpeg"
+import core_h6ex1 from "../images/CORE-H6-Ex1.jpeg"
 import core_h6ex2 from "../images/CORE-H6-Ex2.png"
 import gamme_stellar from "../images/gammestellar.png"
 import gamme_core from "../images/gammecore.jpg"
@@ -116,7 +116,7 @@ const slides = [
         title: "CORE-P6",
         to: '/Téléphone-Crosscall/core-p6',
         theme: "orange",
-        ajust: "md:object-cover object-right",
+        ajust: "md:object-center object-right",
     },
     {
         image: core_h6ex1,
