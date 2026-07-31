@@ -104,7 +104,7 @@ export default function AccCross() {
                                         <FaStarHalfAlt/>
                                         <span className="ml-4 text-black">4.3</span>
                                     </div>
-                                    <button onClick={() => navigate("/Accessoires-Crosscall/x-glass")} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    <button onClick={() => {navigate("/Accessoires-Crosscall/x-glass"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                 </div>
                                 <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                     <img src={x_cable} alt="" className="flex w-55 mx-auto" />
@@ -117,7 +117,7 @@ export default function AccCross() {
                                         <FaStarHalfAlt/>
                                         <span className="ml-4 text-black">4.4</span>
                                     </div>
-                                    <button onClick={() => navigate("/Accessoires-Crosscall/x-cable")} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    <button onClick={() => {navigate("/Accessoires-Crosscall/x-cable"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                 </div>
                                 <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                     <img src={x_power} alt="" className="flex w-55 mx-auto" />
@@ -130,7 +130,7 @@ export default function AccCross() {
                                         <FaStarHalfAlt/>
                                         <span className="ml-4 text-black">4.5</span>
                                     </div>
-                                    <button onClick={() => navigate("/Accessoires-Crosscall/x-power")} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    <button onClick={() => {navigate("/Accessoires-Crosscall/x-power"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                 </div>
                                 <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                     <img src={x_docke} alt="" className="flex w-55 mx-auto" />
@@ -143,7 +143,7 @@ export default function AccCross() {
                                         <FaStarHalfAlt/>
                                         <span className="ml-4 text-black">4.5</span>
                                     </div>
-                                    <button onClick={() => navigate("/Accessoires-Crosscall/chargeur-usbc")} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    <button onClick={() => {navigate("/Accessoires-Crosscall/chargeur-usbc"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                 </div>
                                 <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                     <img src={chargeur_usbc} alt="" className="flex w-55 mx-auto" />
@@ -156,7 +156,7 @@ export default function AccCross() {
                                         <FaStarHalfAlt/>
                                         <span className="ml-4 text-black">4.5</span>
                                     </div>
-                                    <button onClick={() => navigate("/Accessoires-Crosscall/x-glass-core-m6")} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    <button onClick={() => {navigate("/Accessoires-Crosscall/x-glass-core-m6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                 </div>
                                 <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                     <img src={x_blocker} alt="" className="flex w-55 mx-auto" />
@@ -169,7 +169,7 @@ export default function AccCross() {
                                         <FaStarHalfAlt/>
                                         <span className="ml-4 text-black">4.4</span>
                                     </div>
-                                    <button onClick={() => navigate("/Accessoires-Crosscall/x-blocker")} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    <button onClick={() => {navigate("/Accessoires-Crosscall/x-blocker"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                 </div>
                                 <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                     <img src={x_glass0} alt="" className="flex w-55 mx-auto" />
@@ -182,7 +182,7 @@ export default function AccCross() {
                                         <FaStarHalfAlt/>
                                         <span className="ml-4 text-black">4.4</span>
                                     </div>
-                                    <button onClick={() => navigate("/Accessoires-Crosscall/x-docker")} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    <button onClick={() => {navigate("/Accessoires-Crosscall/x-docker"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                 </div>
                                 <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                     <img src={cable_usbc_usbc} alt="" className="flex w-55 mx-auto" />
@@ -195,7 +195,7 @@ export default function AccCross() {
                                         <FaStarHalfAlt/>
                                         <span className="ml-4 text-black">4.5</span>
                                     </div>
-                                    <button onClick={() => navigate("/Accessoires-Crosscall/cable-usbc-usbc")} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    <button onClick={() => {navigate("/Accessoires-Crosscall/cable-usbc-usbc"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                 </div>
                                 <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                     <img src={stylus_case} alt="" className="flex w-55 mx-auto" />
@@ -208,7 +208,7 @@ export default function AccCross() {
                                         <FaRegStar/>
                                         <span className="ml-4 text-black">3.9</span>
                                     </div>
-                                    <button onClick={() => navigate("/Accessoires-Crosscall/stylus-case")} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    <button onClick={() => {navigate("/Accessoires-Crosscall/stylus-case"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                 </div>
                                 <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                     <img src={holster} alt="" className="flex w-55 mx-auto" />
@@ -221,7 +221,7 @@ export default function AccCross() {
                                         <FaRegStar/>
                                         <span className="ml-4 text-black">3.8</span>
                                     </div>
-                                    <button onClick={() => navigate("/Accessoires-Crosscall/holster")} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    <button onClick={() => {navigate("/Accessoires-Crosscall/holster"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                 </div>
                             </div>
                         </div>
@@ -242,7 +242,7 @@ export default function AccCross() {
                                         <FaStarHalfAlt/>
                                         <span className="ml-4 text-black">4.4</span>
                                     </div>
-                                    <button onClick={() => navigate("/Accessoires-Crosscall/x-bike")} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    <button onClick={() => {navigate("/Accessoires-Crosscall/x-bike"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                 </div>
                             </div>
                         </div>
@@ -264,7 +264,7 @@ export default function AccCross() {
                                         <FaStarHalfAlt/>
                                         <span className="ml-4 text-black">4.4</span>
                                     </div>
-                                    <button onClick={() => navigate("/Accessoires-Crosscall/x-car-pro")} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    <button onClick={() => {navigate("/Accessoires-Crosscall/x-car-pro"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                 </div>
                             </div>
                         </div>
@@ -286,7 +286,7 @@ export default function AccCross() {
                                         <FaRegStar/>
                                         <span className="ml-4 text-black">4.2</span>
                                     </div>
-                                    <button onClick={() => navigate("/Accessoires-Crosscall/x-vibes")} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    <button onClick={() => {navigate("/Accessoires-Crosscall/x-vibes"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                 </div>
                             </div>
                         </div>

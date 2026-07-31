@@ -5,7 +5,7 @@ import PremierBP from "../images/PremierBP.jpg"
 import card from "../images/SCard.png"
 import printerrs from "../images/PrinterRS.png"
 import rfids from "../images/RFIDS.png"
-import crosslogo from "../images/crosscall.webp"
+import crosslogo from "../images/crosslogo.svg"
 
 
 // ─── Données de navigation ────────────────────────────────────────────────────
@@ -400,11 +400,13 @@ export default function Header() {
                         <img src={printerrs} className="w-17" alt="Partner" />
                         <img src={rfids} className="w-17" alt="Partner" />
                         <img src={card} className="w-17" alt="Partner" />
-                        <img src={crosslogo} className="w-17" alt="Partner" />
                     </div>
-                    <button className={`py-1 px-5 rounded-full bg-transparent font-bold shadow-xl`}>
-                        Actualité
-                    </button>
+                    <div className="flex gap-2">
+                        <img src={crosslogo} className="w-40" alt="Partner" />
+                        <button className={`py-1 px-5 rounded-full bg-transparent font-bold shadow-xl`}>
+                            Actualité
+                        </button>
+                    </div>
                 </div>
                 <nav className="flex text-center items-center justify-between w-full gap-13 md:bg-gray-300 md:px-4 md:p-2 rounded-full">
 

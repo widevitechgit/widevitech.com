@@ -43,6 +43,7 @@ const PRODUITS = {
         slug: "x-glass",
         image: x_glass,
         categorie: "tel",
+        hidden: "hidden",
         note: 4.3,
         couleurGradient: "from-gray-900 via-gray-800 to-lime-900",
         accroche: "Protection d'écran en verre trempé pour smartphones Crosscall",
@@ -69,6 +70,7 @@ const PRODUITS = {
         slug: "x-cable",
         image: x_cable,
         categorie: "tel",
+        hidden: "hidden",
         note: 4.4,
         couleurGradient: "from-gray-900 via-gray-800 to-lime-900",
         accroche: "Câble de recharge robuste renforcé — compatible smartphones Crosscall",
@@ -94,6 +96,7 @@ const PRODUITS = {
         nom: "X-POWER",
         slug: "x-power",
         image: x_power,
+        hidden: "hidden",
         categorie: "tel",
         note: 4.3,
         couleurGradient: "from-gray-900 via-gray-800 to-lime-900",
@@ -119,6 +122,7 @@ const PRODUITS = {
     "x-docker": {
         nom: "X-DOCKER",
         slug: "x-docker",
+        hidden: "hidden",
         image: x_docke,
         categorie: "tel",
         note: 4.3,
@@ -145,6 +149,7 @@ const PRODUITS = {
     "chargeur-usbc": {
         nom: "Chargeur USB-C",
         slug: "chargeur-usbc",
+        hidden: "hidden",
         image: chargeur_usbc,
         categorie: "tel",
         note: 4.4,
@@ -171,6 +176,7 @@ const PRODUITS = {
     "x-blocker": {
         nom: "X-BLOCKER",
         slug: "x-blocker",
+        hidden: "hidden",
         image: x_blocker,
         categorie: "tel",
         note: 4.1,
@@ -199,6 +205,7 @@ const PRODUITS = {
         slug: "x-glass-core-m6",
         image: x_glass0,
         categorie: "tel",
+        hidden: "hidden",
         note: 4.3,
         couleurGradient: "from-gray-900 via-gray-800 to-lime-900",
         accroche: "Protection d'écran verre trempé 9H taillée sur mesure pour le CORE-M6",
@@ -225,6 +232,7 @@ const PRODUITS = {
         slug: "cable-usbc-usbc",
         image: cable_usbc_usbc,
         categorie: "tel",
+        hidden: "hidden",
         note: 4.5,
         couleurGradient: "from-gray-900 via-gray-800 to-lime-900",
         accroche: "Câble USB-C vers USB-C renforcé pour recharge rapide et transfert de données",
@@ -248,6 +256,7 @@ const PRODUITS = {
 
     "stylus-case": {
         nom: "STYLUS CASE",
+        badge: "Rupture de stock",
         slug: "stylus-case",
         image: stylus_case,
         categorie: "tel",
@@ -275,6 +284,7 @@ const PRODUITS = {
     "holster": {
         nom: "HOLSTER",
         slug: "holster",
+        badge: "Rupture de stock",
         image: holster,
         categorie: "tel",
         note: 3.8,
@@ -304,6 +314,7 @@ const PRODUITS = {
         slug: "x-bike",
         image: x_bike,
         categorie: "velo",
+        hidden: "hidden",
         note: 4.4,
         couleurGradient: "from-gray-900 via-green-900 to-lime-900",
         accroche: "Support vélo magnétique X-LINK pour smartphones Crosscall",
@@ -331,6 +342,7 @@ const PRODUITS = {
         slug: "x-car-pro",
         image: x_car_pro,
         categorie: "voiture",
+        hidden: "hidden",
         note: 4.4,
         couleurGradient: "from-gray-900 via-gray-800 to-lime-900",
         accroche: "Support voiture X-LINK avec recharge sans fil intégrée",
@@ -359,6 +371,7 @@ const PRODUITS = {
         slug: "x-vibes",
         image: x_vibes,
         categorie: "ecouteur",
+        hidden: "hidden",
         note: 4.2,
         couleurGradient: "from-gray-900 via-gray-800 to-lime-900",
         accroche: "Écouteurs sans fil robustes certifiés IP55 — autonomie 24 h, réduction de bruit",
@@ -462,7 +475,7 @@ export default function AccCrossDetail() {
             {/* ── Fil d'ariane ── */}
             <div className="max-w-6xl mx-auto px-6 pt-20 pb-2 md:pt-43">
                 <button
-                    onClick={() => navigate(`/Accessoire-Crosscall?categorie=${produit.categorie}`)}
+                    onClick={() => {navigate(`/Accessoire-Crosscall?categorie=${produit.categorie}`), window.scrollTo(0,0)}}
                     className="flex items-center gap-2 text-gray-500 hover:text-black text-sm w-fit transition-colors"
                 >
                     ← Retour aux accessoires Crosscall
@@ -484,8 +497,10 @@ export default function AccCrossDetail() {
                 {/* Infos */}
                 <div className="flex flex-col gap-5">
                     <p className="text-xs font-bold uppercase tracking-[0.2em] text-gray-400">Crosscall — Accessoires</p>
-                    <h1 className="text-4xl md:text-5xl font-black leading-tight uppercase text-gray-900">{produit.nom}</h1>
-
+                    <div className="flex gap-3">
+                        <h1 className="text-4xl md:text-5xl font-black leading-tight uppercase text-gray-900">{produit.nom}</h1>
+                        <span className={`bg-red-600 flex px-6 ${produit.hidden} rounded-full text-center justify-center items-center font-bold text-white`}>{produit.badge}</span>
+                    </div>
                     <div className="flex items-center gap-3">
                         <Stars note={produit.note} dark />
                     </div>

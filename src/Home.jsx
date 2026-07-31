@@ -25,8 +25,8 @@ import rfid from "../images/rfid.jpeg"
 import conso from "../images/conso.jpeg"
 import tab from "../images/tab.jpeg"
 import core_p6 from "../images/CORE-P6.png"
-import core_h6ex1 from "../images/CORE-H6-Ex1.jpeg"
-import core_h6ex2 from "../images/CORE-H6-Ex2.jpeg"
+import core_h6ex1 from "../images/CORE-H6-Ex1.png"
+import core_h6ex2 from "../images/CORE-H6-Ex2.png"
 import gamme_stellar from "../images/gammestellar.png"
 import gamme_core from "../images/gammecore.png"
 
@@ -119,7 +119,7 @@ const slides = [
     {
         image: conso,
         title: "Consommables pour",
-        stitle: "l’impression",
+        stitle: "impression",
         to: '/Consommables?categorie=etiquette',
         theme: "navy",
     },

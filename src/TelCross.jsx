@@ -51,7 +51,7 @@ function ProduitCard({ p, navigate }) {
                 <span className="text-gray-500 text-[12px] line-through">{p.prixBarre}</span>{" "}{p.prix}
             </p>
             <button
-                onClick={() => navigate(`/Téléphone-Crosscall/${p.slug}`)}
+                onClick={() => {navigate(`/Téléphone-Crosscall/${p.slug}`), window.scrollTo(0,0)}}
                 className="bg-black mt-auto text-white hover:bg-lime-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold"
             >
                 Voir le produit

@@ -6,6 +6,8 @@ import {
     FaTruck, FaUndo, FaChevronLeft, FaChevronRight,
 } from "react-icons/fa"
 import core_m6 from "../images/CORE-M6.webp"
+import garant5ans from "../Logos/5YEAR_BADGE.png" 
+import garant3ans from "../Logos/3YEAR_BADGE.webp"
 import corez5 from "../images/CoreZ5.webp"
 import core_s5 from "../images/CORE-S5.webp"
 import stellar_x5s from "../images/STELLAR-X5S.webp"
@@ -179,6 +181,7 @@ const PRODUITS = {
         nom: "CORE-H6 EX1",
         slug: "core-h6-ex1",
         image: coreh6ex1front,
+        garant: garant3ans,
         medias: [
             { type: "image", src: coreh6ex1front },
             { type: "image", src: coreh6ex1right },
@@ -215,6 +218,7 @@ const PRODUITS = {
         nom: "CORE-H6 EX2",
         slug: "core-h6-ex2",
         image: coreh6ex2front,
+        garant: garant3ans,
         medias: [
             { type: "image", src: coreh6ex2front },
             { type: "image", src: coreh6ex2left },
@@ -256,6 +260,7 @@ const PRODUITS = {
         nom: "CORE-P6",
         slug: "core-p6",
         image: corep6front,
+        garant: garant5ans,
         medias: [
             { type: "video", src: "https://www.youtube.com/embed/q_OG_I0fRFA" },
             { type: "image", src: corep6front },
@@ -287,6 +292,7 @@ const PRODUITS = {
         nom: "CORE-M6",
         slug: "core-m6",
         image: core_m6,
+        garant: garant5ans,
         medias: [
             { type: "video", src: "https://www.youtube.com/embed/mdR6C_yYf40" },
             { type: "image", src: core_m6 },
@@ -320,6 +326,7 @@ const PRODUITS = {
         nom: "CORE-Z5",
         slug: "core-z5",
         image: corez5,
+        garant: garant5ans,
         medias: [
             { type: "video", src: "https://www.youtube.com/embed/kD_DjTa_LHo" },
             { type: "image", src: corez5 },
@@ -352,6 +359,7 @@ const PRODUITS = {
     "core-s5": {
         nom: "CORE-S5",
         slug: "core-s5",
+        garant: garant5ans,
         image: core_s5,
         medias: [
             { type: "image", src: core_s5 },
@@ -384,6 +392,7 @@ const PRODUITS = {
     "stellar-x5s-chamonix": {
         nom: "STELLAR-X5S Chamonix",
         slug: "stellar-x5s-chamonix",
+        hidden: "hidden",
         image: stellar_x5s,
         medias: [
             { type: "video", src: "https://www.youtube.com/embed/SgZ9jhKlEK8" },
@@ -418,6 +427,7 @@ const PRODUITS = {
         nom: "STELLAR-M6 Chamonix",
         slug: "stellar-m6-chamonix",
         image: stellar_m6,
+        hidden: "hidden",
         medias: [
             { type: "image", src: stellarm6face },
             { type: "image", src: stellarm6back }
@@ -456,6 +466,7 @@ const PRODUITS = {
             { type: "image", src: stellarx5sback }
         ],
         gamme: "stellar",
+        hidden: "hidden",
         note: 4.5,
         couleurGradient: "from-gray-900 via-slate-800 to-lime-900",
         accroche: "Le smartphone 5G haut de gamme ultime de Crosscall — robustesse maximale",
@@ -483,6 +494,7 @@ const PRODUITS = {
     "stellar-m6": {
         nom: "STELLAR-M6",
         slug: "stellar-m6",
+        hidden: "hidden",
         image: stellar_m60,
         medias: [
             { type: "image", src: stellarm6face0 },
@@ -526,7 +538,7 @@ export default function TelCrossDetail() {
                 <h1 className="text-3xl font-bold text-gray-800">Produit introuvable</h1>
                 <p className="text-gray-500">Le modèle <span className="font-mono bg-gray-100 px-2 py-1 rounded">{slug}</span> n'existe pas.</p>
                 <button
-                    onClick={() => navigate("/Téléphone-Crosscall")}
+                    onClick={() => {navigate("/Téléphone-Crosscall"), window.scrollTo(0,0)}}
                     className="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-lime-500 transition-colors"
                 >
                     ← Retour aux téléphones
@@ -574,10 +586,13 @@ export default function TelCrossDetail() {
                         <p className="text-xs font-bold uppercase tracking-[0.2em] text-gray-400">
                             Crosscall — Gamme {produit.gamme}
                         </p>
-                        <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-[1.05] text-black">
-                            {produit.nom}
-                        </h1>
-                        <Stars note={produit.note} />
+                        <div className="flex md:gap-40 gap-5">
+                            <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-[1.05] text-black">
+                                {produit.nom}
+                            </h1>
+                            <img className={`${produit.hidden} md:w-20 md:h-20 h-10 w-10 flex text-center items-center justify-center`} src={produit.garant} alt="Garantie logo" />
+                        </div>
+                        <Stars className={`${produit.hidden}`} note={produit.note} />
 
                         {/*<div className="flex items-end gap-3 flex-wrap mt-1">
                             <span className="text-3xl font-black text-black">{produit.prix}</span>
@@ -725,7 +740,7 @@ export default function TelCrossDetail() {
                                 return (
                                     <button
                                         key={p.slug}
-                                        onClick={() => navigate(`/Téléphone-Crosscall/${p.slug}`)}
+                                        onClick={() => {navigate(`/Téléphone-Crosscall/${p.slug}`), window.scrollTo(0,0)}}
                                         className="bg-white border border-gray-100 rounded-2xl p-6 flex flex-col items-center gap-3 text-center hover:border-lime-400 hover:shadow-lg transition-all"
                                     >
                                         <div className="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center">
