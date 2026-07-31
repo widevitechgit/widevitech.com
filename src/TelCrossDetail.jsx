@@ -21,10 +21,19 @@ import stellarm6face0 from "../images/STELLAR-M6_FRONT0.png"
 import stellarm6back0 from "../images/STELLAR-M6_BACK0.png"
 
 import corep6front from "../images/CORE-P6D.png"
+
 import coreh6ex1front from "../images/CORE-H6_EX1_FRONT.png"
 import coreh6ex1back from "../images/CORE-H6_EX1_BACK.png"
+import coreh6ex1top from "../images/CORE-H6_EX1_TOP.png"
+import coreh6ex1right from "../images/CORE-H6_EX1_RIGHT.png"
+import coreh6ex1left from "../images/CORE-H6_EX1_LEFT.png"
+
 import coreh6ex2front from "../images/CORE-H6_EX2_FRONT.png"
 import coreh6ex2back from "../images/CORE-H6_EX2_BACK.png"
+import coreh6ex2top from "../images/CORE-H6_EX2-TOP.png"
+import coreh6ex2left from "../images/CORE-H6_EX2-LEFT.png"
+import coreh6ex2right from "../images/CORE-H6_EX2-RIGHT.png"
+import coreh6ex2battery from "../images/CORE-H6_EX2-BATTERY.png"
 
 // ─── Composant étoiles ────────────────────────────────────────────────────────
 function Stars({ note }) {
@@ -169,13 +178,17 @@ const PRODUITS = {
     "core-h6-ex1": {
         nom: "CORE-H6 EX1",
         slug: "core-h6-ex1",
+        image: coreh6ex1front,
         medias: [
             { type: "image", src: coreh6ex1front },
+            { type: "image", src: coreh6ex1right },
             { type: "image", src: coreh6ex1back },
+            { type: "image", src: coreh6ex1left },
+            { type: "image", src: coreh6ex1top },
         ],
         gamme: "core",
         couleurGradient: "from-gray-900 via-gray-800 to-lime-900",
-        accroche: "Le smartphone intrinsèquement sûr pour les environnements à risque d'explosion.",
+        accroche: "Le smartphone intrinsèquement sûr pour les environnements à risque d'explosion. Pas disponibles avant fin 2026",
         description:
             "Le CORE-H6 EX1 est un smartphone durci certifié ATEX/IECEx Zone 1/21, conçu pour les professionnels intervenant dans des environnements explosifs tels que les industries pétrolières, gazières, chimiques ou minières. Il associe robustesse, sécurité et performances pour garantir des communications fiables dans les conditions les plus exigeantes.",
 
@@ -187,7 +200,7 @@ const PRODUITS = {
             { label: "Caméra frontale", valeur: "16 Mpx" },
             { label: "Batterie", valeur: "5 000 mAh" },
             { label: "Système", valeur: "Android" },
-            { label: "Garantie", valeur: "5 ans" },
+            { label: "Garantie", valeur: "3 ans" },
         ],
 
         points: [
@@ -201,15 +214,20 @@ const PRODUITS = {
     "core-h6-ex2": {
         nom: "CORE-H6 EX2",
         slug: "core-h6-ex2",
+        image: coreh6ex2front,
         medias: [
             { type: "image", src: coreh6ex2front },
+            { type: "image", src: coreh6ex2left },
             { type: "image", src: coreh6ex2back },
+            { type: "image", src: coreh6ex2battery },
+            { type: "image", src: coreh6ex2right },
+            { type: "image", src: coreh6ex2top }
         ],
         gamme: "core",
         couleurGradient: "from-gray-900 via-gray-800 to-lime-900",
 
         accroche:
-            "Le smartphone ATEX Zone 2/22 conçu pour les opérations critiques et les environnements industriels.",
+            "Le smartphone ATEX Zone 2/22 conçu pour les opérations critiques et les environnements industriels. Pas disponibles avant fin 2026",
 
         description:
             "Le CORE-H6 EX2 associe la technologie d'un smartphone Android à l'ergonomie d'une radio professionnelle. Certifié ATEX/IECEx Zone 2/22, IP68 et MIL-STD-810H, il garantit des communications fiables, une sécurité renforcée et des performances élevées pour les professionnels évoluant dans les secteurs de l'énergie, de la chimie, des transports et de l'industrie.",
@@ -223,6 +241,7 @@ const PRODUITS = {
             { label: "Batterie", valeur: "5 000 mAh amovible et sécurisée" },
             { label: "Système", valeur: "Android 15" },
             { label: "Mémoire", valeur: "8 Go RAM / 256 Go" },
+            { label: "Garantie", valeur: "3 ans" },
         ],
 
         points: [
@@ -236,6 +255,7 @@ const PRODUITS = {
     "core-p6": {
         nom: "CORE-P6",
         slug: "core-p6",
+        image: corep6front,
         medias: [
             { type: "video", src: "https://www.youtube.com/embed/q_OG_I0fRFA" },
             { type: "image", src: corep6front },
@@ -285,7 +305,7 @@ const PRODUITS = {
             { label: "Caméra frontale", valeur: "8 Mpx" },
             { label: "Batterie", valeur: "Longue durée" },
             { label: "Système", valeur: "Android" },
-            { label: "Garantie", valeur: "2 ans" },
+            { label: "Garantie", valeur: "5 ans" },
         ],
         points: [
             "Certifié IP68 — étanche et résistant à la poussière",
@@ -318,7 +338,7 @@ const PRODUITS = {
             { label: "Caméra frontale", valeur: "16 Mpx" },
             { label: "Système X-LINK", valeur: "Montage accessoires magnétique" },
             { label: "Système", valeur: "Android" },
-            { label: "Garantie", valeur: "2 ans" },
+            { label: "Garantie", valeur: "5 ans" },
         ],
         points: [
             "5G + Wi-Fi 6 pour les connexions les plus rapides disponibles",
@@ -349,7 +369,7 @@ const PRODUITS = {
             { label: "Format", valeur: "Compact" },
             { label: "Batterie", valeur: "Standard" },
             { label: "Système", valeur: "Android" },
-            { label: "Garantie", valeur: "2 ans" },
+            { label: "Garantie", valeur: "5 ans" },
         ],
         points: [
             "Prix accessible pour équiper des flottes complètes",

@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
 import logo from "../Logos/logo.png"
 import { useState, useEffect } from "react"
-import PremierBP from "../images/PremierBP.png"
+import PremierBP from "../images/PremierBP.jpg"
 import card from "../images/SCard.png"
 import printerrs from "../images/PrinterRS.png"
 import rfids from "../images/RFIDS.png"
+import crosslogo from "../images/crosscall.webp"
 
 
 // ─── Données de navigation ────────────────────────────────────────────────────
@@ -399,6 +400,7 @@ export default function Header() {
                         <img src={printerrs} className="w-17" alt="Partner" />
                         <img src={rfids} className="w-17" alt="Partner" />
                         <img src={card} className="w-17" alt="Partner" />
+                        <img src={crosslogo} className="w-17" alt="Partner" />
                     </div>
                     <button className={`py-1 px-5 rounded-full bg-transparent font-bold shadow-xl`}>
                         Actualité
