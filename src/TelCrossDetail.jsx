@@ -734,7 +734,7 @@ export default function TelCrossDetail() {
                 <section className="bg-gray-50 border-y border-gray-100">
                     <div className="max-w-6xl mx-auto px-6 py-16">
                         <h2 className="text-2xl font-black uppercase tracking-tight text-black mb-8">Découvrez toute la gamme {produit.gamme}</h2>
-                        <div className="grid sm:grid-cols-4 gap-6">
+                        <div className="grid sm:grid-cols-4 md:grid-cols-4 gap-6">
                             {autresModeles.map(p => {
                                 /*const pRemise = Math.round(parsePrix(p.prixBarre) - parsePrix(p.prix))*/
                                 return (
