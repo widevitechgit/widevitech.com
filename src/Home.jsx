@@ -238,7 +238,7 @@ const clients = [
     { src: majestic, alt: "Majestic One" },
     { src: mantra, alt: "Mantra" },
     { src: orange, alt: "Orange Ci" },
-    { src: snedai, alt: "Snedai" }
+    { src: snedai, alt: "Snedai" },
 ];
 
 // Small reusable "eyebrow" label used above section titles to keep the
@@ -318,7 +318,7 @@ export default function Home() {
                 <Swiper
                     modules={[Autoplay, Pagination, Keyboard]}
                     autoplay={{
-                        delay: 3000,
+                        delay: 4000,
                         disableOnInteraction: false,
                     }}
                     pagination={{ clickable: true }}
