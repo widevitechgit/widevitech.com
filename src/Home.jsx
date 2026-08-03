@@ -222,6 +222,9 @@ const clients = [
     { src: azadea, alt: "Azadea" },
     { src: bollore, alt: "Bollore" },
     { src: citerminal, alt: "Ci Terminal" },
+    { src: dhl, alt: "DHL" },
+    { src: eburtis, alt: "EBURTIS" },
+    { src: geantcasino, alt: "GeantCasino" },
 ];
 
 // Small reusable "eyebrow" label used above section titles to keep the
