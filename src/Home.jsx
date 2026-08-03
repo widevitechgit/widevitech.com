@@ -43,11 +43,18 @@ import fruinov from "../Logos/fruinov.jfif"
 import threertechnologie from "../Logos/3rtechnologie.png"
 import amsa from "../Logos/amsa.png"
 import azadea from "../Logos/azadea.webp"
-import bollore from "../Logos/Bollore.webp"
 import citerminal from "../Logos/citerminal.jfif"
 import dhl from "../Logos/DHL.webp"
 import eburtis from "../Logos/eburtis.png"
 import geantcasino from "../Logos/geantcasino.jpg"
+import giz from "../Logos/giz.png"
+import olam from "../Logos/olam.jpg"
+import idh from "../Logos/IDH.jpg"
+import innov from "../Logos/innov.png"
+import majestic from "../Logos/majestic.jpg"
+import mantra from "../Logos/mantra.png"
+import orange from "../Logos/orange.jpg"
+import snedai from "../Logos/snedai.png"
 
 import aproposBg from "../images/Widevitech02.jpg";
 
@@ -220,11 +227,18 @@ const clients = [
     { src: threertechnologie, alt: "3r Technologie" },
     { src: amsa, alt: "Amsa" },
     { src: azadea, alt: "Azadea" },
-    { src: bollore, alt: "Bollore" },
     { src: citerminal, alt: "Ci Terminal" },
     { src: dhl, alt: "DHL" },
     { src: eburtis, alt: "EBURTIS" },
     { src: geantcasino, alt: "GeantCasino" },
+    { src: giz, alt: "GIZ" },
+    { src: olam, alt: "OLAM" },
+    { src: idh, alt: "IDH" },
+    { src: innov, alt: "INNOV" },
+    { src: majestic, alt: "Majestic One" },
+    { src: mantra, alt: "Mantra" },
+    { src: orange, alt: "Orange Ci" },
+    { src: snedai, alt: "Snedai" }
 ];
 
 // Small reusable "eyebrow" label used above section titles to keep the
