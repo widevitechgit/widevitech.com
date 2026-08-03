@@ -211,7 +211,6 @@ const PRODUITS = {
             "Résistance IP68 et MIL-STD-810H contre l'eau, la poussière et les chocs.",
             "Connectivité 5G, Wi-Fi 6E et NFC pour les usages professionnels.",
             "Conçu pour les secteurs du pétrole, du gaz, de la chimie et de l'industrie.",
-            "Garantie de 5 ans et suivi logiciel longue durée.",
         ],
     },
     "core-h6-ex2": {

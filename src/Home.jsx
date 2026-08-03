@@ -30,6 +30,25 @@ import core_h6ex2 from "../images/CORE-H6-Ex2.png"
 import gamme_stellar from "../images/gammestellar.png"
 import gamme_core from "../images/gammecore.png"
 
+import client01 from "../Logos/solibra.png"
+import nouvellepspci from "../Logos/nouvellepspci.png"
+import agl from "../Logos/agl.png"
+import carrefour from "../Logos/carrefour.svg"
+import cdci from "../Logos/CDCI.png"
+import cnts from "../Logos/cnts.jpg"
+import centaure from "../Logos/centaure.png"
+import decathlon from "../Logos/Decathlon.png"
+import dream from "../Logos/dream.png"
+import fruinov from "../Logos/fruinov.jfif"
+import threertechnologie from "../Logos/3rtechnologie.png"
+import amsa from "../Logos/amsa.png"
+import azadea from "../Logos/azadea.webp"
+import bollore from "../Logos/Bollore.webp"
+import citerminal from "../Logos/citerminal.jfif"
+import dhl from "../Logos/DHL.webp"
+import eburtis from "../Logos/eburtis.png"
+import geantcasino from "../Logos/geantcasino.jpg"
+
 import aproposBg from "../images/Widevitech02.jpg";
 
 // Brand palette used throughout: navy for the enterprise / data-capture line
@@ -181,6 +200,28 @@ const partners = [
     { src: logo02, alt: "Crosscall" },
     { src: logo03, alt: "Dell" },
     { src: logo04, alt: "Getac" },
+];
+
+// Logos clients à afficher dans le bandeau défilant "Nos clients".
+// Même format que `partners` ci-dessus : ajoute tes imports en haut du
+// fichier (ex: import client01 from "../images/client01.png";) puis
+// référence-les ici.
+const clients = [
+    { src: client01, alt: "Solibra" },
+    { src: nouvellepspci, alt: "Nouvelle PSP CI" },
+    { src: agl, alt: "AGL" },
+    { src: carrefour, alt: "Carrefour" },
+    { src: cdci, alt: "CDCI" },
+    { src: cnts, alt: "CNTS" },
+    { src: centaure, alt: "Centaure" },
+    { src: decathlon, alt: "Decathlon" },
+    { src: dream, alt: "Dream cosmétics" },
+    { src: fruinov, alt: "Fruinov" },
+    { src: threertechnologie, alt: "3r Technologie" },
+    { src: amsa, alt: "Amsa" },
+    { src: azadea, alt: "Azadea" },
+    { src: bollore, alt: "Bollore" },
+    { src: citerminal, alt: "Ci Terminal" },
 ];
 
 // Small reusable "eyebrow" label used above section titles to keep the
@@ -389,6 +430,62 @@ export default function Home() {
                         <p className="text-sm text-white/70">Directeur Général, WIDEVITECH</p>
                     </div>
                 </div>
+            </section>
+
+            <section className="flex flex-col min-h-fit py-10 text-center items-center justify-center bg-white text-black gap-10 overflow-hidden">
+                <div className="flex flex-col items-center gap-3 px-6">
+                    <h1 className="md:text-3xl text-xl font-extrabold uppercase tracking-tight text-[#0A2A4A]">
+                        Nos clients
+                    </h1>
+                    <span className="w-16 h-1 rounded-full bg-[#F2801E]" />
+                </div>
+
+                {/* Bandeau défilant de droite à gauche. Le tableau `clients` est
+                    dupliqué une fois pour obtenir une boucle continue et sans
+                    saut : dès que la 1re copie sort de l'écran à gauche, la 2e
+                    (identique) prend le relais pile au même endroit. */}
+                <div className="relative w-full">
+                    {/* Fondus latéraux pour adoucir l'entrée/sortie des logos */}
+                    <div className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-white to-transparent z-10" />
+                    <div className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-white to-transparent z-10" />
+
+                    <div className="clients-marquee flex w-max">
+                        {[...clients, ...clients].map((client, i) => (
+                            <div
+                                key={client.alt + i}
+                                className="mx-3 md:mx-5 shrink-0 w-40 md:w-48 bg-white rounded-2xl p-4 shadow-sm border border-black/5 flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:border-[#F2801E]/50 hover:-translate-y-1"
+                            >
+                                <img
+                                    src={client.src}
+                                    alt={client.alt}
+                                    loading="lazy"
+                                    className="w-full max-w-full"
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Animation du défilement + pause au survol. En <style> ici (et
+                    non en config Tailwind) pour rester autonome dans ce fichier :
+                    aucune modification de tailwind.config à prévoir ailleurs. */}
+                <style>{`
+                    @keyframes clients-marquee {
+                        from { transform: translateX(0); }
+                        to { transform: translateX(-50%); }
+                    }
+                    .clients-marquee {
+                        animation: clients-marquee 28s linear infinite;
+                    }
+                    .clients-marquee:hover {
+                        animation-play-state: paused;
+                    }
+                    @media (prefers-reduced-motion: reduce) {
+                        .clients-marquee {
+                            animation: none;
+                        }
+                    }
+                `}</style>
             </section>
 
             <section className="flex flex-col min-h-80 p-6 text-center items-center justify-center bg-[#F5F7FA] text-black gap-10">
