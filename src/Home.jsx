@@ -470,7 +470,7 @@ export default function Home() {
                         {[...clients, ...clients].map((client, i) => (
                             <div
                                 key={client.alt + i}
-                                className="mx-3 md:mx-5 shrink-0 w-40 md:w-48 bg-white rounded-2xl p-4 shadow-sm border border-black/5 flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:border-[#F2801E]/50 hover:-translate-y-1"
+                                className="mx-3 md:mx-5 shrink-0 w-17 md:w-48 bg-white rounded-2xl md:p-4 p-2 shadow-sm border border-black/5 flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:border-[#F2801E]/50 hover:-translate-y-1"
                             >
                                 <img
                                     src={client.src}
