@@ -321,13 +321,13 @@ function MobileMenu({ onClose }) {
                 })}
 
                 {/* Bouton contact */}
-                <div className="px-6 py-6">
+                {/*<div className="px-6 py-6">
                     <button
                         className="w-full bg-blue-700 text-white font-bold py-3 rounded-full hover:bg-orange-500 transition-all"
                         >
                             <Link to="/contact">Contacter Nous</Link>
                     </button>
-                </div>
+                </div>*/}
             </div>
         </div>
     )
@@ -458,7 +458,9 @@ export default function Header() {
 
                     {/* ── Bouton contact mobile ── */}
                     <button className="bg-blue-700 text-white h-10 text-2xl md:w-50 w-20 font-bold md:rounded-full rounded-2xl shadow-xl hover:bg-orange-500 transition-all md:hidden block">
-                        &#9993;
+                        <Link to="/contact">
+                            &#9993;
+                        </Link>
                     </button>
                 </nav>
 
