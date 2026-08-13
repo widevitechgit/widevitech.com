@@ -33,3 +33,4 @@ jobs:
           remote_port: ${{ secrets.SSH_PORT }}
           remote_user: ${{ secrets.SSH_USER }}
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          rsh: "-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
