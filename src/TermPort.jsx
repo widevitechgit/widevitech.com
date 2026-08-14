@@ -195,49 +195,49 @@ export default function TermPort() {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={tc27} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">TC27<br /><span className="text-[14px]">&#40;WCMTB-T27B6ABC2-A6&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">TC27</h1>
                                         <p>TC27, WWAN, 5G, Wi-Fi 6, SE4710, écran 6 pouces, 6 Go/64 Go, caméra frontale 16 Mpx, caméra frontale 5 Mpx, connecteurs arrière 2 broches, batterie standard, NFC, Bluetooth, USB-C, SIM et eSIM, GMS, compatible avec le reste du monde</p>
                                         <button onClick={() => {navigate("/terminaux/WCMTB-T27B6ABC2-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={tc27} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">TC27<br /><span className="text-[14px]">&#40;WCMTB-T27B8ABE8-A6&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">TC27</h1>
                                         <p>TC27, WWAN, 5G, Wi-Fi 6, SE4710, écran 6 pouces, 8 Go/128 Go, caméra frontale 16 Mpx, caméra frontale 5 Mpx, connecteur arrière 8 broches, batterie longue durée, NFC, Bluetooth, USB-C, SIM et eSIM, GMS, compatible avec le reste du monde</p>
                                         <button onClick={() => {navigate("/terminaux/WCMTB-T27B8ABE8-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={tc58} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">TC58<br /><span className="text-[14px]">&#40;TC58B1-3T1E4B1080-A6&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">TC58</h1>
                                         <p>TC58, WAN, écran 6 pouces, 5G FR1, Wi-Fi 6E, 4 Go de RAM/64 Go de ROM, capteur d'image SE4720, caméra frontale 8 MP, caméra frontale 16 MP, batterie rechargeable, batterie standard 4680 mAh, GMS, ROW</p>
                                         <button onClick={() => {navigate("/terminaux/TC58B1-3T1E4B1080-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={tc78} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">TC78<br /><span className="text-[14px]">&#40;TC78B1-3T1K6B1A80-A6&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">TC78</h1>
                                         <p>TC78, WAN, écran 6 pouces, 5G Sub-6, Wi-Fi 6E, mémoire flash 8/128 Go, SE55, caméra frontale 8 Mpx, caméra arrière 16 Mpx, remplacement à chaud, recharge sans fil, batterie standard 4 680 mAh, GMS, ROW</p>
                                         <button onClick={() => {navigate("/terminaux/TC78B1-3T1K6B1A80-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={mc330l} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">MC330L<br /><span className="text-[14px]">&#40;MC330L-GJ3EG4RW&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">MC330L</h1>
                                         <p>MC : WLAN, BT, pistolet, 2D, 38 KY, 2,5X, GMS, 4/32 Go, SNSR, NFC, ROW</p>
                                         <button onClick={() => {navigate("/terminaux/MC330L-GJ3EG4RW"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={mc345b} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">MC345B<br /><span className="text-[14px]">&#40;MC345B-3G1J53SS-A6&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">MC345B</h1>
                                         <p>MC34, WAN, 5G/LTE, GPS, LAN, Wi-Fi 6E, une carte SIM + eSIM, pistolet, Bluetooth, NFC, écran 4 pouces, vibreur, GMS, imageur SE4770, 6 Go de RAM/64 Go UFS, 38 touches, batterie standard 7000 mAh, ROW</p>
                                         <button onClick={() => {navigate("/terminaux/MC345B-3G1J53SS-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={mc3401} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">MC3401<br /><span className="text-[14px]">&#40;MC3401-0G1M54SS-A6&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">MC3401</h1>
                                         <p>MC34, LAN, Wi-Fi 6E, pistolet, Bluetooth, NFC, écran 4 pouces, vibreur, GMS, appareil photo SE58, 6 Go de RAM/64 Go UFS, 47 touches, batterie standard 7000 mAh, ROW</p>
                                         <button onClick={() => {navigate("/terminaux/MC3401-0G1M54SS-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={mc94} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">MC94<br /><span className="text-[14px]">&#40;MC9401-0G1R6BSS-A6&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">MC94</h1>
                                         <p>MC94, LAN, Wi-Fi 6E, pistolet, Bluetooth, NFC, écran 4,3 pouces, vibreur, GMS, appareil photo SE58, caméra frontale 8 MP, caméra frontale 16 MP, 6 Go de RAM/128 Go UFS, clavier 34 touches, batterie standard 7000 mAh, ROW</p>
                                         <button onClick={() => {navigate("/terminaux/MC9401-0G1R6BSS-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -251,7 +251,7 @@ export default function TermPort() {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={vc83} alt="" className="flex w-75 mx-auto" />
-                                        <h1 className="text-2xl font-bold">VC8300<br /><span className="text-[14px]">&#40;VC83-08SOCQBAABANA&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">VC8300</h1>
                                         <p>Nombre d'utilisateurs finaux : 8 (1280 x 720), clavier QWERTY, plage de température standard (-30 °C à +50 °C), affichage lisible en extérieur, écran tactile capacitif, processeur QC SD660, 4 Go de RAM, 32 Go de mémoire MMC (pSLC), Android GMS, Ivanti Velocity, E/S de base (2 ports USB, 2 ports RS232, haut-parleur/microphone), version NA (États-Unis, Canada, Porto Rico)</p>
                                         <button onClick={() => {navigate("/terminaux/VC83-08SOCQBAABANA"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -265,19 +265,19 @@ export default function TermPort() {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={rs5} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">RS5000X<br /><span className="text-[14px]">&#40;RS5000X-TCFSSWR&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">RS5000X</h1>
                                         <p>Scanner portable filaire RS5000X, SE4770, câble court, déclenchement standard au doigt, distribution mondiale</p>
                                         <button onClick={() => {navigate("/terminaux/RS5000X-TCFSSWR"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={rs21} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">RS21<br /><span className="text-[14px]">&#40;RS21C0-TS00ZWR&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">RS21</h1>
                                         <p>Scanner portable S2100, imageur 1D/2D SE4770/SR560, batterie intégrée, distribution mondiale. Support pour le dos de la main vendu séparément : SG-RS2X-HMTRA-xx (main droite) ou SG-RS2X-HMTLA-xx (main gauche).</p>
                                         <button onClick={() => {navigate("/terminaux/RS21C0-TS00ZWR"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={rs5} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">RS5000X<br /><span className="text-[14px]">&#40;RS5000X-TCFSXWR&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">RS5000X</h1>
                                         <p>Scanner portable filaire RS5000X, SE4770/SR560, câble court, grande gâchette avec dragonne isotherme, livraison internationale</p>
                                         <button onClick={() => {navigate("/terminaux/RS5000X-TCFSXWR"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>

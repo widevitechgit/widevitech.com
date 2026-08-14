@@ -12,13 +12,18 @@ import rs5 from "../images/RS5.jfif"
 import rs21 from "../images/RS21.jfif"
 import zc32 from "../images/ZC32.jpg"
 import zd621 from "../images/ZD621.jpg"
+import zd621r from "../images/ZD621r.jpg"
 import zq620 from "../images/ZQ620.jpg"
 import zq630 from "../images/ZQ630.jpg"
 import zt231 from "../images/ZT231.jpg"
 import zd510 from "../images/ZD510-HC.jpg"
+import zq511r from "../images/zq511r.jpg"
 import zt411 from "../images/zt411.jpg"
 import zt620 from "../images/zt620.jpg"
+import zq310_plus from "../images/zq310-plus.jpg"
 import zt510 from "../images/zt510.jpg"
+import zc10l from "../images/zc10l.jpg"
+import zxp7 from "../images/zxp7.jpg"
 
 // Un seul état remplace les 12 booléens
 // "portables" | "embarques" | "transportables"
@@ -329,13 +334,31 @@ export default function Imprimante() {
         
                         {categorie === "bureau" && (
                             <div>
-                                <h1 className="text-xl mb-7">Produits de <span className="text-xl font-bold">1 - 1</span></h1>
+                                <h1 className="text-xl mb-7">Produits de <span className="text-xl font-bold">1 - 3</span></h1>
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={zd621} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZD621<br /><span className="text-[14px]">&#40;ZD6A142-31EF00EZ&#41;</span></h1>
-                                        <p>Imprimante à transfert thermique (74/300 m) ZD621, écran tactile couleur LCD, 203 ppp, USB, hôte USB, Ethernet, série, BTLE5, distributeur (décolleur), câbles UE et Royaume-Uni, police suisse, EZPL</p>
+                                        <h1 className="text-2xl font-bold">ZD621</h1>
+                                        <p>
+                                            Imprimante à transfert thermique (74/300 m) ZD621, écran tactile couleur LCD, 203 ppp, USB, hôte USB, Ethernet, série, BTLE5, distributeur (décolleur), câbles UE et Royaume-Uni, police suisse, EZPL
+                                        </p>
                                         <button onClick={() => {navigate("/imprimantes/ZD6A142-31EF00EZ"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={zd621r} alt="" className="flex w-55 mx-auto" />
+                                        <h1 className="text-2xl font-bold">ZD621R</h1>
+                                        <p>
+                                            Imprimante à transfert thermique (74/300 m) ZD621R, écran tactile couleur LCD, 203 ppp, USB, hôte USB, Ethernet, série, BTLE5, ROW, RFID UHF, câbles UE et Royaume-Uni, police suisse, EZPL
+                                        </p>
+                                        <button onClick={() => {navigate("/imprimantes/ZD6A142-31EF00EZ0"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={zd510} alt="" className="flex w-55 mx-auto" />
+                                        <h1 className="text-2xl font-bold">ZD510-HC</h1>
+                                        <p>
+                                            Bracelet pour imprimante DT ZD510, ZPL II, XML, 300 dpi, câbles UE et Royaume-Uni, USB, hôte USB, Ethernet uniquement
+                                        </p>
+                                        <button onClick={() => {navigate("/imprimantes/ZD51013-D0ER00FZ0"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                 </div>
                             </div>
@@ -346,14 +369,26 @@ export default function Imprimante() {
                                 <h1 className="text-xl mb-7">Produits de <span className="text-xl font-bold">1 - 2</span></h1>
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={zq310_plus} alt="" className="flex w-55 mx-auto" />
+                                        <h1 className="text-2xl font-bold">ZQ310 Plus</h1>
+                                        <p>Imprimante DT ZQ310 Plus, 802AC/BT 4.X, papier ligné, avec capteur d'étiquettes, intérieur, anglais, groupe E</p>
+                                        <button onClick={() => {navigate("/imprimantes/ZQ31-A0W03RE-00"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={zq511r} alt="" className="flex w-55 mx-auto" />
+                                        <h1 className="text-2xl font-bold">ZQ511R</h1>
+                                        <p>Imprimante DT ZQ511, largeur du support 3,15 pouces / 80 mm, polices anglaises/latines, RFID, double Wi-Fi 802.11ac/Bluetooth 4.X, batterie standard, certifications EMEA</p>
+                                        <button onClick={() => {navigate("/imprimantes/ZQ51-BUW030E-00"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={zq620} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZQ620<br /><span className="text-[14px]">&#40;ZQ62-AUWAE14-00&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ZQ620</h1>
                                         <p>Imprimante DT ZQ620 Plus 3 / 72 mm, polices anglaises, double connectivité 802.11ac / BT4.x, plateau ligné, noyau 0,75 mm, groupe E, bandoulière, clip ceinture</p>
                                         <button onClick={() => {navigate("/imprimantes/ZQ62-AUWAE14-00"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={zq630} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZQ630<br /><span className="text-[14px]">&#40;ZQ63-AUFAE14-00&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ZQ630</h1>
                                         <p>Imprimante DT ZQ630 Plus, polices anglaises, BT 4.x, plateau ligné, noyau de 0,75 pouce, groupe E, bandoulière, clip ceinture</p>
                                         <button onClick={() => {navigate("/imprimantes/ZQ63-AUFAE14-00"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -367,43 +402,43 @@ export default function Imprimante() {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={zt231} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZT231<br /><span className="text-[14px]">&#40;ZT23143-T0E000FZ&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ZT231</h1>
                                         <p>Imprimante TT ZT231, 4 pouces, 300 dpi, transfert thermique, découpe facile, câbles EU/UK, USB, série, Ethernet, BTLE, hôte USB, EZPL</p>
                                         <button onClick={() => {navigate("/imprimantes/ZT23143-T0E000FZ"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={zt411} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZT411<br /><span className="text-[14px]">&#40;ZT41142-T0E0000Z&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ZT411</h1>
                                         <p>Imprimante TT ZT411, 4 pouces, 203 dpi, câble européen et britannique, série, USB, Ethernet 10/100, Bluetooth 4.1/MFi, hôte USB, EZPL</p>
                                         <button onClick={() => {navigate("/imprimantes/ZT41142-T0E0000Z"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={zt411} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZT411<br /><span className="text-[14px]">&#40;ZT41143-T0E0000Z&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ZT411</h1>
                                         <p>Imprimante TT ZT411, 4 pouces, 300 dpi, câble européen et britannique, série, USB, Ethernet 10/100, Bluetooth 4.1/MFi, hôte USB, EZPL</p>
                                         <button onClick={() => {navigate("/imprimantes/ZT41143-T0E0000Z"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={zt620} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZT620<br /><span className="text-[14px]">&#40;ZT62062-T0E0100Z&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ZT620</h1>
                                         <p>Imprimante TT ZT620, 6 pouces, 203 dpi, câble européen et britannique, série, USB, Ethernet Gigabit, Bluetooth 4.1, hôte USB, fonction Tear, écran tactile couleur, ZPL</p>
                                         <button onClick={() => {navigate("/imprimantes/ZT62062-T0E0100Z"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={zt620} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZT620<br /><span className="text-[14px]">&#40;ZT62063-T0E0100Z&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ZT620</h1>
                                         <p>Imprimante TT ZT620, 6 pouces, 300 dpi, câble européen et britannique, série, USB, Ethernet Gigabit, Bluetooth 4.0, hôte USB, fonction Tear, écran tactile couleur, ZPL</p>
                                         <button onClick={() => {navigate("/imprimantes/ZT62063-T0E0100Z"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={zt510} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZT510<br /><span className="text-[14px]">&#40;ZT51042-T0E0000Z&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ZT510</h1>
                                         <p>Imprimante TT ZT620, 6 pouces, 300 dpi, câble européen et britannique, série, USB, Ethernet Gigabit, Bluetooth 4.0, hôte USB, fonction Tear, écran tactile couleur, ZPL</p>
                                         <button onClick={() => {navigate("/imprimantes/ZT51042-T0E0000Z"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={zt510} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZT510<br /><span className="text-[14px]">&#40;ZT51043-T2E0000Z&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ZT510</h1>
                                         <p>Imprimante TT ZT620, 6 pouces, 300 dpi, câble européen et britannique, série, USB, Ethernet Gigabit, Bluetooth 4.0, hôte USB, fonction Tear, écran tactile couleur, ZPL</p>
                                         <button onClick={() => {navigate("/imprimantes/ZT51043-T2E0000Z"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -416,14 +451,20 @@ export default function Imprimante() {
                                 <h1 className="text-xl mb-7">Produits de <span className="text-xl font-bold">1 - 2</span></h1>
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
-                                        <img src={zc11} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZC100<br /><span className="text-[14px]">&#40;ZC11-0000Q00EM00&#41;</span></h1>
-                                        <p>Imprimante ZC100, recto, câbles UK/EU, USB uniquement, pilote Windows, application CardStudio 2.0 (standard), 200 cartes PVC, ruban YMCKO (200 images)</p>
-                                        <button onClick={() => {navigate("/imprimantes/ZC11-0000Q00EM00"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                        <img src={zc10l} alt="" className="flex w-55 mx-auto" />
+                                        <h1 className="text-2xl font-bold">ZC10L</h1>
+                                        <p>Imprimante ZC10L, support pour cartes épaisses, USB 2.0, pilote Windows, démo 2.0, US, EMEA, LA, APAC ARTICLE DE CLASSE 5 FABRIQUÉ PAR LE CLIENT, DEMANDER UN DEVIS.</p>
+                                        <button onClick={() => {navigate("/imprimantes/ZC10L-00QT0US00"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={zxp7} alt="" className="flex w-50 mx-auto" />
+                                        <h1 className="text-2xl font-bold">ZXP 7</h1>
+                                        <p>Imprimante ZXP Series 7 PRO, double face, câbles UK/EU, USB, Ethernet 10/100, aimant ISO HiCo/LoCo sélectionnable par logiciel, bac de sortie haute capacité</p>
+                                        <button onClick={() => {navigate("/imprimantes/Z72-0M0C00H0EM00"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={zc11} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZC300<br /><span className="text-[14px]">&#40;ZC32-000CQ00EM00&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ZC300</h1>
                                         <p>Imprimante ZC300, recto verso, câble UK/EU, USB et Ethernet, pilote Windows, application CardStudio 2.0 (standard), 200 cartes PVC, ruban YMCKOK (200 images)</p>
                                         <button onClick={() => {navigate("/imprimantes/ZC32-000CQ00EM00"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -437,7 +478,7 @@ export default function Imprimante() {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={rs5} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">RS5000X<br /><span className="text-[14px]">&#40;RS5000X-TCFSSWR&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">RS5000X</h1>
                                         <p>Scanner portable filaire RS5000X, SE4770, câble court, déclenchement standard au doigt, distribution mondiale</p>
                                         <button onClick={() => {navigate("/imprimantes/RS5000X-TCFSSWR-MOT"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -451,7 +492,7 @@ export default function Imprimante() {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={zd510} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZD510-HC<br /><span className="text-[14px]">&#40;ZD51013-D0ER00FZ&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ZD510-HC</h1>
                                         <p>Bracelet pour imprimante DT ZD510, ZPL II, XML, 300 dpi, câbles UE et Royaume-Uni, USB, hôte USB, Ethernet uniquement</p>
                                         <button onClick={() => {navigate("/imprimantes/ZD51013-D0ER00FZ"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>

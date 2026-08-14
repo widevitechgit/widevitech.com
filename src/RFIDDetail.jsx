@@ -8,6 +8,9 @@ import mc3330xr from "../images/MC3330XR.jpg"
 import fxr90 from "../images/FXR90.jpg"
 import an720 from "../images/AN720.jpg"
 import zd621r from "../images/ZD621R.jpg"
+import rfd40 from "../images/rfd40s.jpg"
+import tc22r from "../images/tc22r.jpg"
+import rfd9030 from "../images/rfd9030.jpg"
 
 // ─── Accent couleur selon la catégorie ─────────────────────────────────────────
 function accentFromGradient(gradient) {
@@ -152,6 +155,157 @@ const PRODUITS = {
             "Wi-Fi 802.11ac pour une connexion réseau rapide en entrepôt",
             "Batterie haute capacité pour les journées de travail les plus longues",
             "47 touches pour une saisie de données complète sur le terrain",
+        ],
+    },
+
+    "RFD9031-G30G700-WR": {
+        nom: "RFD9030",
+        sku: "RFD9031-G30G700-WR",
+        image: rfd9030,
+        medias: [
+            { type: "image", src: rfd9030 }
+        ],
+        categorie: "portables",
+        couleurGradient: "from-blue-900 via-blue-700 to-blue-500",
+        accroche: "Sled RFID UHF ultra-robuste à portée standard avec Wi-Fi 6, Bluetooth 5.3 et lecture 1 300+ tags/s",
+        description:
+            "Le RFD9030 est un sled RFID UHF ultra-robuste conçu pour accélérer les inventaires, la gestion des stocks et le suivi des actifs dans les environnements exigeants. Il offre un débit de lecture supérieur à 1 300 tags par seconde et une portée standard d'environ 6,7 mètres. Sa batterie PowerPrecision+ de 7 000 mAh, sa connectivité Wi-Fi 6 et Bluetooth 5.3, ainsi que sa conception renforcée IP65/IP67 en font une solution adaptée aux opérations intensives dans les secteurs de la logistique, du transport et de la fabrication.",
+        specs: [
+            { label: "Type", valeur: "Sled RFID UHF ultra-robuste" },
+            { label: "Modèle", valeur: "RFD9030 — portée standard" },
+            { label: "Technologie RFID", valeur: "Technologie radio propriétaire Zebra" },
+            { label: "Standards RFID", valeur: "EPC Class 1 Gen 2, EPC Gen2 V2" },
+            { label: "Vitesse de lecture", valeur: "Plus de 1 300 tags/seconde" },
+            { label: "Portée de lecture", valeur: "Environ 6,7 m" },
+            { label: "Fréquences", valeur: "902–928 MHz (US), 865–868 MHz (UE), 916–921 MHz (Japon)" },
+            { label: "Puissance RF", valeur: "Jusqu'à 30 dBm EIRP" },
+            { label: "Batterie", valeur: "PowerPrecision+ Li-Ion 7 000 mAh" },
+            { label: "Wi-Fi", valeur: "Wi-Fi 6" },
+            { label: "Bluetooth", valeur: "Bluetooth 5.3" },
+            { label: "Connectivité avec terminaux", valeur: "eConnex avec adaptateurs interchangeables" },
+            { label: "NFC", valeur: "Appairage NFC" },
+            { label: "Déclencheur", valeur: "Déclencheur programmable à trois fonctions" },
+            { label: "Imageur", valeur: "Imageur intégré selon configuration" },
+            { label: "Indicateurs", valeur: "LED Bluetooth, Wi-Fi, décodage, batterie et état" },
+            { label: "Signal sonore", valeur: "Buzzer" },
+            { label: "Dimensions", valeur: "189 × 83,4 × 173 mm" },
+            { label: "Poids", valeur: "714 g avec SE4750MR / 751 g avec SE4850" },
+            { label: "Indice de protection", valeur: "IP65 et IP67" },
+            { label: "Résistance aux chutes", valeur: "Chutes multiples de 1,8 m sur béton" },
+            { label: "Résistance aux chocs", valeur: "500 cycles de chute de 0,5 m" },
+            { label: "Température de fonctionnement", valeur: "-20 °C à 55 °C" },
+            { label: "Humidité", valeur: "5 à 85 % sans condensation" },
+        ],
+        points: [
+            "Lecture RFID UHF à plus de 1 300 tags par seconde",
+            "Portée standard d'environ 6,7 mètres",
+            "Batterie PowerPrecision+ haute capacité de 7 000 mAh",
+            "Wi-Fi 6 pour la gestion et la mise à jour du périphérique",
+            "Bluetooth 5.3 pour la connexion aux smartphones et terminaux compatibles",
+            "Adaptateurs eConnex interchangeables pour différents terminaux mobiles Zebra",
+            "Déclencheur programmable à trois fonctions",
+            "Conception ultra-robuste avec protection IP65 et IP67",
+            "Résistance aux chutes multiples de 1,8 m sur béton",
+            "Idéal pour les inventaires rapides, le suivi des actifs, la logistique et la fabrication",
+        ],
+    },
+
+    "RFD4030-G00B700-WR": {
+        nom: "RFD40 Standard",
+        sku: "RFD4030-G00B700-WR",
+        image: rfd40,
+        medias: [
+            { type: "image", src: rfd40 }
+        ],
+        categorie: "portables",
+        couleurGradient: "from-blue-900 via-blue-700 to-blue-500",
+        accroche: "Lecteur RFID UHF portable haute performance avec 1 300+ tags/s et batterie 7 000 mAh",
+        description:
+            "Le RFD40 Standard est un lecteur RFID UHF portable conçu pour accélérer les opérations d'inventaire, de localisation d'articles et de gestion des actifs. Il offre une vitesse de lecture de plus de 1 300 tags par seconde et une portée nominale d'environ 6 mètres. Sa batterie PowerPrecision+ de 7 000 mAh, son déclencheur programmable à trois fonctions et sa connexion eConnex permettent de l'associer rapidement aux terminaux mobiles Zebra compatibles tout en restant robuste pour les environnements professionnels.",
+        specs: [
+            { label: "Type", valeur: "Lecteur RFID UHF portable (sled)" },
+            { label: "Technologie RFID", valeur: "Technologie radio propriétaire Zebra" },
+            { label: "Standards RFID", valeur: "EPC Class 1 Gen 2, EPC Gen2 V2" },
+            { label: "Vitesse de lecture", valeur: "Plus de 1 300 tags/seconde" },
+            { label: "Portée de lecture", valeur: "Environ 6 m (19,7+ ft)" },
+            { label: "Fréquences", valeur: "US 902–928 MHz, UE 865–868 MHz, Japon 916–921 MHz" },
+            { label: "Puissance RF", valeur: "Jusqu'à 30 dBm EIRP" },
+            { label: "Batterie", valeur: "PowerPrecision+ Li-Ion 7 000 mAh" },
+            { label: "Déclencheur", valeur: "Déclencheur programmable à trois fonctions" },
+            { label: "Connectivité", valeur: "eConnex, USB-C" },
+            { label: "Hôte", valeur: "Terminaux mobiles et tablettes Zebra compatibles, PC Windows" },
+            { label: "Mémoire batch", valeur: "Jusqu'à 40 000 tags RFID" },
+            { label: "Voyants", valeur: "LED de décodage et LED d'état de batterie" },
+            { label: "Signal sonore", valeur: "Buzzer" },
+            { label: "Dimensions", valeur: "15,1 × 8,4 × 16,65 cm" },
+            { label: "Poids", valeur: "Environ 541 g avec batterie" },
+            { label: "Indice de protection", valeur: "IP54" },
+            { label: "Résistance aux chutes", valeur: "Chutes multiples de 1,5 m sur béton" },
+            { label: "Résistance aux chocs", valeur: "500 cycles de chute de 0,5 m" },
+            { label: "Température de fonctionnement", valeur: "-10 °C à 50 °C" },
+            { label: "Humidité", valeur: "5 à 85 % sans condensation" },
+        ],
+        points: [
+            "Lecture RFID UHF à plus de 1 300 tags par seconde",
+            "Portée de lecture nominale d'environ 6 mètres",
+            "Batterie PowerPrecision+ haute capacité de 7 000 mAh",
+            "Connexion rapide aux terminaux Zebra compatibles grâce à eConnex",
+            "Connexion USB-C possible avec un PC Windows ou un autre hôte",
+            "Mode batch permettant de stocker jusqu'à 40 000 tags RFID",
+            "Déclencheur programmable à trois fonctions pour accélérer les opérations",
+            "Conception robuste avec protection IP54",
+            "Résistance à plusieurs chutes de 1,5 m sur béton",
+            "Idéal pour la gestion des stocks, l'inventaire, le suivi des actifs et la recherche d'articles",
+        ],
+    },
+
+    "TC2205-0G1250SS-WR": {
+        nom: "TC22R",
+        sku: "TC2205-0G1250SS-WR",
+        image: tc22r,
+        medias: [
+            { type: "image", src: tc22r }
+        ],
+        categorie: "portables",
+        couleurGradient: "from-blue-900 via-blue-700 to-blue-500",
+        accroche: "Terminal mobile professionnel renforcé 6 pouces avec Wi-Fi 6E, scan 1D/2D et Android",
+        description:
+            "Le TC22R est un terminal mobile professionnel compact conçu pour les environnements de vente, d'hôtellerie, d'entreposage, de distribution et de collecte de données. Il associe un écran Full HD+ de 6 pouces à un processeur Qualcomm 2,1 GHz, une connectivité Wi-Fi 6E et Bluetooth 5.2, ainsi qu'une capacité de capture de données avec imageur 1D/2D. Sa conception robuste, son écran tactile utilisable avec des gants et ses batteries remplaçables permettent de l'utiliser efficacement tout au long de la journée.",
+        specs: [
+            { label: "Type", valeur: "Terminal mobile professionnel Android" },
+            { label: "Écran", valeur: "6 pouces Full HD+ (1080 × 2160), 450 nits" },
+            { label: "Processeur", valeur: "Qualcomm hexacœur 2,1 GHz" },
+            { label: "Mémoire", valeur: "6 Go RAM / 64 Go UFS Flash" },
+            { label: "Extension stockage", valeur: "MicroSD jusqu'à 2 To" },
+            { label: "Scanner", valeur: "SE4710 1D/2D ou SE55 Advanced Range selon configuration" },
+            { label: "Caméra arrière", valeur: "16 MP" },
+            { label: "Caméra avant", valeur: "5 MP" },
+            { label: "NFC", valeur: "NFC ISO 14443 A/B, MIFARE, FeliCa et ISO 15693" },
+            { label: "Wi-Fi", valeur: "Wi-Fi 6E (802.11ax), 2x2 MU-MIMO" },
+            { label: "Bluetooth", valeur: "Bluetooth 5.2" },
+            { label: "USB", valeur: "USB 3.1 Type-C" },
+            { label: "Batterie standard", valeur: "PowerPrecision Li-Ion 3800 mAh" },
+            { label: "Batterie étendue", valeur: "5200 mAh disponible en option" },
+            { label: "Clavier", valeur: "Clavier virtuel à l'écran" },
+            { label: "Boutons", valeur: "Deux boutons de scan dédiés, bouton programmable, volume et alimentation" },
+            { label: "Audio", valeur: "Double haut-parleur, microphones avec réduction du bruit" },
+            { label: "Dimensions", valeur: "165 × 76,3 × 12,5 mm" },
+            { label: "Poids", valeur: "236 g avec batterie 3800 mAh" },
+            { label: "Indice de protection", valeur: "IP65 / IP68" },
+            { label: "Résistance aux chutes", valeur: "Jusqu'à 1,5 m selon configuration et protection" },
+            { label: "Système", valeur: "Android" },
+        ],
+        points: [
+            "Grand écran Full HD+ de 6 pouces adapté aux applications professionnelles",
+            "Wi-Fi 6E pour une connectivité réseau rapide et fiable",
+            "Capture de codes-barres 1D et 2D avec imageur Zebra",
+            "Caméras arrière 16 MP et avant 5 MP",
+            "Batterie PowerPrecision+ 3800 mAh avec option 5200 mAh",
+            "Écran tactile utilisable avec les doigts nus ou des gants légers",
+            "Conception robuste avec protection IP65/IP68",
+            "Résistance aux chutes pour une utilisation dans les environnements professionnels",
+            "USB 3.1 Type-C pour la communication et la recharge",
+            "Idéal pour la gestion des stocks, le picking, la vente, la réception et la collecte de données",
         ],
     },
 
@@ -310,7 +464,6 @@ export default function RFIDDetail() {
                         <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-[1.05] text-black">
                             {produit.nom}
                         </h1>
-                        <p className="text-gray-400 font-mono text-sm">{produit.sku}</p>
                         <p className="text-gray-600 leading-relaxed text-lg">{produit.accroche}</p>
 
                         <div className="flex flex-wrap gap-3 mt-2">
@@ -417,14 +570,13 @@ export default function RFIDDetail() {
                             {autresModeles.map((p) => (
                                 <button
                                     key={p.sku}
-                                    onClick={() => navigate(`/rfid/${p.sku}`)}
+                                    onClick={() => {navigate(`/rfid/${p.sku}`), window.scrollTo(0,0)}}
                                     className="bg-white border border-gray-100 rounded-2xl p-6 flex flex-col items-center gap-3 text-center hover:shadow-lg transition-all"
                                 >
                                     <div className="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center">
                                         <img src={p.image} alt={p.nom} className="w-24 h-28 object-contain" />
                                     </div>
                                     <h3 className="font-bold text-black">{p.nom}</h3>
-                                    <p className="text-gray-400 font-mono text-xs">{p.sku}</p>
                                 </button>
                             ))}
                         </div>

@@ -55,7 +55,7 @@ export default function Contact() {
     };
 
     return (
-        <section className="min-h-screen bg-black text-white pt-30 pb-16 px-6 md:px-16">
+        <section className="min-h-screen bg-black text-white pt-30 md:pt-50 pb-16 px-6 md:px-16">
             <div className="max-w-6xl mx-auto flex flex-col gap-10">
                 <div className="text-center flex flex-col gap-3">
                     <h1 className="md:text-4xl text-3xl font-bold uppercase">
@@ -73,25 +73,24 @@ export default function Contact() {
                         <div>
                             <h2 className="text-xl font-semibold mb-1">Adresse</h2>
                             <p className="text-gray-200">
-                                Marcory Zone 4, Boulevard Valery Giscard d'Estaing
+                                33 Boulevard de Marseille, Abidjan
                                 <br />
                                 Abidjan, Côte d'Ivoire
                             </p>
                         </div>
                         <div>
                             <h2 className="text-xl font-semibold mb-1">Téléphone</h2>
-                            <p className="text-gray-200">+225 07 03 04 XX XX</p>
+                            <p className="text-gray-200">+225 07 07 90 29 30</p>
+                            <p className="text-gray-200">+225 07 87 80 95 78</p>
                         </div>
                         <div>
                             <h2 className="text-xl font-semibold mb-1">Email</h2>
-                            <p className="text-gray-200">contact@widevitech.com</p>
+                            <p className="text-gray-200">commercial@widevitech.com</p>
                         </div>
                         <div>
                             <h2 className="text-xl font-semibold mb-1">Horaires</h2>
                             <p className="text-gray-200">
                                 Lundi - Vendredi : 8h00 - 18h00
-                                <br />
-                                Samedi : 9h00 - 13h00
                             </p>
                         </div>
                     </div>

@@ -14,6 +14,9 @@ import mc3330xr from "../images/MC3330XR.jpg"
 import fxr90 from "../images/FXR90.jpg"
 import an720 from "../images/AN720.jpg"
 import zd621r from "../images/ZD621R.jpg"
+import rfd40 from "../images/rfd40s.jpg"
+import tc22r from "../images/tc22r.jpg"
+import rfd9030 from "../images/rfd9030.jpg"
 
 export default function RFID () {
     const [searchParams, setSearchParams] = useSearchParams()
@@ -231,12 +234,30 @@ export default function RFID () {
                     <div className="flex flex-col text-start">
 
                         {categorie === "portables" && (
-                            <div>
+                            <div >
                                 <h1 className="text-xl mb-7">Produits de <span className="text-xl font-bold">1 - 1</span></h1>
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={rfd40} alt="" className="flex w-55 mx-auto" />
+                                        <h1 className="text-2xl font-bold">RFD40 STANDARD</h1>
+                                        <p>Pays de l'utilisateur final, voir les commentaires RFD40, Standard, Antenne polarisée circulaire à portée standard, RFID UHF uniquement, Pistolet, Sans imageur, Batterie 7000 mAh, Noir minuit, 900 MHz mondial</p>
+                                        <button onClick={() => {navigate("/rfid/RFD4030-G00B700-WR"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={tc22r} alt="" className="flex w-55 mx-auto" />
+                                        <h1 className="text-2xl font-bold">TC22R</h1>
+                                        <p>Lecteur RFID portable intégré TC22R, format pistolet, Wi-Fi 6, Android GMS, caméras SE4710 + FF/FF + RFID portée standard, 6 Go à 64 Go de stockage, batterie standard 7 000 mAh, compatible avec le réseau mondial 900 MHz.</p>
+                                        <button onClick={() => {navigate("/rfid/TC2205-0G1250SS-WR"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={rfd9030} alt="" className="flex w-55 mx-auto" />
+                                        <h1 className="text-2xl font-bold">RFD9030</h1>
+                                        <p>RFD90, support Premium Plus, antenne polarisée circulaire à portée standard, RFID UHF, Bluetooth, Wi-Fi, pistolet, imageur SE4750MR, batterie 7000 mAh, noir minuit/vert industriel, 900 MHz mondial</p>
+                                        <button onClick={() => {navigate("/rfid/RFD9031-G30G700-WR"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={mc3330xr} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">MC3330XR<br /><span className="text-[14px]">&#40;MC333U-GJ4EG4EU&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">MC3330XR</h1>
                                         <p>Pistolet RFID UHF MC3330XR, antenne circulaire, Wi-Fi 802.11 a/b/g/n/ac, lecteur 2D SE4770, 47 touches, batterie haute capacité, GMS, 4 Go de RAM / 32 Go de ROM, bandes ETSI</p>
                                         <button onClick={() => {navigate("/rfid/MC333U-GJ4EG4EU"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -250,7 +271,7 @@ export default function RFID () {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={fxr90} alt="" className="flex w-75 mx-auto" />
-                                        <h1 className="text-2xl font-bold">FXR90<br /><span className="text-[14px]">&#40;FXR90011-400000-WR&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">FXR90</h1>
                                         <p>Lecteur RFID fixe ultra-robuste FXR90, RFID UHF, Bluetooth 5.3, Wi-Fi 6, antenne linéaire à polarisation croisée intégrée, 4 ports d'antenne externes, compatible avec les fréquences mondiales 800 MHz et 900 MHz</p>
                                         <button onClick={() => {navigate("/rfid/FXR90011-400000-WR"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -264,7 +285,7 @@ export default function RFID () {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={an720} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">AN720<br /><span className="text-[14px]">&#40;AN720-L51NF00WEU&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">AN720</h1>
                                         <p>ANT: RFID, ROBUSTE, FRÉQUENCE EU, ARTICLE À UTILISATION RESTREINTE DE CLASSE 4, CERTIFICATION CORRESPONDANTE REQUISE.</p>
                                         <button onClick={() => {navigate("/rfid/AN720-L51NF00WEU"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -278,7 +299,7 @@ export default function RFID () {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={zd621r} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ZD621R<br /><span className="text-[14px]">&#40;ZD6A142-30ELR2EZ&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ZD621R</h1>
                                         <p>La Zebra ZD621R est une imprimante d’étiquettes RFID professionnelle offrant une impression haute qualité en 203 dpi, un écran tactile couleur intuitif et de nombreuses options de connectivité. Idéale pour la gestion d’inventaire, la traçabilité et les applications logistiques nécessitant l’encodage RFID UHF.</p>
                                         <button onClick={() => {navigate("/rfid/ZD6A142-30ELR2EZ"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>

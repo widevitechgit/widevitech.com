@@ -582,7 +582,6 @@ export default function TermPortDetail() {
                         <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-[1.05] text-black">
                             {produit.nom}
                         </h1>
-                        <p className="text-gray-400 font-mono text-sm">{produit.sku}</p>
                         <p className="text-gray-600 leading-relaxed text-lg">{produit.accroche}</p>
 
                         <div className="flex flex-wrap gap-3 mt-2">

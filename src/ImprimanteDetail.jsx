@@ -7,6 +7,8 @@ import {
 import zc11 from "../images/ZC11.png"
 import zc32 from "../images/ZC32.jpg"
 import zd621 from "../images/ZD621.jpg"
+import zq310_plus from "../images/zq310-plus.jpg"
+import zq511r from "../images/zq511r.jpg"
 import zq620 from "../images/ZQ620.jpg"
 import zq630 from "../images/ZQ630.jpg"
 import zt231 from "../images/ZT231.jpg"
@@ -15,6 +17,8 @@ import rs5 from "../images/RS5.jfif"
 import zt411 from "../images/zt411.jpg"
 import zt620 from "../images/zt620.jpg"
 import zt510 from "../images/zt510.jpg"
+import zxp7 from "../images/zxp7.jpg"
+import zc10l from "../images/zc10l.jpg"
 
 // ─── Accent couleur selon la catégorie ─────────────────────────────────────────
 function accentFromGradient(gradient) {
@@ -162,6 +166,157 @@ const PRODUITS = {
             "Connectivité BTLE5 pour la gestion sans fil",
             "Compatible EZPL pour une intégration simplifiée aux systèmes Zebra",
             "Multi-interfaces pour s'adapter à toutes les infrastructures réseau",
+        ],
+    },
+
+    "ZD6A142-31EF00EZ0": {
+        nom: "ZD621R",
+        sku: "ZD6A142-31EF00EZ",
+        image: zd621,
+        medias: [
+            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/web-production/zd421-zd621-video-website-en-us.mp4/jcr:content/renditions/original" },
+            { type: "image", src: zd621 }
+        ],
+        categorie: "bureau",
+        couleurGradient: "from-orange-900 via-orange-700 to-orange-500",
+        accroche: "Imprimante de bureau à transfert thermique 203 dpi avec écran tactile couleur",
+        description:
+            "La ZD621 est l'imprimante de bureau de référence de Zebra pour les volumes faibles à moyens. Son écran tactile couleur LCD simplifie la configuration et le suivi, tandis que ses multiples interfaces (USB, Ethernet, série, BTLE5) assurent une intégration aisée dans tout environnement informatique.",
+        specs: [
+            { label: "Technologie", valeur: "Transfert thermique" },
+            { label: "Résolution", valeur: "203 dpi" },
+            { label: "Ruban", valeur: "74 / 300 m" },
+            { label: "Écran", valeur: "Tactile couleur LCD" },
+            { label: "Interfaces", valeur: "USB, hôte USB, Ethernet, Série, BTLE5" },
+            { label: "Distributeur", valeur: "Décolleur (peeler) inclus" },
+            { label: "Police", valeur: "Suisse" },
+            { label: "Langage", valeur: "EZPL" },
+            { label: "Câbles", valeur: "UE et Royaume-Uni inclus" },
+        ],
+        points: [
+            "Écran tactile couleur pour une configuration intuitive",
+            "Distributeur décolleur intégré pour l'application d'étiquettes à la volée",
+            "Connectivité BTLE5 pour la gestion sans fil",
+            "Compatible EZPL pour une intégration simplifiée aux systèmes Zebra",
+            "Multi-interfaces pour s'adapter à toutes les infrastructures réseau",
+            "RFID",
+        ],
+    },
+
+    "ZQ31-A0W03RE-00": {
+        nom: "ZQ310 Plus",
+        sku: "ZQ31-A0W03RE-00",
+        image: zq310_plus,
+        medias: [
+            { type: "image", src: zq310_plus }
+        ],
+        categorie: "mobiles",
+        couleurGradient: "from-orange-900 via-orange-700 to-orange-500",
+        accroche: "Imprimante mobile thermique directe 203 dpi avec connectivité Wi-Fi et Bluetooth",
+        description:
+            "La ZQ310 Plus est une imprimante mobile compacte de 2 pouces conçue pour l'impression de reçus, d'étiquettes et de supports linerless, directement sur le terrain. Elle offre une impression thermique directe en 203 dpi, une vitesse allant jusqu'à 102 mm/s et une largeur d'impression maximale de 48 mm. Cette version Indoor intègre une connectivité Wi-Fi 5 (802.11ac) et Bluetooth pour faciliter l'impression mobile et son intégration aux systèmes d'entreprise.",
+        specs: [
+            { label: "Technologie", valeur: "Thermique directe" },
+            { label: "Résolution", valeur: "203 dpi (8 points/mm)" },
+            { label: "Vitesse d'impression", valeur: "Jusqu'à 102 mm/s (4 ips)" },
+            { label: "Largeur d'impression", valeur: "48 mm (1,89 po)" },
+            { label: "Largeur du support", valeur: "58 mm, entretoises disponibles pour 50,8 mm" },
+            { label: "Mémoire", valeur: "128 MB RAM, 256 MB Flash (48 MB disponibles)" },
+            { label: "Batterie", valeur: "Li-Ion PowerPrecision+ 2280 mAh, 7,2 V" },
+            { label: "Connectivité", valeur: "Wi-Fi 5 (802.11ac), Bluetooth 4.x, USB" },
+            { label: "Langages", valeur: "CPCL, ZPL" },
+            { label: "Capteurs", valeur: "Marque noire, espace (optionnel)" },
+            { label: "Média", valeur: "Tickets, étiquettes et supports linerless" },
+            { label: "Diamètre maximal du rouleau", valeur: "40 mm" },
+            { label: "Dimensions", valeur: "130 × 93,5 × 49,5 mm" },
+            { label: "Poids avec batterie", valeur: "0,37 kg" },
+            { label: "Résistance", valeur: "IP54" },
+            { label: "Découpe", valeur: "Barre de déchirement" },
+        ],
+        points: [
+            "Impression mobile de reçus, étiquettes et supports linerless",
+            "Résolution de 203 dpi pour une impression nette des textes et codes-barres",
+            "Vitesse d'impression jusqu'à 102 mm/s",
+            "Connectivité Wi-Fi 5 et Bluetooth pour une utilisation sans fil",
+            "Batterie PowerPrecision+ 2280 mAh conçue pour une utilisation sur toute la journée",
+            "Compatible avec les langages d'impression CPCL et ZPL",
+            "Conception compacte et robuste avec indice de protection IP54",
+            "Applications idéales : étiquetage, gestion des stocks, point de vente et preuve de livraison",
+        ],
+    },
+
+    "ZQ51-BUW030E-00": {
+        nom: "ZQ511 RFID",
+        sku: "ZQ51-BUW030E-00",
+        image: zq511r,
+        medias: [
+            { type: "image", src: zq511r }
+        ],
+        categorie: "mobiles",
+        couleurGradient: "from-orange-900 via-orange-700 to-orange-500",
+        accroche: "Imprimante mobile RFID UHF 3 pouces, thermique directe 203 dpi, Wi-Fi 5 et Bluetooth",
+        description:
+            "La ZQ511 RFID est une imprimante mobile thermique directe 3 pouces conçue pour imprimer et encoder des étiquettes RFID UHF directement sur le terrain. Faisant partie de la série ZQ500, elle associe une conception extrêmement robuste à une impression jusqu'à 127 mm/s et une résolution de 203 dpi. Elle intègre le Wi-Fi 5 (802.11ac), le Bluetooth 4.1 et une batterie PowerPrecision+ de 3250 mAh, pour répondre aux besoins exigeants de la gestion des actifs, des stocks et des opérations mobiles.",
+        specs: [
+            { label: "Technologie", valeur: "Thermique directe" },
+            { label: "Résolution", valeur: "203 dpi (8 points/mm)" },
+            { label: "Vitesse d'impression", valeur: "Jusqu'à 127 mm/s (5 ips) avec mode Draft" },
+            { label: "Largeur d'impression", valeur: "72 mm (2,83 pouces)" },
+            { label: "Largeur du support", valeur: "35 à 80 mm" },
+            { label: "Diamètre maximal du rouleau", valeur: "51 mm" },
+            { label: "Mémoire", valeur: "256 MB RAM, 512 MB Flash" },
+            { label: "Batterie", valeur: "PowerPrecision+ Li-Ion 3250 mAh, 7,2 V" },
+            { label: "Batterie étendue", valeur: "6500 mAh en option" },
+            { label: "Connectivité", valeur: "Wi-Fi 5 (802.11ac), Bluetooth 4.1, Bluetooth Low Energy" },
+            { label: "Langages", valeur: "ZPL, CPCL" },
+            { label: "RFID", valeur: "UHF EPC Gen 2 V2, ISO/IEC 18000-63, RAIN RFID" },
+            { label: "Encodage RFID", valeur: "Technologie Adaptive Encoding" },
+            { label: "Supports", valeur: "Étiquettes RFID, étiquettes, reçus et tags" },
+            { label: "Capteur", valeur: "Détection de marque noire" },
+            { label: "Dimensions", valeur: "150 × 120 × 62 mm" },
+            { label: "Poids avec batterie standard", valeur: "0,63 kg" },
+            { label: "Indice de protection", valeur: "IP54" },
+            { label: "Système d'exploitation", valeur: "Link-OS" },
+        ],
+        points: [
+            "Impression et encodage RFID UHF directement sur le terrain",
+            "Compatible avec les protocoles EPC Gen 2 V2, ISO/IEC 18000-63 et RAIN RFID",
+            "Technologie Adaptive Encoding pour simplifier le paramétrage RFID",
+            "Résolution de 203 dpi pour des impressions nettes et précises",
+            "Vitesse d'impression jusqu'à 127 mm/s avec le mode Draft",
+            "Connectivité Wi-Fi 5 et Bluetooth 4.1 pour une utilisation mobile",
+            "Batterie PowerPrecision+ 3250 mAh avec batterie étendue 6500 mAh disponible en option",
+            "Conception ultra-robuste adaptée aux environnements difficiles",
+            "Compatible ZPL et CPCL pour une intégration aux systèmes Zebra",
+            "Idéale pour le suivi des actifs, la gestion des stocks et la traçabilité mobile",
+        ],
+    },
+
+    "ZD51013-D0ER00FZ0": {
+        nom: "ZD510-HC",
+        sku: "ZD51013-D0ER00FZ",
+        image: zd510,
+        medias: [{ type: "image", src: zd510 }],
+        categorie: "bureau",
+        couleurGradient: "from-blue-900 via-blue-700 to-blue-500",
+        accroche: "Imprimante de bracelets patients thermique directe 300 dpi pour le secteur de la santé",
+        description:
+            "La ZD510-HC est une imprimante spécialement conçue pour l'impression de bracelets patients en milieu hospitalier. Sa résolution de 300 dpi garantit la lisibilité parfaite des codes-barres sur bracelets, et son boîtier anti-microbien facilite les protocoles de désinfection en environnement de soins.",
+        specs: [
+            { label: "Technologie", valeur: "Thermique directe (DT)" },
+            { label: "Résolution", valeur: "300 dpi" },
+            { label: "Application", valeur: "Bracelets patients" },
+            { label: "Langages", valeur: "ZPL II, XML" },
+            { label: "Interfaces", valeur: "USB, hôte USB, Ethernet" },
+            { label: "Câbles", valeur: "UE et Royaume-Uni inclus" },
+            { label: "Boîtier", valeur: "Anti-microbien" },
+        ],
+        points: [
+            "Conçue spécifiquement pour l'impression de bracelets patients",
+            "300 dpi pour des codes-barres lisibles sur tous les scanners médicaux",
+            "Boîtier anti-microbien compatible avec les protocoles hospitaliers",
+            "Compatible ZPL II et XML pour l'intégration aux SIH",
+            "Ethernet pour un déploiement réseau partagé dans les services",
         ],
     },
 
@@ -518,34 +673,107 @@ const PRODUITS = {
     },
 
     // ── Cartes d'identification ────────────────────────────────────────────
-    "ZC11-0000Q00EM00": {
-        nom: "ZC100",
-        sku: "ZC11-0000Q00EM00",
-        image: zc11,
+    "ZC10L-00QT0US00": {
+        nom: "ZC10L",
+        sku: "ZC10L-00QT0US00",
+        image: zc10l,
         medias: [
-            { type: "video", src: "https://www.zebra.com/content/dam/zebra_dam/en/video/product-solutions-portfolio/0001/zc300-product-video.mp4/jcr:content/renditions/original" },
-            { type: "image", src: zc11 }
+            { type: "image", src: zc10l }
         ],
         categorie: "cartes",
         couleurGradient: "from-blue-900 via-blue-700 to-blue-500",
-        accroche: "Imprimante de cartes d'identification recto USB avec ruban YMCKO",
+        accroche: "Imprimante de cartes grand format 300 dpi avec impression couleur bord à bord",
         description:
-            "La ZC100 est l'imprimante d'entrée de gamme de Zebra pour la production de cartes d'identification et de badges. Elle inclut tout le nécessaire pour démarrer immédiatement : 200 cartes PVC, un ruban couleur YMCKO (200 images) et l'application CardStudio 2.0 Standard pour la conception des cartes.",
+            "La ZC10L est une imprimante de cartes grand format conçue pour produire à la demande des badges et cartes PVC personnalisés avec une impression couleur ou monochrome de qualité photo. Elle permet une impression simple face bord à bord en un seul passage, sans nécessiter de cartes préimprimées. Avec son format de carte d'environ 140 × 88 mm, elle est particulièrement adaptée aux événements, salons, concerts, festivals et applications d'identification nécessitant des badges facilement lisibles à distance.",
         specs: [
-            { label: "Impression", valeur: "Recto uniquement" },
-            { label: "Interface", valeur: "USB uniquement" },
-            { label: "Ruban inclus", valeur: "YMCKO — 200 images" },
-            { label: "Cartes incluses", valeur: "200 cartes PVC" },
-            { label: "Logiciel", valeur: "CardStudio 2.0 Standard" },
-            { label: "Pilote", valeur: "Windows" },
-            { label: "Câbles", valeur: "UK / EU inclus" },
+            { label: "Technologie", valeur: "Impression directe sur carte — diffusion de colorant" },
+            { label: "Résolution", valeur: "300 dpi" },
+            { label: "Impression", valeur: "Simple face, couleur ou monochrome" },
+            { label: "Impression couleur", valeur: "Jusqu'à 195 cartes/heure" },
+            { label: "Impression monochrome", valeur: "360 à 410 cartes/heure" },
+            { label: "Type d'impression", valeur: "Bord à bord" },
+            { label: "Format de carte", valeur: "140 × 88 mm (5,5 × 3,46 po)" },
+            { label: "Épaisseur de carte", valeur: "24 mil (0,61 mm)" },
+            { label: "Matériau", valeur: "PVC" },
+            { label: "Capacité d'entrée", valeur: "200 cartes" },
+            { label: "Capacité de sortie", valeur: "70 cartes" },
+            { label: "Mémoire", valeur: "64 MB" },
+            { label: "Interface standard", valeur: "USB 2.0" },
+            { label: "Réseau", valeur: "Ethernet 10/100 via serveur d'impression externe en option" },
+            { label: "Logiciel", valeur: "Zebra CardStudio 2.0 — version d'essai 30 jours" },
+            { label: "Pilote", valeur: "Microsoft Windows" },
+            { label: "Affichage", valeur: "LED multi-état" },
+            { label: "Dimensions", valeur: "485 × 278 × 290 mm" },
+            { label: "Poids", valeur: "21 kg" },
+            { label: "Alimentation", valeur: "90–264 V AC, 48–62 Hz" },
         ],
         points: [
-            "Kit complet inclus : cartes PVC, ruban YMCKO et logiciel CardStudio",
-            "Impression couleur recto pour badges, cartes d'accès et ID",
-            "Logiciel CardStudio 2.0 pour concevoir vos cartes facilement",
-            "Configuration simple via USB — prête à l'emploi en quelques minutes",
-            "Idéale pour les petits volumes de production de cartes",
+            "Impression grand format jusqu'à 140 × 88 mm",
+            "Impression couleur bord à bord en un seul passage",
+            "Résolution de 300 dpi pour des images de qualité photo",
+            "Impression couleur jusqu'à 195 cartes/heure",
+            "Impression monochrome jusqu'à 360–410 cartes/heure",
+            "Impression à la demande sans utiliser de cartes préimprimées",
+            "Bac d'alimentation de 200 cartes et sortie de 70 cartes",
+            "USB 2.0 standard et Ethernet disponible en option",
+            "Compatible avec Zebra CardStudio 2.0",
+            "Idéale pour les salons, concerts, festivals, événements sportifs et badges visiteurs",
+        ],
+    },
+
+    "Z72-0M0C00H0EM00": {
+        nom: "ZXP Series 7",
+        sku: "Z72-0M0C00H0EM00",
+        image: zxp7,
+        medias: [
+            { type: "image", src: zxp7 }
+        ],
+        categorie: "cartes",
+        couleurGradient: "from-blue-900 via-blue-700 to-blue-500",
+        accroche: "Imprimante professionnelle de cartes 300 dpi à impression simple ou double face",
+        description:
+            "La ZXP Series 7 est une imprimante professionnelle de cartes conçue pour les applications d'identification, de contrôle d'accès et d'émission de cartes en volume. Elle offre une impression couleur ou monochrome de qualité quasi photographique, en simple ou double face, avec une impression bord à bord sur les cartes CR-80. Elle combine une cadence élevée, une capacité d'alimentation de 250 cartes et des options d'encodage magnétique, contact et sans contact ainsi que RFID UHF.",
+        specs: [
+            { label: "Technologie", valeur: "Sublimation thermique couleur / transfert thermique monochrome" },
+            { label: "Résolution", valeur: "300 dpi (11,8 points/mm)" },
+            { label: "Impression", valeur: "Simple ou double face" },
+            { label: "Qualité d'impression", valeur: "Qualité quasi photographique" },
+            { label: "Impression", valeur: "Bord à bord sur cartes CR-80" },
+            { label: "Vitesse couleur", valeur: "300 cartes/heure en YMCKO, simple face" },
+            { label: "Vitesse couleur recto-verso", valeur: "225 cartes/heure en YMCKOK" },
+            { label: "Vitesse monochrome", valeur: "1 375 cartes/heure, simple face" },
+            { label: "Vitesse monochrome recto-verso", valeur: "555 cartes/heure" },
+            { label: "Capacité d'entrée", valeur: "250 cartes (30 mil)" },
+            { label: "Capacité de sortie", valeur: "100 cartes (30 mil)" },
+            { label: "Bac de rejet", valeur: "15 cartes (30 mil)" },
+            { label: "Alimentation manuelle", valeur: "Insertion carte par carte" },
+            { label: "Cartes compatibles", valeur: "CR-80 / ISO 7810 / Type ID-1" },
+            { label: "Épaisseur des cartes", valeur: "10 à 50 mil (0,25 à 1,27 mm)" },
+            { label: "Épaisseur pour laminage", valeur: "30 mil (0,76 mm)" },
+            { label: "Matériaux", valeur: "PVC, composite, ABS, PET, PET-G, PET-F, PETix et Teslin" },
+            { label: "Interfaces", valeur: "USB 2.0, Ethernet 10/100" },
+            { label: "Écran", valeur: "LCD 21 caractères × 6 lignes avec touches configurables" },
+            { label: "Ruban couleur", valeur: "YMCKO : 250 ou 750 images" },
+            { label: "Ruban couleur recto-verso", valeur: "YMCKOK : 250 ou 750 images" },
+            { label: "Ruban monochrome", valeur: "Jusqu'à 5 000 images selon le ruban" },
+            { label: "Encodage", valeur: "Bande magnétique, carte à puce contact, sans contact HF et RFID UHF" },
+            { label: "Laminage", valeur: "Option simple ou double face, sans déchet" },
+            { label: "Dimensions", valeur: "699 × 277 × 306 mm" },
+            { label: "Poids", valeur: "12,2 kg" },
+            { label: "Alimentation", valeur: "90–264 V AC, 47–63 Hz" },
+            { label: "Garantie", valeur: "2 ans sur l'imprimante et la tête d'impression" },
+        ],
+        points: [
+            "Impression couleur ou monochrome en simple et double face",
+            "Résolution de 300 dpi avec une qualité proche de la photographie",
+            "Impression bord à bord sur cartes CR-80",
+            "Jusqu'à 300 cartes couleur par heure en simple face",
+            "Jusqu'à 1 375 cartes monochromes par heure en simple face",
+            "Chargeur de 250 cartes et bac de sortie de 100 cartes",
+            "Encodage disponible pour cartes magnétiques, cartes à puce et RFID UHF",
+            "Option de laminage simple ou double face pour renforcer la protection des cartes",
+            "Connectivité USB 2.0 et Ethernet 10/100",
+            "Idéale pour les cartes d'identification, badges employés, contrôle d'accès et cartes de membres",
         ],
     },
 
@@ -636,6 +864,7 @@ const PRODUITS = {
             "Ethernet pour un déploiement réseau partagé dans les services",
         ],
     },
+
 }
 
 // ─── Composant principal ─────────────────────────────────────────────────────
@@ -704,7 +933,6 @@ export default function ImprimanteDetail() {
                         <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-[1.05] text-black">
                             {produit.nom}
                         </h1>
-                        <p className="text-gray-400 font-mono text-sm">{produit.sku}</p>
                         <p className="text-gray-600 leading-relaxed text-lg">{produit.accroche}</p>
 
                         <div className="flex flex-wrap gap-3 mt-2">
