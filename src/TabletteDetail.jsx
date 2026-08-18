@@ -8,6 +8,7 @@ import et40 from "../images/et40.jpg"
 import et40hc from "../images/ET40-HC.jpg"
 import et60 from "../images/ET60.jpg"
 import et80 from "../images/ET80.jpg"
+import et60w from "../images/et60w.jpg"
 
 // ─── Accent couleur selon la catégorie ─────────────────────────────────────────
 function accentFromGradient(gradient) {
@@ -152,6 +153,64 @@ const PRODUITS = {
             "Batterie longue durée pour des journées de travail intensives",
         ],
     },
+
+    "ET60WW-0S6DPS00A0-00": {
+        nom: "ET60W",
+        sku: "ET60WW-0S6DPS00A0-00",
+        image: et60w,
+        medias: [
+            { type: "image", src: et60w }
+        ],
+        gamme: "et6x",
+        couleurGradient: "from-orange-900 via-orange-700 to-orange-500",
+        accroche: "Tablette Windows durcie 10,1 pouces avec Intel Core Ultra 5 vPro, 16 Go de RAM et SSD 256 Go",
+        description:
+            "La Zebra ET60W est une tablette professionnelle Windows durcie conçue pour les environnements industriels, la logistique, les entrepôts, les opérations de terrain et les applications de maintenance. Cette configuration ET60WW-0S6DPS00A0-00 intègre un processeur Intel Core Ultra 5 vPro, 16 Go de mémoire LPDDR5, un SSD NVMe de 256 Go, une batterie standard de 36 Wh et Windows 11 Pro 64 bits. Son écran tactile WUXGA de 10,1 pouces offre une luminosité de 1 000 nits et fonctionne avec les doigts nus ou gantés ainsi qu'avec un stylet compatible. Avec son indice IP66, sa résistance aux chutes selon MIL-STD-810H et ses fonctions de connectivité Wi-Fi de nouvelle génération, l'ET60W est conçue pour assurer une productivité élevée dans les environnements exigeants.",
+        specs: [
+            { label: "Type", valeur: "Tablette professionnelle Windows durcie" },
+            { label: "Modèle", valeur: "ET60W" },
+            { label: "SKU", valeur: "ET60WW-0S6DPS00A0-00" },
+            { label: "Processeur", valeur: "Intel Core Ultra 5 135U vPro" },
+            { label: "Système d'exploitation", valeur: "Windows 11 Pro 64 bits" },
+            { label: "Mémoire", valeur: "16 Go LPDDR5" },
+            { label: "Stockage", valeur: "256 Go SSD M.2 2230 PCIe NVMe" },
+            { label: "Écran", valeur: "10,1 pouces WUXGA (1920 × 1200)" },
+            { label: "Luminosité", valeur: "1 000 nits" },
+            { label: "Écran tactile", valeur: "Multi-touch capacitif, doigts nus ou gantés, Corning Gorilla Glass" },
+            { label: "Ports", valeur: "1 × USB 3.1 Type-A, 2 × Thunderbolt 4 / USB4 Type-C" },
+            { label: "Connectivité", valeur: "Wi-Fi 7, compatible Wi-Fi 6E, 2×2 MU-MIMO" },
+            { label: "Bluetooth", valeur: "Bluetooth 5.x" },
+            { label: "Caméra arrière", valeur: "13 MP autofocus avec flash LED" },
+            { label: "Caméra avant", valeur: "5 MP RGB avec cache de confidentialité" },
+            { label: "Sécurité biométrique", valeur: "Caméra infrarouge compatible Windows Hello" },
+            { label: "Scanner intégré", valeur: "SE55 1D/2D IntelliFocus en option" },
+            { label: "Batterie", valeur: "36 Wh standard" },
+            { label: "Charge", valeur: "USB Power Delivery 3.0, 45 W" },
+            { label: "Hot Swap", valeur: "Oui, au moins 60 secondes" },
+            { label: "Dimensions", valeur: "275 × 199 × 18,3 mm" },
+            { label: "Poids", valeur: "Environ 1,2 kg" },
+            { label: "Indice de protection", valeur: "IP66" },
+            { label: "Résistance aux chutes", valeur: "MIL-STD-810H, jusqu'à 1,5 m sur béton" },
+            { label: "Température de fonctionnement", valeur: "-29 °C à +63 °C" },
+            { label: "Température de stockage", valeur: "-40 °C à +70 °C" },
+            { label: "Certification atmosphères explosives", valeur: "Classe 1 Division 2 sur certaines configurations" },
+        ],
+        points: [
+            "Configuration exacte avec Intel Core Ultra 5 vPro, 16 Go de RAM et SSD 256 Go",
+            "Windows 11 Pro 64 bits pour les applications professionnelles et industrielles",
+            "Écran WUXGA 10,1 pouces de 1 000 nits adapté aux environnements lumineux",
+            "Écran tactile utilisable avec les doigts nus ou gantés",
+            "Wi-Fi 7 avec prise en charge des bandes 2,4 GHz, 5 GHz et 6 GHz",
+            "Deux ports Thunderbolt 4 / USB4 Type-C et un port USB Type-A",
+            "Batterie standard 36 Wh avec véritable fonction Hot Swap",
+            "Résistance IP66 contre la poussière et les projections d'eau",
+            "Conception renforcée conforme aux exigences MIL-STD-810H",
+            "Caméra arrière 13 MP et caméra avant 5 MP avec support Windows Hello",
+            "Scanner 1D/2D SE55 disponible en option",
+            "Conçue pour les entrepôts, la logistique, la fabrication et les interventions sur le terrain"
+        ],
+    },
+
     "ET45CB-101D2B0-A6": {
         nom: "ET45",
         sku: "ET45CB-101D2B0-A6",
@@ -362,7 +421,6 @@ export default function TabletteDetail() {
                         <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-[1.05] text-black">
                             {produit.nom}
                         </h1>
-                        <p className="text-gray-400 font-mono text-sm">{produit.sku}</p>
                         <p className="text-gray-600 leading-relaxed text-lg">{produit.accroche}</p>
 
                         <div className="flex flex-wrap gap-3 mt-2">
@@ -378,7 +436,6 @@ export default function TabletteDetail() {
                                         state: {
                                             produit: {
                                                 nom: produit.nom,
-                                                sku: produit.sku,
                                                 image: produit.image,
                                                 categorie: produit.categorie,
                                                 accroche: produit.accroche,
@@ -476,7 +533,6 @@ export default function TabletteDetail() {
                                         <img src={p.image} alt={p.nom} className="w-24 h-28 object-contain" />
                                     </div>
                                     <h3 className="font-bold text-black">{p.nom}</h3>
-                                    <p className="text-gray-400 font-mono text-xs">{p.sku}</p>
                                 </button>
                             ))}
                         </div>

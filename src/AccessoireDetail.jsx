@@ -544,7 +544,6 @@ export default function AccessoireDetail() {
                         </button>
                         <p className="text-sm font-bold uppercase tracking-widest text-white/60">ACCESSOIRES ZEBRA</p>
                         <h1 className="text-5xl font-bold leading-tight">{produit.nom}</h1>
-                        <p className="text-white/80 font-mono text-sm">{produit.sku}</p>
                         <p className="text-lg text-white/90 leading-relaxed">{produit.accroche}</p>
                         <div className="flex flex-wrap gap-3 mt-4">
                             <button onClick={() => navigate('/Contact-Commercial')} className="bg-white text-black font-semibold px-6 py-3 rounded-full hover:bg-orange-100 transition-colors">

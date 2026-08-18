@@ -251,13 +251,13 @@ export default function Scanner() {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={ds2208} alt="" className="flex w-55 mx-auto rounded-2xl" />
-                                        <h1 className="text-2xl font-bold">DS2208<br /><span className="text-[14px]">&#40;DS2208-SR00007ZZWW&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">DS2208</h1>
                                         <p>DS2208 : Caméra de surface, portée standard, filaire, noir crépuscule</p>
                                         <button onClick={() => {navigate("/scanners/DS2208-SR00007ZZWW"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={ls2208} alt="" className="flex w-40 mx-auto rounded-2xl" />
-                                        <h1 className="text-2xl font-bold">LS2208<br /><span className="text-[14px]">&#40;LS2208-SR20007R-UR&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">LS2208</h1>
                                         <p>KT:LS2208, NOIR, CÂBLE USB, SUPPORT</p>
                                         <button onClick={() => {navigate("/scanners/LS2208-SR20007R-UR"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -271,19 +271,19 @@ export default function Scanner() {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={ds3600} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">DS3678-HP<br /><span className="text-[14px]">&#40;DS3678-HP3U42A0SFW&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">DS3678-HP</h1>
                                         <p>Kit DS3678-HP RUGGED GREEN STANDARD CASTER USB (sans câble d'alimentation) : scanner DS3678-HP2F003VZWW, câble USB blindé CBA-U42-S07PAR (compatible avec une alimentation 12 V), socle STB3678-C100F3WW, alimentation PWRS-14000-148R</p>
                                         <button onClick={() => {navigate("/scanners/DS3678-HP3U42A0SFW"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={ds3600} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">DS3608<br /><span className="text-[14px]">&#40;DS3608-SR00003VZWW&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">DS3608</h1>
                                         <p>DS3608 : Caméra de surface robuste, gamme standard, filaire, vert industriel, moteur à vibration</p>
                                         <button onClick={() => {navigate("/scanners/DS3608-SR00003VZWW"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={ds3600xr} alt="" className="flex w-40 mx-auto" />
-                                        <h1 className="text-2xl font-bold">DS3678-XR<br /><span className="text-[14px]">&#40;DS3678-XR3U42A2SVW&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">DS3678-XR</h1>
                                         <p>Kit DS3678-XR robuste avec moteur à vibration vert, station d'accueil standard et port USB (sans câble d'alimentation) : scanner DS3678-XR6F003VZWW, câble USB blindé CBA-U42-S07PAR (compatible avec une alimentation 12 V), station d'accueil STB3678-C100F3WW, alimentation PWR-BGA12V50W0WW</p>
                                         <button onClick={() => {navigate("/scanners/DS3678-XR3U42A2SVW"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -297,7 +297,7 @@ export default function Scanner() {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={ds55} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">DS5502-SR<br /><span className="text-[14px]">&#40;DS5502-SR4US70MMZW&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">DS5502-SR</h1>
                                         <p>Kit USB DS5502-SR Noir (avec support multiple) : Scanner DS5502-SR40004ZZWW, câble USB CBL-U10755-01 7_, BRKT-MM0055C-04</p>
                                         <button onClick={() => {navigate("/scanners/DS5502-SR4US70MMZW"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -311,13 +311,13 @@ export default function Scanner() {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={ds8208hc} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">DS8208-HC<br /><span className="text-[14px]">&#40;DS8208-HC4000BVZWW&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">DS8208-HC</h1>
                                         <p>DS8208 : APPAREIL D'IMAGERIE DE ZONE, SOINS DE SANTÉ, FILAIRE, ÉCLAIRAGE BLANC, HC BLANC, VIBRATION</p>
                                         <button onClick={() => {navigate("/scanners/DS8208-HC4000BVZWW"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={ds8208hc} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">DS8208-HC<br /><span className="text-[14px]">&#40;DS8208-HCBU2104ZVW&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">DS8208-HC</h1>
                                         <p>KIT USB à vibrations blanches DS8208-HC : scanner DS8208-HC4000BVZWW, câble USB blindé CBA-U21-S07ZBR</p>
                                         <button onClick={() => {navigate("/scanners/DS8208-HCBU2104ZVW"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>

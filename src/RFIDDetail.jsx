@@ -11,6 +11,9 @@ import zd621r from "../images/ZD621R.jpg"
 import rfd40 from "../images/rfd40s.jpg"
 import tc22r from "../images/tc22r.jpg"
 import rfd9030 from "../images/rfd9030.jpg"
+import fx96 from "../images/fx9600.jpg"
+import an480 from "../images/an480.jpg"
+import an650 from "../images/an650.jpg"
 
 // ─── Accent couleur selon la catégorie ─────────────────────────────────────────
 function accentFromGradient(gradient) {
@@ -342,6 +345,55 @@ const PRODUITS = {
         ],
     },
 
+    "FX9600-42325A50-WR": {
+        nom: "FX9600",
+        sku: "FX9600-42325A50-WR",
+        image: fx96,
+        medias: [
+            { type: "image", src: fx96 }
+        ],
+        categorie: "fixe",
+        couleurGradient: "from-orange-900 via-orange-700 to-orange-500",
+        accroche: "Lecteur RFID fixe UHF haute performance pour les environnements industriels et les applications à fort volume",
+        description:
+            "Le Zebra FX9600 est un lecteur RFID fixe UHF conçu pour les environnements à fort volume et à forte densité, notamment les entrepôts, centres de distribution, transports, logistique, fabrication et commerce de détail. Cette version FX9600-42325A50-WR est équipée de 4 ports d'antenne RF et prend en charge les standards ISO 18000-63 et EPC Class 1 Gen 2 V2. Elle offre une excellente sensibilité RF, une connectivité Ethernet, USB et série, ainsi que l'alimentation PoE et PoE+. Son boîtier en aluminium moulé et son indice de protection IP53 permettent une utilisation dans des environnements professionnels exigeants.",
+        specs: [
+            { label: "Type", valeur: "Lecteur RFID fixe UHF" },
+            { label: "Technologie RFID", valeur: "RAIN RFID / UHF" },
+            { label: "Protocoles", valeur: "ISO 18000-63 / EPC Class 1 Gen 2 V2" },
+            { label: "Configuration", valeur: "4 ports RF monostatiques" },
+            { label: "Connecteurs antennes", valeur: "Reverse Polarity TNC" },
+            { label: "Sensibilité de réception", valeur: "-86 dBm monostatique" },
+            { label: "Fréquences", valeur: "865–868 MHz et 902–928 MHz (version mondiale)" },
+            { label: "Puissance RF", valeur: "Jusqu'à +33 dBm avec PoE+ / alimentation 24 VDC" },
+            { label: "Ethernet", valeur: "10/100Base-T RJ45" },
+            { label: "USB", valeur: "USB Host et Client Type A/B" },
+            { label: "Port série", valeur: "DB9" },
+            { label: "GPIO", valeur: "4 entrées / 4 sorties opto-isolées" },
+            { label: "Alimentation", valeur: "PoE 802.3af / PoE+ 802.3at / 24 VDC" },
+            { label: "Wi-Fi / Bluetooth", valeur: "Pris en charge via dongle Wi-Fi/Bluetooth optionnel" },
+            { label: "Boîtier", valeur: "Aluminium moulé sous pression" },
+            { label: "Indice de protection", valeur: "IP53" },
+            { label: "Température de fonctionnement", valeur: "-20 °C à +55 °C" },
+            { label: "Dimensions", valeur: "27,3 × 18,4 × 5,0 cm" },
+            { label: "Poids", valeur: "Environ 2,13 kg" },
+            { label: "Système", valeur: "Linux" },
+            { label: "Mémoire", valeur: "512 MB Flash / 256 MB DRAM" },
+        ],
+        points: [
+            "Lecteur RFID UHF hautes performances conçu pour les environnements à fort volume",
+            "Version mondiale FX9600-42325A50-WR avec prise en charge des bandes 865–868 MHz et 902–928 MHz",
+            "4 ports d'antenne RF monostatiques pour les portails, quais et zones de lecture",
+            "Excellente sensibilité RF jusqu'à -86 dBm pour une lecture fiable et une grande portée",
+            "Prise en charge de PoE et PoE+ pour simplifier l'installation et réduire le câblage",
+            "Connectivité Ethernet, USB et série pour une intégration flexible",
+            "4 entrées et 4 sorties GPIO opto-isolées pour l'intégration aux équipements industriels",
+            "Boîtier robuste en aluminium avec indice de protection IP53",
+            "Wi-Fi et Bluetooth disponibles via un dongle externe compatible",
+            "Compatible avec 123RFID Desktop et les solutions de gestion RFID Zebra"
+        ],
+    },
+
     // ── Antennes ───────────────────────────────────────────────────────────
     "AN720-L51NF00WEU": {
         nom: "AN720",
@@ -368,6 +420,97 @@ const PRODUITS = {
             "Haute performance de portée pour couvrir de grandes surfaces",
             "Compatible avec toute la gamme de lecteurs fixes Zebra",
             "Conçue pour le suivi précis des stocks et des actifs en temps réel",
+        ],
+    },
+
+    "AN650-FCL71324EU": {
+        nom: "AN650",
+        sku: "AN650-FCL71324EU",
+        image: an650,
+        medias: [
+            { type: "image", src: an650 }
+        ],
+        categorie: "antennes",
+        couleurGradient: "from-orange-900 via-orange-700 to-orange-500",
+        accroche: "Antenne RFID UHF ultra-plate pour le suivi au sol — 9 dBiC et protection IP65",
+        description:
+            "La Zebra AN650 est une antenne RFID UHF ultra-plate et ultra-robuste conçue pour les applications de lecture au sol et les zones de passage. Avec seulement 8 mm d'épaisseur, elle peut être installée sous un tapis ou un autre revêtement et s'intègre discrètement dans l'environnement. Sa polarisation circulaire droite, son gain de 9 dBiC et sa conception robuste la rendent particulièrement adaptée au suivi des personnes et des biens dans les passages, portes, entrées, événements et autres zones de contrôle.",
+        specs: [
+            { label: "Type", valeur: "Antenne RFID UHF ultra-plate de sol" },
+            { label: "Technologie", valeur: "RAIN RFID / UHF" },
+            { label: "Fréquences", valeur: "865–956 MHz" },
+            { label: "Bandes", valeur: "865–868 MHz (ETSI) / 902–928 MHz (FCC)" },
+            { label: "Gain", valeur: "9 dBiC" },
+            { label: "Polarisation", valeur: "Circulaire droite (RHCP)" },
+            { label: "Rapport axial", valeur: "< 2 dB" },
+            { label: "VSWR", valeur: "1,4:1" },
+            { label: "Puissance maximale", valeur: "3 W" },
+            { label: "Connecteur", valeur: "SMA femelle" },
+            { label: "Indice de protection", valeur: "IP65" },
+            { label: "Température de fonctionnement", valeur: "-20 °C à +55 °C" },
+            { label: "Dimensions", valeur: "915 × 305 × 8 mm" },
+            { label: "Épaisseur", valeur: "8 mm" },
+            { label: "Montage", valeur: "Au sol / sous tapis ou revêtement" },
+        ],
+        points: [
+            "Antenne RFID UHF ultra-plate de seulement 8 mm d'épaisseur",
+            "Conçue pour être dissimulée sous un tapis ou un autre revêtement",
+            "Gain élevé de 9 dBiC pour les applications de lecture au sol",
+            "Polarisation circulaire droite pour une lecture fiable des tags",
+            "Large couverture de fréquences de 865 à 956 MHz",
+            "Indice de protection IP65 pour une utilisation dans des environnements exigeants",
+            "Conçue pour le suivi des personnes et des biens dans les passages et zones de contrôle",
+            "Adaptée aux portes, entrées, points de passage, événements et applications de suivi",
+            "Format de 915 × 305 mm pour couvrir efficacement une zone de passage",
+            "Conception ultra-basse pour une intégration discrète dans l'installation",
+        ],
+    },
+
+    "AN480-CL66100WR": {
+        nom: "AN480",
+        sku: "AN480-CL66100WR",
+        image: an480,
+        medias: [
+            { type: "image", src: an480 }
+        ],
+        categorie: "antennes",
+        couleurGradient: "from-orange-900 via-orange-700 to-orange-500",
+        accroche: "Antenne RFID UHF large bande haute performance 6 dBiL — couverture mondiale",
+        description:
+            "La Zebra AN480 est une antenne RFID UHF large bande haute performance conçue pour les déploiements RFID à l'échelle mondiale. Son unique port d'antenne et sa réponse en fréquence de 865 à 956 MHz offrent une grande flexibilité pour les environnements de vente au détail, d'entreprise, d'entrepôt, de fabrication et de logistique. Avec un gain de 6,0 dBiL, une polarisation circulaire gauche ou droite et un boîtier robuste IP54, l'AN480 est adaptée aux zones de lecture autour des rayonnages, aux portes, passages, portails, convoyeurs et quais de chargement.",
+        specs: [
+            { label: "Type", valeur: "Antenne RFID UHF large bande" },
+            { label: "Technologie", valeur: "RAIN RFID / UHF" },
+            { label: "Ports", valeur: "1 port" },
+            { label: "Plage de fréquences", valeur: "865–956 MHz" },
+            { label: "Gain", valeur: "6,0 dBiL" },
+            { label: "Polarisation", valeur: "Circulaire gauche ou circulaire droite" },
+            { label: "Rapport avant/arrière", valeur: "18 dB" },
+            { label: "Ouverture à -3 dB", valeur: "65° dans les deux plans" },
+            { label: "Rapport axial", valeur: "1,5 dB typique" },
+            { label: "Puissance maximale", valeur: "2 W" },
+            { label: "VSWR", valeur: "1,3:1" },
+            { label: "Connecteur", valeur: "N-Type Female" },
+            { label: "Emplacement connecteur", valeur: "Arrière" },
+            { label: "Protection", valeur: "IP54" },
+            { label: "Température de fonctionnement", valeur: "-25 °C à +70 °C" },
+            { label: "Température de stockage", valeur: "-40 °C à +70 °C" },
+            { label: "Dimensions", valeur: "259,1 × 259,1 × 33,5 mm" },
+            { label: "Poids", valeur: "1,13 kg" },
+            { label: "Boîtier", valeur: "Aluminium avec capot en plastique blanc" },
+            { label: "Montage", valeur: "Goujons de fixation fournis" },
+        ],
+        points: [
+            "Antenne large bande couvrant 865 à 956 MHz pour les déploiements RFID mondiaux",
+            "Gain de 6,0 dBiL pour une couverture de lecture performante",
+            "Polarisation circulaire gauche ou droite pour s'adapter aux besoins de l'installation",
+            "1 port d'antenne avec connecteur N-Type Female situé à l'arrière",
+            "Ouverture de 65° à -3 dB dans les deux plans pour une couverture équilibrée",
+            "Indice de protection IP54 pour une utilisation dans des environnements professionnels exigeants",
+            "Boîtier en aluminium avec capot plastique blanc robuste",
+            "Compatible avec les supports et options de montage Zebra",
+            "Adaptée aux rayonnages, portes, passages, portails, convoyeurs et quais de chargement",
+            "Conçue pour les environnements de vente au détail, entrepôts, fabrication et logistique"
         ],
     },
 

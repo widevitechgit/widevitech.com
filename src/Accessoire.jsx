@@ -223,19 +223,19 @@ export default function Accessoire () {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={p10} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">KIT<br /><span className="text-[14px]">&#40;P1031365-042&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">KIT</h1>
                                         <p>KIT ACC,QLn/ZQ5/ZQ6,ZQ6 Plus,ADAPTATEUR CA POUR MOBILE, CÂBLE UE</p>
                                         <button onClick={() => {navigate("/accessoires/P1031365-042"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={kit} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">CLEANING CARD KIT<br /><span className="text-[14px]">&#40;105999-311-01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">CLEANING CARD KIT</h1>
                                         <p>Kit de cartes de nettoyage (amélioré), ZC100/300, 5 cartes</p>
                                         <button onClick={() => {navigate("/accessoires/105999-311-01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={tete} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">TÊTE D’IMPRESSION<br /><span className="text-[14px]">&#40;P1058930-012&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">TÊTE D’IMPRESSION</h1>
                                         <p>Kit, tête d'impression 203 dpi, ZT420, ZT421</p>
                                         <button onClick={() => {navigate("/accessoires/P1058930-012"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -249,55 +249,55 @@ export default function Accessoire () {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={cbl_tc51} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">CBL TC51<br /><span className="text-[14px]">&#40;CBL-TC51-USB1-01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">CBL TC51</h1>
                                         <p>CÂBLE DE CHARGE/USB ROBUSTE TC51</p>
                                         <button onClick={() => {navigate("/accessoires/CBL-TC51-USB1-01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={cbl_mc33} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">CBL-MC33<br /><span className="text-[14px]">&#40;CBL-MC33-USBCHG-01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">CBL-MC33</h1>
                                         <p>Le câble USB et de charge MC3300 / MC3300x / MC3300ax, MC3400 / MC3450 permet une charge rapide lorsqu'il est utilisé avec une batterie MC33x/MC34x et un adaptateur secteur. De plus, il assure la communication USB avec l'appareil lorsqu'il est connecté à un ordinateur.</p>
                                         <button onClick={() => {navigate("/accessoires/CBL-MC33-USBCHG-01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={cbl_tc5x} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">CBL-TC5X<br /><span className="text-[14px]">&#40;CBL-TC5X-USBC2A-01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">CBL-TC5X</h1>
                                         <p>Câble de communication et de charge USB-A vers USB-C. Ce câble mesure environ 1 mètre (3,25 pieds). Il peut être utilisé avec l'adaptateur allume-cigare USB (CHG-AUTO-USB1-01) pour la charge en véhicule.</p>
                                         <button onClick={() => {navigate("/accessoires/CBL-TC5X-USBC2A-01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={sac_mc33} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">Four-slot battery charger<br /><span className="text-[14px]">&#40;SAC-MC33-4SCHG-01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">Four-slot battery charger</h1>
                                         <p>Chargeur de batterie à quatre emplacements pour MC3300 / MC3300x / MC3300ax, MC3400 / MC3450. Vendus séparément : bloc d’alimentation (PWR-BGA12V50W0WW), câble CC (CBL-DC-388A1-01) et cordon d’alimentation secteur spécifique au pays.</p>
                                         <button onClick={() => {navigate("/accessoires/SAC-MC33-4SCHG-01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={crd_mc33} alt="" className="flex w-35 mx-auto" />
-                                        <h1 className="text-2xl font-bold">CRADLE MC33<br /><span className="text-[14px]">&#40;CRD-MC33-2SUCHG-01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">CRADLE MC33</h1>
                                         <p>Chargeur à un emplacement avec station de charge USB pour un appareil MC3300/MC3300x/MC3300ax, MC3400/MC3450 et sa batterie. Vendus séparément : bloc d’alimentation (PWR-BGA12V50W0WW), câble CC (CBL-DC-388A1-01), câble micro-USB (25-124330-01R), câble d’alimentation secteur (spécifique au pays).</p>
                                         <button onClick={() => {navigate("/accessoires/CRD-MC33-2SUCHG-01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={kit_crd} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">KIT STATION DE CHARGE ET CONNEXION<br /><span className="text-[14px]">&#40;KT-CRD-MC33-2SUCHG01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">KIT STATION DE CHARGE ET CONNEXION</h1>
                                         <p>KIT Station de Charge et de Connexion pour 1 Terminal MC33 contenant un chargeur de batterie 1 position avec 1 Port micro USB Maître/Esclave. Garantie 1 an.﻿ Inclus : Câble d'Alimentation (CBL-DC-388A1-01); Alimentation (PWR-BGA12V50W0WW); Câble avec Prise Secteur Europe Terre (50-16000-220R). Ne contient pas le Câble USB (25-124330-01R) ﻿à commander.</p>
                                         <button onClick={() => {navigate("/accessoires/KT-CRD-MC33-2SUCHG01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={coque} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">COQUE TC22/TC27<br /><span className="text-[14px]">&#40;SG-TC2L-BOOT-01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">COQUE TC22/TC27</h1>
                                         <p>Coque de protection pour TC22/TC27 compatible avec la dragonne et utilisable avec batterie standard ou étendue.</p>
                                         <button onClick={() => {navigate("/accessoires/SG-TC2L-BOOT-01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={trigger} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ELECTRONIC TRIGGER<br /><span className="text-[14px]">&#40;TRG-NGTC7-ELEC-01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ELECTRONIC TRIGGER</h1>
                                         <p>Poignée électronique à gâchette. Utilise une gâchette électrique via les contacts situés à l'arrière du TC73/TC78. Compatible avec les batteries standard et à capacité étendue. Vendu séparément : Courroie de poignet optionnelle SG-PD40-WLD1-01.</p>
                                         <button onClick={() => {navigate("/accessoires/TRG-NGTC7-ELEC-01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={handle} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">TRIGGER HANDLE<br /><span className="text-[14px]">&#40;TRG-TC2L-SNP1-01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">TRIGGER HANDLE</h1>
                                         <p>Poignée avec Gachette pour lecture codes barres pour TC22/27. Nécessite la coque de protection référence SG-TC2L-BOOT-01.</p>
                                         <button onClick={() => {navigate("/accessoires/TRG-TC2L-SNP1-01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -311,43 +311,43 @@ export default function Accessoire () {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={cordon} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">CORDON<br /><span className="text-[14px]">&#40;50-16000-220R&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">CORDON</h1>
                                         <p>CORDON : PWR, 18 AWG, 6 A, 250 V, EUROPE</p>
                                         <button onClick={() => {navigate("/accessoires/50-16000-220R"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={cbl_dc} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">CBL-DC<br /><span className="text-[14px]">&#40;CBL-DC-388A1-01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">CBL-DC</h1>
                                         <p>CÂBLE D'ASSEMBLAGE, ALIMENTATION, 12 V CC, 4,16 A</p>
                                         <button onClick={() => {navigate("/accessoires/CBL-DC-388A1-01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={cbl_tc2x} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">CBL-ET51<br /><span className="text-[14px]">&#40;CBL-TC2X-USBC-01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">CBL-ET51</h1>
                                         <p>Un câble USB-A vers USB-C se connectant au port USB-C situé sous l'appareil. Ce câble mesure environ 1,5 mètre (5 pieds) de long et est muni d'une perle de ferrite.</p>
                                         <button onClick={() => {navigate("/accessoires/CBL-TC2X-USBC-01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={crd_et4x} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">CRD-ET4X<br /><span className="text-[14px]">&#40;CRD-ET4X-4S10I1-01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">CRD-ET4X</h1>
                                         <p>Station de charge ET4X à quatre emplacements pour 10 ET40, ET45, ET40HC, ET45HC (Compatible avec les tablettes 10 pouces, exosquelettes, terminaux de paiement, extensions, dragonnes médicales) (Alimentation vendue séparément)</p>
                                         <button onClick={() => {navigate("/accessoires/CRD-ET4X-4S10I1-01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={cable} alt="" className="flex w-45 mx-auto" />
-                                        <h1 className="text-2xl font-bold">CÂBLE AVEC PRISE<br /><span className="text-[14px]">&#40;450042&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">CÂBLE AVEC PRISE</h1>
                                         <p>CORDON D'ALIMENTATION, ADAPTATEUR D'ALIMENTATION EU (ET8X,L10,R12) ARTICLE RESTREINT CLASSE 4, CERTIFICATION CORRESPONDANTE REQUISE.</p>
                                         <button onClick={() => {navigate("/accessoires/450042"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={power} alt="" className="flex w-45 mx-auto" />
-                                        <h1 className="text-2xl font-bold">BLOC D'ALIMENTATION<br /><span className="text-[14px]">&#40;PWR-BGA12V50W0WW&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">BLOC D'ALIMENTATION</h1>
                                         <p>Bloc d'alimentation CA/CC de niveau VI permettant d'alimenter un socle à un emplacement ou un chargeur de batterie à quatre emplacements. Câble CC (CBL-DC-388A1-01) et cordon d'alimentation CA spécifique au pays vendus séparément.</p>
                                         <button onClick={() => {navigate("/accessoires/PWR-BGA12V50W0WW"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={protection} alt="" className="flex w-45 mx-auto" />
-                                        <h1 className="text-2xl font-bold">PROTECTION ET4X<br /><span className="text-[14px]">&#40;SG-ET4X-10EXOSKL1-01&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">PROTECTION ET4X</h1>
                                         <p>Protection supplémentaire pour ET4X 10 pouces. Augmente la protection contre les chutes à 1,55 m. Possède des points d'accroche pour les clips en D (SG ET4X DCLIPS 0) et les sangles (SG ET5X SHDRSTP 01 ou 58 40000 007R) Compatible avec les chargeurs mono et multiple.</p>
                                         <button onClick={() => {navigate("/accessoires/SG-ET4X-10EXOSKL1-01"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -361,7 +361,7 @@ export default function Accessoire () {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={btry} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">BATTERIE<br /><span className="text-[14px]">&#40;BTRY-36IAB0E-00&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">BATTERIE</h1>
                                         <p>BLOC-BATTERIE, BATTERIE DE RECHANGE, FAMILLE DS36XX</p>
                                         <button onClick={() => {navigate("/accessoires/BTRY-36IAB0E-00"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>

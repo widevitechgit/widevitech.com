@@ -14,6 +14,7 @@ import et40 from "../images/et40.jpg"
 import et60 from "../images/ET60.jpg"
 import et40hc from "../images/ET40-HC.jpg"
 import et80 from "../images/ET80.jpg"
+import et60w from "../images/et60w.jpg"
 
 export default function Tablette () {
     const [searchParams, setSearchParams] = useSearchParams()
@@ -36,9 +37,6 @@ export default function Tablette () {
             setCategorie(param)
         }
         else if (param === "et6x") {
-            setCategorie(param)
-        }
-        else if (param === "et8x") {
             setCategorie(param)
         }
         window.scrollTo(0, 0)
@@ -94,7 +92,7 @@ export default function Tablette () {
                     </div>
                 )}
 
-                {categorie === "et8x" && (
+                {/*{categorie === "et8x" && (
                     <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">TABLETTES</p>
@@ -107,7 +105,7 @@ export default function Tablette () {
                             <div className="absolute inset-0 bg-black/50"></div>
                         </div>
                     </div>
-                )}
+                )}*/}
             </section>
 
             {/* ───── SECTION PRODUITS ───── */}
@@ -150,7 +148,7 @@ export default function Tablette () {
                     </div>
                 )}
 
-                {categorie === "et8x" && (
+                {/*{categorie === "et8x" && (
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Gammes ET8x</p>
                         <h1 className="text-3xl font-bold text-black">Des tablettes durcies qui, comme vous, font toute la différence</h1>
@@ -160,7 +158,7 @@ export default function Tablette () {
                             pour garantir votre efficacité. Pour réussir et exceller, il vous faut les nouvelles tablettes durcies Windows Zebra ET80 et ET85 2-en-1.
                         </p>
                     </div>
-                )}
+                )}*/}
 
                 <div className="flex md:flex-row flex-col text-center items-center justify-center gap-4">
 
@@ -185,12 +183,12 @@ export default function Tablette () {
                         >
                             Gamme ET6x
                         </button>
-                        <button
+                        {/*<button
                             className={categorie === "et8x" ? "font-bold w-55 h-10 text-start p-2 hover:bg-orange-500" : "bg-white/50 w-55 h-10 text-start p-2 hover:bg-orange-500"}
                             onClick={() => switchCategorie("et8x")}
                         >
                             Gamme ET8x
-                        </button>
+                        </button>*/}
                     </div>
 
                     {/* ── Grille produits ── */}
@@ -202,13 +200,13 @@ export default function Tablette () {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={et40} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ET40<br /><span className="text-[14px]">&#40;ET40AB-001C1B0-A6&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ET40</h1>
                                         <p>ET40, 10 , WIFI6, SE4100, 4 Go/64 Go, ANDROID GMS, SKU RANGÉE</p>
                                         <button onClick={() => {navigate("/tablettes/ET40AB-001C1B0-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={et40} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ET45<br /><span className="text-[14px]">&#40;ET45CB-101D2B0-A6&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ET45</h1>
                                         <p>ET45, 10, 5G, Wi-Fi 6, SE4710, 8 Go/128 Go, Android GMS, ROW SKU</p>
                                         <button onClick={() => {navigate("/tablettes/ET45CB-101D2B0-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -222,13 +220,13 @@ export default function Tablette () {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={et40hc} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ET40-HC<br /><span className="text-[14px]">&#40;ET40AB-0H1C1B0-A6&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ET40-HC</h1>
                                         <p>ET40 HC, 10 pouces, Wi-Fi 6, SE4100, 4 Go/64 Go, Android GMS, ROW SKU</p>
                                         <button onClick={() => {navigate("/tablettes/ET40AB-0H1C1B0-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={et40hc} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ET45-HC<br /><span className="text-[14px]">&#40;ET45CB-1H1C1B0-A6&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ET45-HC</h1>
                                         <p>ET45 HC, 10 pouces, 5G, Wi-Fi 6, SE4100, 4 Go/64 Go, Android GMS, ROW SKU</p>
                                         <button onClick={() => {navigate("/tablettes/ET45CB-1H1C1B0-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
@@ -242,27 +240,33 @@ export default function Tablette () {
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={et60} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ET60<br /><span className="text-[14px]">&#40;ET60AW-0SQAGS00A0-A6&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ET60</h1>
                                         <p>ET60, écran tactile standard, 8/128 Go de RAM/mémoire flash, Android GMS, batterie standard, ROW</p>
                                         <button onClick={() => {navigate("/tablettes/ET60AW-0SQAGS00A0-A6"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={et60w} alt="" className="flex w-55 mx-auto" />
+                                        <h1 className="text-2xl font-bold">ET60W</h1>
+                                        <p>ET60W, Intel Core Ultra 5 vPro, 16/256 Go de RAM/SSD, Windows Pro, batterie standard</p>
+                                        <button onClick={() => {navigate("/tablettes/ET60WW-0S6DPS00A0-00"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                 </div>
                             </div>
                         )}
 
-                        {categorie === "et8x" && (
+                        {/*{categorie === "et8x" && (
                             <div>
                                 <h1 className="text-xl mb-7">Produits de <span className="text-xl font-bold">1 - 1</span></h1>
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={et80} alt="" className="flex w-55 mx-auto" />
-                                        <h1 className="text-2xl font-bold">ET80 2 EN 1<br /><span className="text-[14px]">&#40;ET80A-0P5B2-CF0&#41;</span></h1>
+                                        <h1 className="text-2xl font-bold">ET80 2 EN 1</h1>
                                         <p>Tablette robuste, ET80, 12 pouces, Wi-Fi, Windows Pro, i5, 16 Go, SSD 256 Go, BCR, lecteur d'empreintes digitales, NFC, IP65, garantie 3 ans</p>
                                         <button onClick={() => {navigate("/tablettes/ET80A-0P5B2-CF0"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
                                 </div>
                             </div>
-                        )}
+                        )}*/}
 
                     </div>
                 </div>

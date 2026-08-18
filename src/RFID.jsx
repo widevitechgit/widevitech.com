@@ -17,6 +17,9 @@ import zd621r from "../images/ZD621R.jpg"
 import rfd40 from "../images/rfd40s.jpg"
 import tc22r from "../images/tc22r.jpg"
 import rfd9030 from "../images/rfd9030.jpg"
+import fxr96 from "../images/fx9600.jpg"
+import an480 from "../images/an480.jpg"
+import an650 from "../images/an650.jpg"
 
 export default function RFID () {
     const [searchParams, setSearchParams] = useSearchParams()
@@ -40,9 +43,6 @@ export default function RFID () {
             setCategorie(param)
         }
         else if (param === "antennes") {
-            setCategorie(param)
-        }
-        else if (param === "imprimantes") {
             setCategorie(param)
         }
         window.scrollTo(0, 0)
@@ -125,7 +125,7 @@ export default function RFID () {
                     </div>
                 )}
 
-                {categorie === "imprimantes" && (
+                {/*{categorie === "imprimantes" && (
                     <div className="flex md:flex-row flex-col-reverse w-full justify-center md:gap-5 gap-2 md:pt-43 pt-17">
                         <div className="flex flex-col text-start items-start justify-center bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:h-120 h-70 md:p-15 p-7 w-full md:w-[40%] md:rounded-l-none rounded-2xl">
                             <p className="md:text-[15px] text-[13px] font-bold text-white/80">IMPRIMANTES</p>
@@ -147,7 +147,7 @@ export default function RFID () {
                             <div className="absolute inset-0 bg-black/50"></div>
                         </div>
                     </div>
-                )}
+                )}*/}
             </section>
 
             {/* ───── SECTION PRODUITS ───── */}
@@ -188,7 +188,7 @@ export default function RFID () {
                     </div>
                 )}
 
-                {categorie === "imprimantes" && (
+                {/* *{categorie === "imprimantes" && (
                     <div className="flex flex-col gap-5">
                         <p className="text-[15px] font-bold uppercase text-black/60">Imprimantes rfid</p>
                         <h1 className="text-3xl font-bold text-black">Des données RFID fiables</h1>
@@ -197,7 +197,7 @@ export default function RFID () {
                             cartes RFID RAIN partout où vous en avez besoin. Le codeur RFID installable en usine ou sur site permet de répondre à vos besoins actuels ou futurs.
                         </p>
                     </div>
-                )}
+                )}*/}
 
                 <div className="flex md:flex-row flex-col text-center items-center justify-center gap-4">
 
@@ -222,12 +222,12 @@ export default function RFID () {
                         >
                             Antennes RFID
                         </button>
-                        <button
+                        {/*<button
                             className={categorie === "imprimantes" ? "font-bold w-55 h-10 text-start p-2 hover:bg-orange-500" : "bg-white/50 w-55 h-10 text-start p-2 hover:bg-orange-500"}
                             onClick={() => switchCategorie("imprimantes")}
                         >
                             Imprimantes RFID
-                        </button>
+                        </button>*/}
                     </div>
 
                     {/* ── Grille produits ── */}
@@ -270,6 +270,12 @@ export default function RFID () {
                                 <h1 className="text-xl mb-7">Produits de <span className="text-xl font-bold">1 - 1</span></h1>
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={fxr96} alt="" className="flex w-75 mx-auto" />
+                                        <h1 className="text-2xl font-bold">FXR96</h1>
+                                        <p>LECTEUR RFID FIXE FX9600 - 4 PORTS, POE, GLOBAL</p>
+                                        <button onClick={() => {navigate("/rfid/FX9600-42325A50-WR"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={fxr90} alt="" className="flex w-75 mx-auto" />
                                         <h1 className="text-2xl font-bold">FXR90</h1>
                                         <p>Lecteur RFID fixe ultra-robuste FXR90, RFID UHF, Bluetooth 5.3, Wi-Fi 6, antenne linéaire à polarisation croisée intégrée, 4 ports d'antenne externes, compatible avec les fréquences mondiales 800 MHz et 900 MHz</p>
@@ -284,16 +290,28 @@ export default function RFID () {
                                 <h1 className="text-xl mb-7">Produits de <span className="text-xl font-bold">1 - 20</span></h1>
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
                                     <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={an480} alt="" className="flex w-50 mx-auto" />
+                                        <h1 className="text-2xl font-bold">AN480</h1>
+                                        <p>ANTENNE : 1 PORT LARGE BANDE - ARTICLE RESTREINT DE CLASSE 4, CERTIFICATION CORRESPONDANTE REQUISE.</p>
+                                        <button onClick={() => {navigate("/rfid/AN480-CL66100WR"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
                                         <img src={an720} alt="" className="flex w-35 mx-auto" />
                                         <h1 className="text-2xl font-bold">AN720</h1>
                                         <p>ANT: RFID, ROBUSTE, FRÉQUENCE EU, ARTICLE À UTILISATION RESTREINTE DE CLASSE 4, CERTIFICATION CORRESPONDANTE REQUISE.</p>
                                         <button onClick={() => {navigate("/rfid/AN720-L51NF00WEU"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
                                     </div>
+                                    <div className="flex flex-col text-start w-70 bg-white rounded-2xl p-4 gap-4">
+                                        <img src={an650} alt="" className="flex w-50 mx-auto" />
+                                        <h1 className="text-2xl font-bold">AN650</h1>
+                                        <p>ANTENNE DE SOL ULTRA-BAS, 800 MHz, IP65, 50 ohms, 3 W, ARTICLE À DISTANCE DE CLASSE 4, CERTIFICATION CORRESPONDANTE REQUISE.</p>
+                                        <button onClick={() => {navigate("/rfid/AN650-FCL71324EU"), window.scrollTo(0,0)}} className="bg-black mt-auto text-white hover:bg-orange-500 w-45 self-center h-11 rounded-2xl text-[16px] font-bold">Voir le produit</button>
+                                    </div>
                                 </div>
                             </div>
                         )}
 
-                        {categorie === "imprimantes" && (
+                        {/*{categorie === "imprimantes" && (
                             <div>
                                 <h1 className="text-xl mb-7">Produits de <span className="text-xl font-bold">1 - 20</span></h1>
                                 <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
@@ -305,7 +323,7 @@ export default function RFID () {
                                     </div>
                                 </div>
                             </div>
-                        )}
+                        )}*/}
 
                     </div>
                 </div>

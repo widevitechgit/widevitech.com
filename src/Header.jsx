@@ -57,7 +57,7 @@ const NAV_MATERIELS = [
             { label: "Lecteurs RFID portables",          to: "/RFID?categorie=portables" },
             { label: "Lecteurs RFID fixes et infrastructure", to: "/RFID?categorie=fixe" },
             { label: "Antennes RFID",                   to: "/RFID?categorie=antennes" },
-            { label: "Imprimantes RFID",                to: "/RFID?categorie=imprimantes" },
+            /*{ label: "Imprimantes RFID",                to: "/RFID?categorie=imprimantes" },*/
         ],
     },
     {
@@ -81,7 +81,7 @@ const NAV_MATERIELS = [
             { label: "Gamme ET4x",    to: "/Tablettes?categorie=et4x" },
             { label: "Gamme ET4x-HC", to: "/Tablettes?categorie=et4x-hc" },
             { label: "Gamme ET6x",    to: "/Tablettes?categorie=et6x" },
-            { label: "Gamme ET8x",    to: "/Tablettes?categorie=et8x" },
+            /*{ label: "Gamme ET8x",    to: "/Tablettes?categorie=et8x" },*/
         ],
     },
     {

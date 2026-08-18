@@ -424,7 +424,6 @@ export default function ScannerDetail() {
                         <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-[1.05] text-black">
                             {produit.nom}
                         </h1>
-                        <p className="text-gray-400 font-mono text-sm">{produit.sku}</p>
                         <p className="text-gray-600 leading-relaxed text-lg">{produit.accroche}</p>
 
                         <div className="flex flex-wrap gap-3 mt-2">
@@ -440,7 +439,6 @@ export default function ScannerDetail() {
                                         state: {
                                             produit: {
                                                 nom: produit.nom,
-                                                sku: produit.sku,
                                                 image: produit.image,
                                                 categorie: produit.categorie,
                                                 accroche: produit.accroche,
@@ -537,7 +535,6 @@ export default function ScannerDetail() {
                                         <img src={p.image} alt={p.nom} className="w-24 h-28 object-contain" />
                                     </div>
                                     <h3 className="font-bold text-black">{p.nom}</h3>
-                                    <p className="text-gray-400 font-mono text-xs">{p.sku}</p>
                                 </button>
                             ))}
                         </div>

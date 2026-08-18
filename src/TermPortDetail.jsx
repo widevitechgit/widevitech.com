@@ -695,7 +695,6 @@ export default function TermPortDetail() {
                                         <img src={p.image} alt={p.nom} className="w-24 h-28 object-contain" />
                                     </div>
                                     <h3 className="font-bold text-black">{p.nom}</h3>
-                                    <p className="text-gray-400 font-mono text-xs">{p.sku}</p>
                                 </button>
                             ))}
                         </div>
