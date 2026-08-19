@@ -439,7 +439,7 @@ export default function Header() {
                             Logiciels
                         </button>*/}
 
-                        <button onClick={() => {window.open("https://widevitech-sav.vercel.app/","_blank"), toggleMenu("savwide")}} className="cursor-pointer">
+                        <button onClick={() => {window.open("https://sav.widevitech.com/","_blank"), toggleMenu("savwide")}} className="cursor-pointer">
                             SAV
                         </button>
                     </ul>
