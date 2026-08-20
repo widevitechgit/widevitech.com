@@ -73,6 +73,7 @@ export default function ContactCommercial () {
                 //    puisque sa demande est déjà enregistrée.
                 await sendCommercialContactEmail({
                     request_code: created.code,
+                    tracking_url: `${window.location.origin}/suivi-commercial/${created.code}`,
                     nom: form.nom.trim(),
                     prenom: form.prenom.trim(),
                     societe: form.societe.trim(),
