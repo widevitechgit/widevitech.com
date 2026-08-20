@@ -1,20 +1,23 @@
 import { useState } from "react"
-import emailjs from '@emailjs/browser'
+import { Link } from "react-router-dom"
+import { createCommercialRequest } from "./lib/db.js"
+import { sendCommercialContactEmail } from "./lib/emailjs.js"
+
+const initialForm = {
+    nom: "",
+    prenom: "",
+    societe: "",
+    email: "",
+    telephone: "",
+    sujet: "",
+    message: "",
+}
 
 export default function ContactCommercial () {
-    const [form, setForm] = useState({
-        nom: "",
-        prenom: "",
-        societe: "",
-        email: "",
-        telephone: "",
-        sujet: "",
-        message: "",
-    })
+    const [form, setForm] = useState(initialForm)
     const [errors, setErrors] = useState({})
-    const [envoye, setEnvoye] = useState(false)
-    const [envoiEnCours, setEnvoiEnCours] = useState(false)
-    const [erreurEnvoi, setErreurEnvoi] = useState(false)
+    const [status, setStatus] = useState("idle") // idle | sending | done | error
+    const [request, setRequest] = useState(null)
 
     const handleChange = (e) => {
         const { name, value } = e.target
@@ -38,7 +41,7 @@ export default function ContactCommercial () {
         return newErrors
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const validationErrors = validate()
         if (Object.keys(validationErrors).length > 0) {
@@ -46,41 +49,81 @@ export default function ContactCommercial () {
             return
         }
 
-        setEnvoiEnCours(true)
-        setErreurEnvoi(false)
+        setStatus("sending")
 
-        emailjs.send(
-            'service_rebf79i',
-            'template_bf3ma5o',
-            {
-                nom: form.nom,
-                prenom: form.prenom,
-                societe: form.societe,
-                email: form.email,
-                telephone: form.telephone,
+        try {
+            // 1. On enregistre d'abord la demande en base : c'est ce qui doit
+            //    absolument réussir, le client aura toujours une trace même si
+            //    l'email échoue ensuite.
+            const created = await createCommercialRequest({
+                client: {
+                    nom: form.nom.trim(),
+                    prenom: form.prenom.trim(),
+                    societe: form.societe.trim(),
+                    email: form.email.trim(),
+                    telephone: form.telephone.trim(),
+                },
                 sujet: form.sujet,
-                message: form.message,
-            },
-            'TFxMyMjVaEIfE_7W_'
-        )
-        .then(() => {
-            setEnvoiEnCours(false)
-            setEnvoye(true)
-            setForm({
-                nom: "",
-                prenom: "",
-                societe: "",
-                email: "",
-                telephone: "",
-                sujet: "",
-                message: "",
+                message: form.message.trim(),
             })
-        })
-        .catch((error) => {
-            console.error("Erreur EmailJS:", error)
-            setEnvoiEnCours(false)
-            setErreurEnvoi(true)
-        })
+
+            try {
+                // 2. L'envoi de l'email est secondaire : s'il échoue (quota
+                //    EmailJS, config manquante...), on ne bloque pas le client
+                //    puisque sa demande est déjà enregistrée.
+                await sendCommercialContactEmail({
+                    request_code: created.code,
+                    nom: form.nom.trim(),
+                    prenom: form.prenom.trim(),
+                    societe: form.societe.trim(),
+                    email: form.email.trim(),
+                    telephone: form.telephone.trim(),
+                    sujet: form.sujet,
+                    message: form.message.trim(),
+                })
+            } catch (emailErr) {
+                console.error("Envoi email échoué :", emailErr)
+            }
+
+            setRequest(created)
+            setStatus("done")
+            setForm(initialForm)
+        } catch (err) {
+            console.error("Erreur lors de l'enregistrement de la demande :", err)
+            setStatus("error")
+        }
+    }
+
+    if (status === "done" && request) {
+        return (
+            <section className="flex items-center justify-center min-h-[60vh] md:p-0 p-2 md:pt-34 pt-17 pb-20">
+                <div className="bg-white rounded-2xl w-full md:w-[70%] shadow-sm overflow-hidden text-start">
+                    <div className="bg-gradient-to-t from-blue-900 via-blue-700 to-blue-500 text-white md:p-12 p-7 text-center">
+                        <p className="md:text-[15px] text-[13px] font-bold text-white/80">DEMANDE ENREGISTRÉE</p>
+                        <h1 className="md:text-3xl text-2xl font-bold mb-3">Merci, {request.client.prenom} !</h1>
+                        <p className="font-mono md:text-3xl text-2xl tracking-[0.2em] my-4">{request.code}</p>
+                        <p className="text-white/80 text-[14px] max-w-xl mx-auto">
+                            Conservez ce code de suivi : notre équipe commerciale reviendra vers vous
+                            dans les meilleurs délais à l'adresse {request.client.email}.
+                        </p>
+                    </div>
+                    <div className="md:p-12 p-7 flex flex-wrap gap-3">
+                        <Link
+                            to={`/suivi-commercial/${request.code}`}
+                            className="bg-black text-white hover:bg-orange-500 rounded-full font-bold px-8 py-3 transition-colors"
+                        >
+                            Suivre ma demande
+                        </Link>
+                        <button
+                            onClick={() => { setStatus("idle"); setRequest(null) }}
+                            className="border border-black/20 rounded-full font-bold px-8 py-3 hover:bg-black/5 transition-colors"
+                        >
+                            Envoyer une autre demande
+                        </button>
+                    </div>
+                </div>
+            </section>
+        )
     }
 
     return (
@@ -101,14 +144,7 @@ export default function ContactCommercial () {
             <section className="flex items-center justify-center md:p-0 p-2 pb-20">
                 <div className="bg-white rounded-2xl w-full md:w-[70%] md:p-12 p-6 shadow-sm">
 
-                    {envoye && (
-                        <div className="bg-green-50 border border-green-300 text-green-800 rounded-2xl p-4 mb-8 text-start">
-                            <p className="font-bold">Votre message a bien été envoyé.</p>
-                            <p className="text-[14px]">Notre service commercial reviendra vers vous dans les meilleurs délais.</p>
-                        </div>
-                    )}
-
-                    {erreurEnvoi && (
+                    {status === "error" && (
                         <div className="bg-red-50 border border-red-300 text-red-800 rounded-2xl p-4 mb-8 text-start">
                             <p className="font-bold">Une erreur est survenue lors de l'envoi.</p>
                             <p className="text-[14px]">Merci de réessayer ou de nous contacter directement par téléphone.</p>
@@ -224,10 +260,10 @@ export default function ContactCommercial () {
 
                         <button
                             type="submit"
-                            disabled={envoiEnCours}
+                            disabled={status === "sending"}
                             className="bg-black text-white hover:bg-orange-500 rounded-full font-bold px-8 py-3 self-start disabled:opacity-60 transition-colors"
                         >
-                            {envoiEnCours ? "Envoi en cours..." : "Envoyer le message"}
+                            {status === "sending" ? "Envoi en cours..." : "Envoyer le message"}
                         </button>
 
                         <p className="text-[12px] text-black/50">* Champs obligatoires</p>

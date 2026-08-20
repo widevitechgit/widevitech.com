@@ -36,6 +36,8 @@ import DetailDellOrdi from './Detaildellordi.jsx'
 import DetailEcran from './DetailEcran.jsx'
 import DetailDellOrdi02 from './DetailDellOrdi02.jsx'
 import Devis from './Devis.jsx'
+import TrackCommercial from './TrackCommercial.jsx'
+import AdminCommercial from './AdminCommercial.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -77,6 +79,9 @@ function App() {
         <Route path="/Dell-Gaming/:slug" element={<DetailDellGaming />} />
         <Route path="/Ordi-Dell/:slug" element={<DetailDellOrdi/>} />
         <Route path="/Devis" element={<Devis/>} />
+        <Route path="/suivi-commercial" element={<TrackCommercial />} />
+        <Route path="/suivi-commercial/:code" element={<TrackCommercial />} />
+        <Route path="/admin-commercial" element={<AdminCommercial />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
