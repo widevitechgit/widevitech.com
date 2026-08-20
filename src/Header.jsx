@@ -269,6 +269,11 @@ function MobileMenu({ onClose }) {
                     Home
                 </Link>
 
+                {/* Suivi commercial */}
+                <Link to="/suivi-commercial" onClick={onClose} className="px-6 py-4 font-bold text-lg">
+                    Suivre ma demande
+                </Link>
+
                 {sections.map(({ key, label, items, color }) => {
                     const c = COLOR[color]
                     return (
@@ -442,6 +447,10 @@ export default function Header() {
                         <button onClick={() => {window.open("https://sav.widevitech.com/","_blank"), toggleMenu("savwide")}} className="cursor-pointer">
                             SAV
                         </button>
+
+                        <Link to="/suivi-commercial" onClick={closeAll} className="cursor-pointer">
+                            Suivre ma demande
+                        </Link>
                     </ul>
 
                     {/* ── Logo ── */}
@@ -451,14 +460,14 @@ export default function Header() {
 
                     {/* ── Bouton contact desktop ── */}
                     <button className="bg-blue-700 text-white h-10 md:text-[14px] text-2xl md:w-50 w-20 font-bold md:rounded-full rounded-2xl shadow-xl hover:bg-orange-500 transition-all md:block hidden">
-                        <Link to="/contact">
+                        <Link to="/Contact-Commercial">
                             Contacter Nous
                         </Link>
                     </button>
 
                     {/* ── Bouton contact mobile ── */}
                     <button className="bg-blue-700 text-white h-10 text-2xl md:w-50 w-20 font-bold md:rounded-full rounded-2xl shadow-xl hover:bg-orange-500 transition-all md:hidden block">
-                        <Link to="/contact">
+                        <Link to="/Contact-Commercial">
                             &#9993;
                         </Link>
                     </button>

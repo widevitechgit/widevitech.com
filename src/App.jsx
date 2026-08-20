@@ -39,53 +39,68 @@ import Devis from './Devis.jsx'
 import TrackCommercial from './TrackCommercial.jsx'
 import AdminCommercial from './AdminCommercial.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
   return (
     <BrowserRouter>
-      <Header/>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/Terminaux-portables' element={<TermPort/>} />
-        <Route path='/Imprimantes' element={<Imprimante/>} />
-        <Route path='/Scanner' element={<Scanner/>} />
-        <Route path='/RFID' element={<RFID/>} />
-        <Route path='/Consommables' element={<Conso/>} />
-        <Route path='/Tablettes' element={<Tablette/>} />
-        <Route path='/Accessoire' element={<Accessoire/>} />
-        <Route path='/Téléphone-Crosscall' element={<TelCross/>} />
-        <Route path='/Logiciel' element={<Logiciel/>} />
-        <Route path="/tablettes/:sku" element={<TabletteDetail />} />
-        <Route path="/terminaux/:sku" element={<TermPortDetail />} />
-        <Route path="/imprimantes/:sku" element={<ImprimanteDetail />} />
-        <Route path="/scanners/:sku" element={<ScannerDetail />} />
-        <Route path="/rfid/:sku" element={<RFIDDetail />} />
-        <Route path="/consommables/:sku" element={<ConsoDetail />} />
-        <Route path="/accessoires/:sku" element={<AccessoireDetail />} />
-        <Route path="/logiciel/:slug" element={<LogicielDetail />} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/Accessoire-Crosscall" element={<AccCross/>} />
-        <Route path="/Téléphone-Crosscall/:slug" element={<TelCrossDetail />} />
-        <Route path="/Accessoires-Crosscall/:slug" element={<AccCrossDetail />} />
-        <Route path='/Ordi-Dell' element={<DellOrdi/>} />
-        <Route path='/Ordi-Bureau-Dell' element={<DellOrdi02/>} />
-        <Route path='/Ordi-Bureau-Dell/:slug' element={<DetailDellOrdi02/>} />
-        <Route path='/Ecrans' element={<Ecrans/>} />
-        <Route path='/Ecrans/:slug' element={<DetailEcran/>} />
-        <Route path='/Contact-Commercial' element={<ContactCommercial/>} />
-        <Route path='/Gaming-Dell' element={<DellGaming/>} />
-        <Route path='/Accessoires-Dell' element={<AccDell/>} />
-        <Route path='/Accessoires-Dell/:slug' element={<DetailAccDell/>} />
-        <Route path="/Dell-Gaming/:slug" element={<DetailDellGaming />} />
-        <Route path="/Ordi-Dell/:slug" element={<DetailDellOrdi/>} />
-        <Route path="/Devis" element={<Devis/>} />
-        <Route path="/suivi-commercial" element={<TrackCommercial />} />
-        <Route path="/suivi-commercial/:code" element={<TrackCommercial />} />
-        <Route path="/admin-commercial" element={<AdminCommercial />} />
-      </Routes>
-      <Footer/>
+      <div className="min-h-screen flex flex-col">
+
+        <Header />
+
+        {/* Le contenu prend tout l'espace disponible */}
+        <main className="flex-1">
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/Terminaux-portables' element={<TermPort />} />
+            <Route path='/Imprimantes' element={<Imprimante />} />
+            <Route path='/Scanner' element={<Scanner />} />
+            <Route path='/RFID' element={<RFID />} />
+            <Route path='/Consommables' element={<Conso />} />
+            <Route path='/Tablettes' element={<Tablette />} />
+            <Route path='/Accessoire' element={<Accessoire />} />
+            <Route path='/Téléphone-Crosscall' element={<TelCross />} />
+            <Route path='/Logiciel' element={<Logiciel />} />
+
+            <Route path="/tablettes/:sku" element={<TabletteDetail />} />
+            <Route path="/terminaux/:sku" element={<TermPortDetail />} />
+            <Route path="/imprimantes/:sku" element={<ImprimanteDetail />} />
+            <Route path="/scanners/:sku" element={<ScannerDetail />} />
+            <Route path="/rfid/:sku" element={<RFIDDetail />} />
+            <Route path="/consommables/:sku" element={<ConsoDetail />} />
+            <Route path="/accessoires/:sku" element={<AccessoireDetail />} />
+            <Route path="/logiciel/:slug" element={<LogicielDetail />} />
+
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/Accessoire-Crosscall" element={<AccCross />} />
+            <Route path="/Téléphone-Crosscall/:slug" element={<TelCrossDetail />} />
+            <Route path="/Accessoires-Crosscall/:slug" element={<AccCrossDetail />} />
+
+            <Route path='/Ordi-Dell' element={<DellOrdi />} />
+            <Route path='/Ordi-Bureau-Dell' element={<DellOrdi02 />} />
+            <Route path='/Ordi-Bureau-Dell/:slug' element={<DetailDellOrdi02 />} />
+
+            <Route path='/Ecrans' element={<Ecrans />} />
+            <Route path='/Ecrans/:slug' element={<DetailEcran />} />
+
+            <Route path='/Contact-Commercial' element={<ContactCommercial />} />
+
+            <Route path='/Gaming-Dell' element={<DellGaming />} />
+            <Route path="/Dell-Gaming/:slug" element={<DetailDellGaming />} />
+
+            <Route path='/Accessoires-Dell' element={<AccDell />} />
+            <Route path='/Accessoires-Dell/:slug' element={<DetailAccDell />} />
+
+            <Route path="/Ordi-Dell/:slug" element={<DetailDellOrdi />} />
+
+            <Route path="/Devis" element={<Devis />} />
+            <Route path="/suivi-commercial" element={<TrackCommercial />} />
+            <Route path="/suivi-commercial/:code" element={<TrackCommercial />} />
+            <Route path="/admin-commercial" element={<AdminCommercial />} />
+          </Routes>
+        </main>
+
+        <Footer />
+
+      </div>
     </BrowserRouter>
   )
 }
-
-export default App
